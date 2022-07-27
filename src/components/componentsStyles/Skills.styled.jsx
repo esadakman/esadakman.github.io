@@ -5,13 +5,15 @@ export const SkillsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  /* height: 100%; */
+  transition: 0.5s all linear;
+  margin-bottom: 5rem;
 
   & > h1.title {
     position: relative;
     ::after {
       content: "";
-      background: ${({ theme }) => theme.colors.turqo};
+      background: ${({ theme }) => theme.colors.mainColor};
       position: absolute;
       text-align: center;
       bottom: 0;
@@ -23,26 +25,36 @@ export const SkillsContainer = styled.div`
 `;
 
 export const SkillIcons = styled.div`
-  width: 90%;
+  width: 70%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-
+  /* border: 1px solid red; */
+  gap: 1rem;
+  padding: 1rem;
   & > div.iconContainer {
-    width: 5rem;
     display: flex;
+    /* border: 1px solid red; */
     flex-direction: column;
     align-items: center;
-    margin: 0 0.85rem 1.45rem 0.85rem;
-    transition: 0.5s color ease-in-out;
+    transition: 0.5s all ease-in-out;
     :hover {
       color: ${({ theme }) => theme.colors.turqo};
     }
     & > i.icon {
-      font-size: 6rem;
+      font-size: 8rem;
       text-transform: none;
+    }
+    & > img {
+      width: 8rem;
+      :hover {
+        color: ${({ theme }) => theme.colors.turqo};
+      }
     }
     & > span {
       font-size: 1.2rem;
+      font-family: "Roboto", sans-serif;
     }
   }
 `;

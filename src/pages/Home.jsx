@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../components/About";
+import Contact from "../components/Contact";
 import Education from "../components/Education";
 
 import Main from "../components/Main";
@@ -14,6 +15,7 @@ const Home = () => {
       <Projects />
       <Education />
       <Skills />
+      <Contact />
     </div>
   );
 };
