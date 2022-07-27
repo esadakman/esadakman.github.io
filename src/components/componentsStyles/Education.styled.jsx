@@ -3,74 +3,94 @@ import styled from "styled-components";
 export const EducationContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 5rem;
-  /* width: 100vw; */
+  width: 100%;
   height: 100vh;
+
+  & > h1.title {
+    position: relative;
+    ::after {
+      content: "";
+      background: ${({ theme }) => theme.colors.turqo};
+      position: absolute;
+      text-align: center;
+      bottom: -20px;
+      left: 10%;
+      height: 10%;
+      width: 80%;
+    }
+  }
 `;
 
 export const EducationArea = styled.div`
-  width: 60%;
-  min-width: 300px;
-  /* height: 50%; */
+  margin-top: 1rem;
+  width: 50%;
+  min-width: 566px;
+  max-height: 470px;
   background-color: "white";
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   align-items: center;
   padding: 2rem 0;
-  /* & > div {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    float: left;
-    border: 1px solid red;
-    
-  } */
+  background-color: ${({ theme }) => theme.colors.cardText};
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 14px;
 `;
 
 export const EducationInfo = styled.div`
   width: 90%;
-  margin: 0 auto 30px auto;
-
-  padding: 15px;
-  border: 1px solid red;
+  min-width: 34rem;
+  margin-bottom: 2rem;
+  padding: 0 15px;
   text-align: left;
   display: flex;
-  /* overflow: hidden; */
 
   & > div.circle {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    float: left;
-    border: 1px solid red;
+    border: 3px solid ${({ theme }) => theme.colors.navBgColor};
     position: relative;
     & > div.straightLine {
-      height: 7rem;
-      border: 0.1px solid red;
       position: absolute;
+      height: 5.9rem;
+      border-left: 3px solid ${({ theme }) => theme.colors.navBgColor};
       top: 100%;
       left: 50%;
-      z-index: -1;
+      /* z-index: -1; */
     }
+  }
+  position: relative;
+  ::after {
+    content: "";
+    background: ${({ theme }) => theme.colors.turqo};
+
+    position: absolute;
+    /* text-align: center; */
+    bottom: -20px;
+    left: 10%;
+    height: 2%;
+    width: 90%;
   }
 `;
 
 export const SchoolInfos = styled.div`
-  margin-top: 0;
-  margin-left: 1rem;
-  border: 2px solid black;
-  & > h4 {
-    margin: 0.5rem;
+  margin: 0 1rem;
+  /* border: 2px solid black; */
+  padding: 0 1rem;
+  & > h3 {
+    margin: 1rem 0;
+    margin-top: 0;
   }
-  & > h6 {
-    margin: 0.5rem;
+  & > h5 {
+    margin: 0.8rem 0;
   }
-  & > span {
+  & > p {
+    margin: 0.5rem 0;
     font-size: 1rem;
-    margin: 0.5rem;
+
+    & > sup {
+      font-size: 10px;
+    }
   }
 `;

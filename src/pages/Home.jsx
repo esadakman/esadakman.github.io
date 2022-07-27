@@ -3,6 +3,7 @@ import About from "../components/About";
 import Education from "../components/Education";
 
 import Main from "../components/Main";
+import Skills from "../components/Skills";
 import Projects from "./Projects";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <About />
       <Projects />
       <Education />
+      <Skills />
     </div>
   );
 };

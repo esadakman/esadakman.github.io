@@ -1,5 +1,4 @@
 import React from "react";
-import { Title } from "./componentsStyles/About.styled";
 import {
   EducationArea,
   EducationContainer,
@@ -10,16 +9,28 @@ import {
 const Education = () => {
   return (
     <EducationContainer>
-      <Title>Education</Title>
+      <h1 className="title">Education</h1>
       <EducationArea>
         <EducationInfo>
           <div className="circle">
             <div className="straightLine" />
           </div>
           <SchoolInfos>
-            <h4>Eskisehir Technical Univercity</h4>
-            <h6>Air Traffic Control (Bachelor Degree)</h6>
-            <span className="education-date">Dec. 2017 - June 2023</span>
+            <h3>Clarusway (Bootcamp) </h3>
+            <h5>Full Stack Development Course </h5>
+            <p>Jan. 2022 - Sep. 2022</p>
+          </SchoolInfos>
+        </EducationInfo>
+        <EducationInfo>
+          <div className="circle">
+            <div className="straightLine" />
+          </div>
+          <SchoolInfos>
+            <h3>Eskisehir Technical University</h3>
+            <h5>Air Traffic Control (Bachelor Degree)</h5>
+            <p>
+              Dec. 2017 - June 2023 <sup>(One class short of graduating)</sup>{" "}
+            </p>
           </SchoolInfos>
         </EducationInfo>
         <EducationInfo>
@@ -27,9 +38,9 @@ const Education = () => {
             <div />
           </div>
           <SchoolInfos>
-            <h4>National Defense University</h4>
-            <h6>Air Traffic Control (Bachelor Degree)</h6>
-            <span className="education-date">Sep. 2014 - July 2016</span>
+            <h3>National Defense University</h3>
+            <h5>Air Traffic Control (Associate Degree)</h5>
+            <p>Sep. 2014 - July 2016</p>
           </SchoolInfos>
         </EducationInfo>
       </EducationArea>

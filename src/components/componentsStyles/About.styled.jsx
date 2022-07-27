@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   height: 100vh;
-  width: 99vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,10 +35,11 @@ export const IMG = styled.img`
 
 export const AboutParagraph = styled.div`
   border: 1px solid ${({ theme }) => theme.colors.turqo};
-
-  width: 60%;
+  width: 80%;
+  min-width: 30rem;
   margin: 1rem;
   & > p {
+    height: 20rem;
     text-align: center;
     line-height: 2rem;
   }

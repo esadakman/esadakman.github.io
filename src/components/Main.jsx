@@ -8,7 +8,7 @@ import {
 
 const Main = () => {
   return (
-    <div style={{ height: "100vh", width: "100vw" }}>
+    <div style={{ height: "100vh", width: "100%" }}>
       <Body>
         <LinesWrapper>
           <SkewLine>
