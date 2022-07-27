@@ -18,7 +18,7 @@ export const Title = styled.h1`
     background: ${({ theme }) => theme.colors.turqo};
 
     position: absolute;
-    text-align: center;
+    /* text-align: center; */
     bottom: 0;
     left: 15%;
     height: 5%;

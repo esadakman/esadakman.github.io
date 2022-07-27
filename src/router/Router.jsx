@@ -11,7 +11,11 @@ const Router = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects" element={<Projects />}>
+            {/* <Route path="/project/react" element={<Projects />} /> */}
+            {/* <Route path="/project/javaScript" element={<Projects />} /> */}
+            {/* <Route path="/project/htmlCss" element={<Projects />} /> */}
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

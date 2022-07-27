@@ -18,6 +18,9 @@ import randomUserOne from "../assets/projectPreviews/ReactJS/randomUserOne.jpg";
 import axiosRouterExercise from "../assets/projectPreviews/ReactJS/axiosRouterExercise.jpg";
 import reviewsProject from "../assets/projectPreviews/ReactJS/reviewsProject.jpg";
 import stopWatch from "../assets/projectPreviews/ReactJS/stopWatch.jpg";
+import TourPlaces from "../assets/projectPreviews/ReactJS/TourPlaces.jpg";
+import digitalClock from "../assets/projectPreviews/ReactJS/digitalClock.jpg";
+import languageCards from "../assets/projectPreviews/ReactJS/languageCards.jpg";
 
 import { Title } from "./componentsStyles/About.styled";
 import { Flex } from "./componentsStyles/Main.styled";
@@ -315,10 +318,89 @@ const ReactProjects = () => {
             </Desc>
           </Card>
           <TitleCard>
-            <p>Overview</p>
+            <p>StopWatch</p>
           </TitleCard>
         </CardWrapper>
         {/* //! ============Divider=========================== */}
+
+        <CardWrapper
+          title="Click for details"
+          onClick={() =>
+            openInNewTab("https://github.com/esadakman/react-digital-clock ")
+          }
+        >
+          <Card>
+            <img src={digitalClock} alt="poster" />
+            <Desc>
+              <h2>Overview</h2>
+              <ul>
+                <li>
+                  Remake of the javaScript digital clock project with React
+                </li>
+              </ul>
+            </Desc>
+          </Card>
+          <TitleCard>
+            <p>Digital Clock</p>
+          </TitleCard>
+        </CardWrapper>
+        {/* //! ============Divider=========================== */}
+
+        <CardWrapper
+          title="Click for details"
+          onClick={() =>
+            openInNewTab("https://github.com/esadakman/language-cards-react ")
+          }
+        >
+          <Card>
+            <img src={languageCards} alt="poster" />
+            <Desc>
+              <h2>Overview</h2>
+              <ul>
+                <li>
+                  In this project for understanding react structure, i tried to
+                  make a simple language cards app.
+                </li>
+                <li>
+                  {" "}
+                  I get the data from locally and i use SASS for the design
+                </li>
+              </ul>
+            </Desc>
+          </Card>
+          <TitleCard>
+            <p>Language Cards</p>
+          </TitleCard>
+        </CardWrapper>
+
+        {/* //! ============Divider=========================== */}
+        <CardWrapper
+          title="Click for details"
+          onClick={() =>
+            openInNewTab("https://github.com/esadakman/tour-places-react")
+          }
+        >
+          <Card>
+            <img src={TourPlaces} alt="poster" />
+            <Desc>
+              <h2>Overview</h2>
+              <ul>
+                <li>
+                  In this project for understanding react structure, i tried to
+                  make a simple tour places app.{" "}
+                </li>
+                <li>
+                  I get the data from locally and i use SASS for the design
+                </li>
+              </ul>
+            </Desc>
+          </Card>
+          <TitleCard>
+            <p>Tour Places</p>
+          </TitleCard>
+        </CardWrapper>
+        {/* //! ============Divider=========================== */}
+
         <CardWrapper
           title="Click for details"
           onClick={() => openInNewTab(" ")}
@@ -338,6 +420,7 @@ const ReactProjects = () => {
             <p>Overview</p>
           </TitleCard>
         </CardWrapper>
+
         {/* //! ============Divider=========================== */}
       </ProjectsContainer>
     </>
