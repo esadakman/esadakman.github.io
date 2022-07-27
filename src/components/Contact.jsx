@@ -69,15 +69,14 @@ const Contact = () => {
         </div>
       </SocialIcons>
       <StyledContactForm>
+        <h1>Send me a message</h1>
         <div>
           <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="to_name" />
-            <label>Email</label>
-            <input type="email" name="from_name" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
+            <input type="email" name="from_name" placeholder="Your Email" />
+            <textarea name="message" placeholder="Your Message" />
+            <button type="submit" value="Send">
+              Send
+            </button>
           </form>
         </div>
       </StyledContactForm>

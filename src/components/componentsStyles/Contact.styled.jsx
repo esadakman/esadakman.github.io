@@ -99,54 +99,72 @@ export const SocialIcons = styled.div`
 
 export const StyledContactForm = styled.div`
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
   & > div {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
-    width: 400px;
+    width: 90%;
     color: white;
     padding: 1rem;
     form {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      width: 100%;
+      width: 90%;
       font-size: 1rem;
       input {
         width: 100%;
         height: 2rem;
-        padding: 0.5rem;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        text-indent: 1rem;
         outline: none;
         border-radius: 5px;
         border: 1px solid rgb(220, 220, 220);
+        background-color: ${({ theme }) => theme.colors.mainColor};
+        ::placeholder {
+          color: white;
+        }
         &:focus {
-          border: 2px solid rgba(0, 206, 158, 1);
+          border: 1px solid rgba(0, 206, 158, 1);
         }
       }
       textarea {
-        max-width: 100%;
-        min-width: 100%;
-        width: 100%;
-        max-height: 100px;
-        min-height: 100px;
-        padding: 0.5rem;
-
+        font-size: 1rem;
+        margin-top: 1rem;
+        text-indent: 1rem;
+        padding: 0.5rem 0;
+        width: 100% !important;
+        border: none;
         outline: none;
+        resize: none;
+        height: 5rem !important;
         border-radius: 5px;
         border: 1px solid rgb(220, 220, 220);
+        background-color: ${({ theme }) => theme.colors.mainColor};
+        ::placeholder {
+          color: white;
+        }
         &:focus {
-          border: 2px solid rgba(0, 206, 158, 1);
+          border: 1px solid rgba(0, 206, 158, 1);
         }
       }
-      label {
-        margin-top: 1rem;
-      }
-      input[type="submit"] {
-        margin-top: 2rem;
+
+      & > button {
+        text-indent: 0;
         cursor: pointer;
-        background: rgb(249, 105, 14);
+        background: rgb(90, 22, 158);
         color: white;
         border: none;
+        margin-top: 2rem;
+        padding: 2rem 0;
       }
     }
   }
