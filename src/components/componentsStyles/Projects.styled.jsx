@@ -67,13 +67,22 @@ export const Desc = styled.div`
     margin: 10px 0;
     font-weight: 400;
   }
-  & > p {
-    overflow: auto;
-    padding-right: 8px;
-    line-height: 24px;
-    font-size: 1.2rem;
-    text-align: justify;
-    height: 85%;
+
+  & > ul {
+    /* border: 1px solid red; */
+    padding: 0 !important;
+
+    & > li {
+      list-style-type: none;
+      /* border: 1px solid red; */
+      overflow: auto;
+      padding-right: 8px;
+      line-height: 24px;
+      font-size: 1.2rem;
+      text-align: justify;
+      height: 85%;
+      padding-bottom: 0.5rem;
+    }
   }
 `;
 
