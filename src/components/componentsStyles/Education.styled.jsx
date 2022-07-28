@@ -61,6 +61,7 @@ export const EducationInfo = styled.div`
     position: relative;
     /* margin-left: 1.5rem; */
     @media (max-width: ${({ theme }) => theme.size.sm}) {
+      height: 2.7rem;
     }
     & > div.straightLine {
       position: absolute;
@@ -82,6 +83,10 @@ export const EducationInfo = styled.div`
     left: 10%;
     height: 2%;
     width: 90%;
+    @media (max-width: ${({ theme }) => theme.size.sm}) {
+      left: 15%;
+      width: 80%;
+    }
   }
 `;
 

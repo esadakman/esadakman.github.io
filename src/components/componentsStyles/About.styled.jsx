@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -34,13 +34,19 @@ export const IMG = styled.img`
 `;
 
 export const AboutParagraph = styled.div`
-  border: 1px solid ${({ theme }) => theme.colors.turqo};
+  /* border: 1px solid ${({ theme }) => theme.colors.turqo}; */
   width: 80%;
-  min-width: 30rem;
+  min-width: 20rem;
   margin: 1rem;
+  @media (max-width: ${({ theme }) => theme.size.md}) {
+    width: 90%;
+  }
   & > p {
-    height: 20rem;
+    /* height: 20rem; */
     text-align: center;
     line-height: 2rem;
+    @media (max-width: ${({ theme }) => theme.size.sm}) {
+      font-size: 1.2rem;
+    }
   }
 `;
