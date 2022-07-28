@@ -11,7 +11,7 @@ const FooterStyle = styled.div`
   height: 8vh;
   padding: 0 1.5rem;
   /* position: fixed; */
-  /* width: 100%; */
+  /* width: 93vw; */
   /* bottom: 0; */
 `;
 

@@ -9,7 +9,7 @@ import mando from "../assets/mando.png";
 
 const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <Title>About Esad</Title>
       <IMG src={mando} alt="picture"></IMG>
       <AboutParagraph>

@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
 export const MainProjectsContainer = styled.div`
+  background: ${({ theme }) => theme.colors.navBgColor};
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding-bottom: 2rem;
   /* height: 100vh; */
   & > h1.title {
     position: relative;
@@ -28,7 +31,7 @@ export const ProjectsIcons = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   gap: 3rem;
   padding: 1rem;
   transition: all 0.3s linear;

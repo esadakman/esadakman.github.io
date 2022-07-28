@@ -7,7 +7,7 @@ const Projects = () => {
   const navigate = useNavigate();
   return (
     <>
-      <MainProjectsContainer>
+      <MainProjectsContainer id="projects">
         <h1 className="title">My Projects</h1>
         <ProjectsIcons>
           <div

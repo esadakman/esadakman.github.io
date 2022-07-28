@@ -36,7 +36,7 @@ const Contact = () => {
       );
   };
   return (
-    <ContactContainer>
+    <ContactContainer id="contact">
       <h1 className="title">Contact</h1>
       <SocialIcons>
         <div

@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex } from "../componentsStyles/Main.styled";
 import {
+  ButtonStyleCard,
   Card,
   CardWrapper,
   Desc,
@@ -19,14 +20,17 @@ import digitalClockJS from "../../assets/projectPreviews/JavaScript/digitalClock
 import stopWatch from "../../assets/projectPreviews/JavaScript/stopWatch.jpg";
 import interactiveRating from "../../assets/projectPreviews/JavaScript/interactiveRating.jpg";
 import todoList from "../../assets/projectPreviews/JavaScript/todoList.jpg";
+import { useNavigate } from "react-router-dom";
 
 const JavaScript = () => {
+  const navigate = useNavigate();
+
   const openInNewTab = (url) => {
     // 👇️ IMDb linkine tıklanıldığında yeni sekmede açmak için aşağıdaki func. kullandım
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
-    <>
+    <Flex justify="center" wrap="wrap">
       <Flex>
         <ProjectsTitles className="titles">JavaScript Projects</ProjectsTitles>
       </Flex>
@@ -298,7 +302,13 @@ const JavaScript = () => {
 
         {/* //! ============Divider=========================== */}
       </ProjectsContainer>
-    </>
+      <ButtonStyleCard
+        onClick={() => navigate(`/`)}
+        style={{ width: "fit-content", height: "3rem" }}
+      >
+        GO TO HOMEPAGE{" "}
+      </ButtonStyleCard>
+    </Flex>
   );
 };
 

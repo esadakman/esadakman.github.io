@@ -4,12 +4,11 @@ import { Flex } from "../componentsStyles/Main.styled";
 import { HashLink as Link } from "react-router-hash-link";
 
 export const Nav = styled(Flex)`
-  padding: 0 1rem;
   background: ${({ theme }) => theme.colors.logoColor};
   position: sticky;
-  /* width: 100%; */
   top: 0;
   z-index: 6;
+  /* width: 95vw; */
   /* @media (max-width: ${({ theme }) => theme.size.lg}) {
     position: relative;
   } */
@@ -25,45 +24,46 @@ export const Logo = styled(Link)`
   gap: 1rem;
   p {
     font-weight: 400;
-    color: ${({ theme }) => theme.colors.navBgColor};
+    color: white;
+    letter-spacing: 5px;
+    margin: 1rem;
+    transition: all 0.3s ease-in;
+
+    :hover {
+      color: ${({ theme }) => theme.colors.turqo};
+    }
   }
 `;
 
 export const IMG = styled.img`
-  width: 40px;
+  width: 3rem;
+  color: red;
+  padding-left: 1rem;
+  transition: all 0.3s ease-in;
+
+  :hover {
+    opacity: 0.7;
+  }
 `;
 
 export const Hamburger = styled.div`
   display: none;
   cursor: pointer;
   color: ${({ theme }) => theme.colors.turqo};
-  & > svg {
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    &:hover {
-      /* background-color: ${({ theme }) => theme.colors.cardBack}; */
-      color: white;
-    }
-  }
   @media (max-width: ${({ theme }) => theme.size.sm}) {
     display: block;
   }
 `;
 
 export const Menu = styled(Flex)`
+  margin-right: 1rem;
   @media (max-width: ${({ theme }) => theme.size.sm}) {
     flex-direction: column;
     width: 100%;
     max-height: ${({ isOpen }) => (isOpen ? "400px" : "0")};
     overflow: hidden;
     transition: max-height 0.3s ease-in;
-    margin-top: 5px;
-  }
-  & > h5 {
-    color: ${({ theme }) => theme.colors.turqo};
-    margin-right: 1rem;
-    font-size: 1.2rem;
+    margin: 0;
   }
 `;
 
@@ -77,13 +77,13 @@ export const MenuLink = styled(Link)`
   transition: all 0.5s ease-in-out;
   border-radius: 5px;
   &:hover {
-    background-color: ${({ theme }) => theme.colors.cardBack};
+    background-color: ${({ theme }) => theme.colors.navBgColor};
     color: white;
   }
   @media (max-width: ${({ theme }) => theme.size.sm}) {
-    border-bottom: 1px solid ${({ theme }) => theme.colors.cardBack};
+    border-bottom: 1px solid white;
     width: 100%;
     border-radius: 5px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
 `;

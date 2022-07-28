@@ -8,26 +8,30 @@ import {
   MenuLink,
   Nav,
 } from "./componentsStyles/Navbar.styled";
+import hamburger from "../assets/hamburger.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // onClick={() => setMovies("")}
   return (
     <Nav justify="space-between" wrap="wrap">
       <Logo to="/">
         <IMG src={logo} alt="logo" />
+
         <p>{"<esad/>"}</p>
       </Logo>
-
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
-        <IMG src={logo} alt="logo" />
+        <IMG
+          src={hamburger}
+          alt="logo"
+          style={{ paddingTop: "8px", width: "2.5rem", paddingRight: "1rem" }}
+        />
       </Hamburger>
 
       <Menu isOpen={isOpen} onClick={() => setIsOpen(false)}>
-        <MenuLink to="home#About">About Me</MenuLink>
-        <MenuLink to="login">Projects</MenuLink>
-        <MenuLink to="login">Contact</MenuLink>
+        <MenuLink to="/#about">About Me</MenuLink>
+        <MenuLink to="/#projects">Projects</MenuLink>
+        <MenuLink to="/#contact">Contact</MenuLink>
       </Menu>
     </Nav>
   );

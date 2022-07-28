@@ -2,8 +2,6 @@ import React from "react";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Education from "../components/Education";
-import Footer from "../components/Footer";
-
 import Main from "../components/Main";
 import Skills from "../components/Skills";
 import Projects from "./Projects";

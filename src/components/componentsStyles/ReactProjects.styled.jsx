@@ -5,7 +5,7 @@ export const ProjectsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 `;
 
 export const CardWrapper = styled.div`
@@ -125,5 +125,29 @@ export const ProjectsTitles = styled.h1`
     left: 10%;
     height: 6%;
     width: 80%;
+  }
+`;
+
+export const ButtonStyleCard = styled.button`
+  background-color: ${({ theme }) => theme.colors.turqo};
+  border: 2px solid ${({ theme }) => theme.colors.navBgColor};
+  border-radius: 0.3rem;
+  color: ${({ theme }) => theme.colors.navBgColor};
+  text-decoration: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+  font-size: 1.1rem;
+  width: 8rem;
+  margin: 1rem auto;
+  :hover {
+    opacity: 0.9;
+    color: ${({ theme }) => theme.colors.turqo};
+    background-color: ${({ theme }) => theme.colors.navBgColor};
+    border: 2px solid ${({ theme }) => theme.colors.turqo};
+  }
+  :active {
+    opacity: 1;
   }
 `;

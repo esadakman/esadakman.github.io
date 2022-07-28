@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex } from "../componentsStyles/Main.styled";
 import {
+  ButtonStyleCard,
   Card,
   CardWrapper,
   Desc,
@@ -18,14 +19,16 @@ import breakpointsNavbar from "../../assets/projectPreviews/HtmlProjects/breakpo
 import google from "../../assets/projectPreviews/HtmlProjects/google.jpg";
 import netflix from "../../assets/projectPreviews/HtmlProjects/netflix.jpg";
 import udemy from "../../assets/projectPreviews/HtmlProjects/udemy.jpg";
-
+import { useNavigate } from "react-router-dom";
 const HtmlCssProjects = () => {
+  const navigate = useNavigate();
+
   const openInNewTab = (url) => {
     // 👇️ IMDb linkine tıklanıldığında yeni sekmede açmak için aşağıdaki func. kullandım
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
-    <>
+    <Flex justify="center" wrap="wrap">
       <Flex>
         <ProjectsTitles className="titles">Html/CSS Projects</ProjectsTitles>
       </Flex>
@@ -261,7 +264,13 @@ const HtmlCssProjects = () => {
         </CardWrapper>
         {/* // ! ===================================== */}
       </ProjectsContainer>
-    </>
+      <ButtonStyleCard
+        onClick={() => navigate(-1)}
+        style={{ width: "fit-content", height: "3rem" }}
+      >
+        GO TO HOMEPAGE{" "}
+      </ButtonStyleCard>
+    </Flex>
   );
 };
 

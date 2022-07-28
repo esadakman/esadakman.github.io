@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  ButtonStyleCard,
   Card,
   CardWrapper,
   Desc,
@@ -24,14 +25,15 @@ import languageCards from "../../assets/projectPreviews/ReactJS/languageCards.jp
 
 import { Title } from "../componentsStyles/About.styled";
 import { Flex } from "../componentsStyles/Main.styled";
-
+import { useNavigate } from "react-router-dom";
 const ReactProjects = () => {
+  const navigate = useNavigate();
   const openInNewTab = (url) => {
     // 👇️ IMDb linkine tıklanıldığında yeni sekmede açmak için aşağıdaki func. kullandım
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
-    <>
+    <Flex justify="center" wrap="wrap">
       <Flex>
         <Title>My Projects</Title>
       </Flex>
@@ -423,7 +425,13 @@ const ReactProjects = () => {
 
         {/* //! ============Divider=========================== */}
       </ProjectsContainer>
-    </>
+      <ButtonStyleCard
+        onClick={() => navigate(-1)}
+        style={{ width: "fit-content", height: "3rem" }}
+      >
+        GO TO HOMEPAGE{" "}
+      </ButtonStyleCard>
+    </Flex>
   );
 };
 
