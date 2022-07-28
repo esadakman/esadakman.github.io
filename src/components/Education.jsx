@@ -5,6 +5,7 @@ import {
   EducationInfo,
   SchoolInfos,
 } from "./componentsStyles/Education.styled";
+import education from "../assets/education-logo.svg";
 
 const Education = () => {
   return (
@@ -13,6 +14,7 @@ const Education = () => {
       <EducationArea>
         <EducationInfo>
           <div className="circle">
+            <img src={education} alt="education" />
             <div className="straightLine" />
           </div>
           <SchoolInfos>
@@ -23,6 +25,8 @@ const Education = () => {
         </EducationInfo>
         <EducationInfo>
           <div className="circle">
+            <img src={education} alt="education" />
+
             <div className="straightLine" />
           </div>
           <SchoolInfos>
@@ -35,6 +39,8 @@ const Education = () => {
         </EducationInfo>
         <EducationInfo>
           <div className="circle">
+            <img src={education} alt="education" />
+
             <div />
           </div>
           <SchoolInfos>

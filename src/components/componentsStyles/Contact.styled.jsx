@@ -30,17 +30,23 @@ export const SocialIcons = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 2rem;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.mainColor};
   gap: 3rem;
+  @media (max-width: ${({ theme }) => theme.size.lg}) {
+    gap: 1rem;
+  }
   & > div.iconContainer {
     color: wheat;
     flex-wrap: wrap;
-    /* width: 23%; */
     min-width: 12rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    /* border: 1px solid red; */
+    @media (max-width: ${({ theme }) => theme.size.lg}) {
+      min-width: 8rem;
+    }
     & > i.linkedin {
       font-size: 8rem;
       border-radius: 50%;
@@ -48,7 +54,10 @@ export const SocialIcons = styled.div`
       padding: 1rem;
       transition: 0.5s all linear;
       color: ${({ theme }) => theme.colors.logoColor};
-
+      @media (max-width: ${({ theme }) => theme.size.md}) {
+        font-size: 6rem;
+        padding: 0.5rem;
+      }
       :hover {
         color: #4c60c9;
       }
@@ -60,8 +69,11 @@ export const SocialIcons = styled.div`
       padding: 1rem;
       transition: 0.5s all linear;
       :hover {
-        /* color: #4c60c9; */
         color: white;
+      }
+      @media (max-width: ${({ theme }) => theme.size.md}) {
+        padding: 0.5rem;
+        font-size: 6rem;
       }
     }
     & > i.twitter {
@@ -74,6 +86,10 @@ export const SocialIcons = styled.div`
       :hover {
         color: #1da1f2;
       }
+      @media (max-width: ${({ theme }) => theme.size.md}) {
+        padding: 1rem;
+        font-size: 5rem;
+      }
     }
     & > i.google {
       font-size: 6rem;
@@ -84,42 +100,58 @@ export const SocialIcons = styled.div`
       padding: 2rem;
       transition: 0.5s all linear;
       :hover {
-        /* color: #1da1f2; */
-        text-decoration: none;
-        color: inherit;
+        color: #d90d1e;
+      }
+      @media (max-width: ${({ theme }) => theme.size.md}) {
+        padding: 0.5rem;
+        font-size: 6rem;
       }
     }
     & > span {
       margin-top: 0.5rem;
       font-size: 1.5rem;
       font-family: "Roboto", sans-serif;
+      @media (max-width: ${({ theme }) => theme.size.md}) {
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
     }
   }
 `;
 
 export const StyledContactForm = styled.div`
-  width: 90%;
+  width: 70%;
+  min-width: 22rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
+
   color: white;
+  & > h2 {
+    margin: 1.5rem;
+    width: 22rem;
+    text-align: center;
+  }
 
   & > div {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     width: 90%;
+    max-width: 35rem;
     color: white;
-    padding: 1rem;
     form {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
       width: 90%;
       font-size: 1rem;
+      gap: 1rem;
       input {
+        transition: 0.3s all linear;
         width: 100%;
         height: 2rem;
         padding: 0.5rem 0;
@@ -128,19 +160,19 @@ export const StyledContactForm = styled.div`
         outline: none;
         border-radius: 5px;
         border: 1px solid rgb(220, 220, 220);
-        background-color: ${({ theme }) => theme.colors.mainColor};
+        background-color: ${({ theme }) => theme.colors.formColor};
         ::placeholder {
           color: white;
         }
         &:focus {
-          border: 1px solid rgba(0, 206, 158, 1);
+          border: 1px solid ${({ theme }) => theme.colors.mainColor};
         }
       }
       textarea {
         font-size: 1rem;
-        margin-top: 1rem;
+        transition: 0.3s all linear;
         text-indent: 1rem;
-        padding: 0.5rem 0;
+        padding: 1rem 0;
         width: 100% !important;
         border: none;
         outline: none;
@@ -148,23 +180,34 @@ export const StyledContactForm = styled.div`
         height: 5rem !important;
         border-radius: 5px;
         border: 1px solid rgb(220, 220, 220);
-        background-color: ${({ theme }) => theme.colors.mainColor};
+        background-color: ${({ theme }) => theme.colors.formColor};
+
         ::placeholder {
           color: white;
         }
         &:focus {
-          border: 1px solid rgba(0, 206, 158, 1);
+          border: 1px solid ${({ theme }) => theme.colors.mainColor};
         }
       }
 
       & > button {
-        text-indent: 0;
         cursor: pointer;
-        background: rgb(90, 22, 158);
+        transition: 0.3s all linear;
+        background-color: ${({ theme }) => theme.colors.formColor};
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
         color: white;
-        border: none;
-        margin-top: 2rem;
-        padding: 2rem 0;
+        border: 1px solid white;
+        border-radius: 0.3rem;
+        /* margin-top: 1rem; */
+        padding: 0.8rem;
+        width: 100%;
+        opacity: 0.7;
+
+        :hover {
+          opacity: 1;
+          border: 1px solid ${({ theme }) => theme.colors.mainColor};
+        }
       }
     }
   }

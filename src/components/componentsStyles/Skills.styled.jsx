@@ -30,9 +30,16 @@ export const SkillIcons = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   gap: 1rem;
   padding: 1rem;
+  transition: all 0.3s linear;
+  @media (max-width: ${({ theme }) => theme.size.lg}) {
+    width: 80%;
+  }
+  @media (max-width: ${({ theme }) => theme.size.md}) {
+    width: 90%;
+  }
   & > div.iconContainer {
     display: flex;
     /* border: 1px solid red; */
@@ -41,13 +48,20 @@ export const SkillIcons = styled.div`
     transition: 0.5s all ease-in-out;
     :hover {
       color: ${({ theme }) => theme.colors.turqo};
+      animation: shake 0.3s linear;
     }
     & > i.icon {
       font-size: 8rem;
       text-transform: none;
+      @media (max-width: ${({ theme }) => theme.size.md}) {
+        font-size: 5rem;
+      }
     }
     & > img {
       width: 8rem;
+      @media (max-width: ${({ theme }) => theme.size.md}) {
+        width: 5rem;
+      }
       :hover {
         color: ${({ theme }) => theme.colors.turqo};
       }
@@ -55,6 +69,29 @@ export const SkillIcons = styled.div`
     & > span {
       font-size: 1.2rem;
       font-family: "Roboto", sans-serif;
+      @media (max-width: ${({ theme }) => theme.size.md}) {
+        font-size: 1rem;
+      }
+    }
+    @keyframes shake {
+      0% {
+        transform: translate(1px, 1px) rotate(2deg);
+      }
+      20% {
+        transform: translate(-3px, 0px) rotate(-4deg);
+      }
+      40% {
+        transform: translate(1px, -1px) rotate(2deg);
+      }
+      60% {
+        transform: translate(-3px, 1px) rotate(-4deg);
+      }
+      80% {
+        transform: translate(-1px, -1px) rotate(2deg);
+      }
+      100% {
+        transform: translate(1px, -2px) rotate(-4deg);
+      }
     }
   }
 `;

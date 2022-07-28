@@ -14,6 +14,8 @@ const theme = {
     googleBlue: "#4285f4",
     buttonActiveBlue: "#1669F2",
     btnColor: "#112756",
+    formColor: "rgba(167, 160, 160, 0.214)",
+    contactTurqo: " rgba(0, 206, 158, 1)",
   },
   size: {
     xs: "500px",

@@ -69,7 +69,7 @@ const Contact = () => {
         </div>
       </SocialIcons>
       <StyledContactForm>
-        <h1>Send me a message</h1>
+        <h2>Send me a message</h2>
         <div>
           <form ref={form} onSubmit={sendEmail}>
             <input type="email" name="from_name" placeholder="Your Email" />

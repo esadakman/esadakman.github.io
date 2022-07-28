@@ -6,20 +6,20 @@ export const GlobalStyles = createGlobalStyle`
     // margin:0;
     font-family: 'Roboto', sans-serif; 
     ::-webkit-scrollbar {
-      width: 0.8rem;
+      width: 0.9rem;
     }
     ::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
+        width: 8px;
+        height: 8px;
       }
       
       ::-webkit-scrollbar-track {
-        border-radius: 10px;
+        border-radius: 1rem;
         background: rgba(0, 0, 0, 0.1);
       }
       
       ::-webkit-scrollbar-thumb {
-        border-radius: 10px;
+        border-radius: 1rem;
         background: rgba(0, 0, 0, 0.3);
       }
       
