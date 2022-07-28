@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const FooterStyle = styled.footer`
+const FooterStyle = styled.div`
   display: flex;
   text-decoration: none;
   justify-content: space-between;
@@ -12,7 +12,7 @@ const FooterStyle = styled.footer`
   padding: 0 1.5rem;
   /* position: fixed; */
   /* width: 100%; */
-  bottom: 0;
+  /* bottom: 0; */
 `;
 
 export const Logos = styled.div`

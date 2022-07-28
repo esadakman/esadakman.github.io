@@ -1,5 +1,4 @@
 import React from "react";
-import { Title } from "../componentsStyles/About.styled";
 import { Flex } from "../componentsStyles/Main.styled";
 import {
   Card,
@@ -19,6 +18,7 @@ import checkoutForm from "../../assets/projectPreviews/JavaScript/checkoutForm.j
 import digitalClockJS from "../../assets/projectPreviews/JavaScript/digitalClockJS.jpg";
 import stopWatch from "../../assets/projectPreviews/JavaScript/stopWatch.jpg";
 import interactiveRating from "../../assets/projectPreviews/JavaScript/interactiveRating.jpg";
+import todoList from "../../assets/projectPreviews/JavaScript/todoList.jpg";
 
 const JavaScript = () => {
   const openInNewTab = (url) => {
@@ -43,14 +43,40 @@ const JavaScript = () => {
               <h2>Overview</h2>
               <ul>
                 <li>
-                  Project aims to display current weather data of searched city
-                  around the world with fetching Weather Api data
+                  In this project, a simple Weather-App was made using the
+                  Weather Api data and axios library. User can can select the
+                  language (English or Turkish) and display current weather data
+                  of searched city around the world.
                 </li>
               </ul>
             </Desc>
           </Card>
           <TitleCard>
             <p> Weather App</p>
+          </TitleCard>
+        </CardWrapper>
+        {/* // ! ===================================== */}
+        <CardWrapper
+          title="Click for details"
+          onClick={() =>
+            openInNewTab("https://github.com/esadakman/todo_list_project")
+          }
+        >
+          <Card>
+            <img src={todoList} alt="poster" />
+            <Desc>
+              <h2>Overview</h2>
+              <ul>
+                <li>
+                  In this project i used Bootstrap for styling and JavaScript
+                  for DOM manipulation. I tried to make responsible design and
+                  for the first time i use local storage in my projects.
+                </li>
+              </ul>
+            </Desc>
+          </Card>
+          <TitleCard>
+            <p> Todo App</p>
           </TitleCard>
         </CardWrapper>
         {/* // ! ===================================== */}
