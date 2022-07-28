@@ -36,7 +36,7 @@ export const SocialIcons = styled.div`
     gap: 1rem;
   }
   & > div.iconContainer {
-    color: wheat;
+    color: white;
     flex-wrap: wrap;
     min-width: 12rem;
     display: flex;

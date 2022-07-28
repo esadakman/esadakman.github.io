@@ -30,7 +30,7 @@ export const SkillIcons = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   gap: 1rem;
   padding: 1rem;
   transition: all 0.3s linear;
