@@ -24,6 +24,9 @@ export const Title = styled.h1`
     height: 5%;
     width: 12rem;
   }
+  .titles {
+    font-size: 1rem;
+  }
 `;
 
 export const IMG = styled.img`

@@ -112,3 +112,18 @@ export const TitleCard = styled.div`
     /* background-color: ${({ theme }) => theme.colors.success}; */
   }
 `;
+
+export const ProjectsTitles = styled.h1`
+  position: relative;
+  padding-bottom: 4px;
+  ::after {
+    content: "";
+    background: ${({ theme }) => theme.colors.mainColor};
+    position: absolute;
+    text-align: center;
+    bottom: -0;
+    left: 10%;
+    height: 6%;
+    width: 80%;
+  }
+`;
