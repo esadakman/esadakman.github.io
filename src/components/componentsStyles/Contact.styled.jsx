@@ -151,6 +151,8 @@ export const StyledContactForm = styled.div`
       font-size: 1rem;
       gap: 1rem;
       input {
+        color: white;
+
         transition: 0.3s all linear;
         width: 100%;
         height: 2rem;
@@ -169,6 +171,8 @@ export const StyledContactForm = styled.div`
         }
       }
       textarea {
+        color: white;
+
         font-size: 1rem;
         transition: 0.3s all linear;
         text-indent: 1rem;
