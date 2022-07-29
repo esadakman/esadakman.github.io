@@ -35,7 +35,7 @@ const ReactProjects = () => {
   return (
     <Flex justify="center" wrap="wrap">
       <Flex>
-        <Title>My Projects</Title>
+        <Title>React Projects</Title>
       </Flex>
       <ProjectsContainer>
         <CardWrapper
@@ -403,7 +403,7 @@ const ReactProjects = () => {
         </CardWrapper>
         {/* //! ============Divider=========================== */}
 
-        <CardWrapper
+        {/* <CardWrapper
           title="Click for details"
           onClick={() => openInNewTab(" ")}
         >
@@ -421,7 +421,7 @@ const ReactProjects = () => {
           <TitleCard>
             <p>Overview</p>
           </TitleCard>
-        </CardWrapper>
+        </CardWrapper> */}
 
         {/* //! ============Divider=========================== */}
       </ProjectsContainer>

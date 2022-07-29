@@ -12,7 +12,9 @@ export const Title = styled.h1`
   /* border: 1px solid red; */
   color: ${({ theme }) => theme.colors.navBgColor};
   position: relative;
-
+  @media (max-width: ${({ theme }) => theme.size.sm}) {
+    font-size: 2rem;
+  }
   ::after {
     content: "";
     background: ${({ theme }) => theme.colors.turqo};
@@ -23,6 +25,9 @@ export const Title = styled.h1`
     left: 15%;
     height: 5%;
     width: 12rem;
+    @media (max-width: ${({ theme }) => theme.size.sm}) {
+      left: 5%;
+    }
   }
   .titles {
     font-size: 1rem;

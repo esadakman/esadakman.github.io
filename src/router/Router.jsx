@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import HtmlCssProjects from "../components/projectsComponents/HtmlCssProjects";
 import JavaScript from "../components/projectsComponents/JavaScriptProjects";
 import ReactProjects from "../components/projectsComponents/ReactProjects";
+import ScrolToTop from "../pages/ScrolToTop";
 import Home from "../pages/Home";
 // import Projects from "../pages/Projects";
 
@@ -15,12 +16,13 @@ const Router = () => {
       <GlobalStyles />
       <BrowserRouter>
         <Navbar />
+        <ScrolToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" exact element={<Home />} />
           {/* <Route path="/projects" element={<ReactProjects />} /> */}
-          <Route path="/projects/react" element={<ReactProjects />} />
-          <Route path="/projects/javaScript" element={<JavaScript />} />
-          <Route path="/projects/htmlCss" element={<HtmlCssProjects />} />
+          <Route path="/react" exact element={<ReactProjects />} />
+          <Route path="/javaScript" exact element={<JavaScript />} />
+          <Route path="/htmlCss" exact element={<HtmlCssProjects />} />
         </Routes>
         <Footer />
       </BrowserRouter>

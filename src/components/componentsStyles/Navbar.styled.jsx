@@ -22,13 +22,16 @@ export const Logo = styled(Link)`
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin: 0.7rem 0;
   p {
     font-weight: 400;
     color: white;
     letter-spacing: 5px;
-    margin: 1rem;
+    margin: 0 0.7rem;
     transition: all 0.3s ease-in;
-
+    @media (max-width: ${({ theme }) => theme.size.sm}) {
+      display: none;
+    }
     :hover {
       color: ${({ theme }) => theme.colors.turqo};
     }

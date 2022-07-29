@@ -12,22 +12,37 @@ export const CardWrapper = styled.div`
   margin: 1rem;
   width: 30rem;
   max-width: 650px;
-  height: 22rem;
+  height: 20rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   cursor: pointer;
+  @media (max-width: ${({ theme }) => theme.size.sm}) {
+    height: 18rem;
+    width: 29rem;
+  }
+  @media (max-width: ${({ theme }) => theme.size.sm}) {
+    height: 16rem;
+    width: 24rem;
+    min-width: 20rem;
+  }
 `;
 
 export const Card = styled.div`
   flex: 1;
-  flex-basis: 300px;
+  flex-basis: 260px;
   background: #fff;
   border: 2px solid #fff;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   overflow: hidden;
   position: relative;
+  @media (max-width: ${({ theme }) => theme.size.md}) {
+    flex-basis: 250px;
+  }
+  @media (max-width: ${({ theme }) => theme.size.sm}) {
+    flex-basis: 200px;
+  }
   & > img {
     width: 100%;
     height: 100%;
@@ -57,6 +72,7 @@ export const Desc = styled.div`
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   height: 100%;
+  overflow: auto;
   transition: all 0.7s ease-in-out;
   padding: 1rem 1.5rem;
   box-sizing: border-box;
@@ -91,12 +107,14 @@ export const Desc = styled.div`
 
 export const TitleCard = styled.div`
   position: relative;
+
   height: 3rem;
   background-color: ${({ theme }) => theme.colors.cardBack};
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 0 1rem;
+
   & > p {
     color: white;
     font-family: "Roboto", sans-serif;
@@ -116,6 +134,9 @@ export const TitleCard = styled.div`
 export const ProjectsTitles = styled.h1`
   position: relative;
   padding-bottom: 4px;
+  @media (max-width: ${({ theme }) => theme.size.sm}) {
+    font-size: 2rem;
+  }
   ::after {
     content: "";
     background: ${({ theme }) => theme.colors.mainColor};
