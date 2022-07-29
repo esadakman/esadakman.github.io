@@ -212,7 +212,10 @@ const HtmlCssProjects = () => {
             <Desc>
               <h2>Overview</h2>
               <ul>
-                <li>Project aims to create google landing page.</li>
+                <li>
+                  I made a google clone page for improving my html and css
+                  skills.
+                </li>
               </ul>
             </Desc>
           </Card>
@@ -232,7 +235,7 @@ const HtmlCssProjects = () => {
             <Desc>
               <h2>Overview</h2>
               <ul>
-                <li>I desidn a netflix clone with using figma</li>
+                <li>I made a netflix clone page with using figma</li>
               </ul>
             </Desc>
           </Card>

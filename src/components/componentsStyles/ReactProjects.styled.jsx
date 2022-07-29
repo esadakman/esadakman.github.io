@@ -83,12 +83,19 @@ export const Desc = styled.div`
     letter-spacing: 1px;
     margin: 10px 0;
     font-weight: 400;
+    @media (max-width: ${({ theme }) => theme.size.sm}) {
+      font-size: 1.2rem;
+      margin-top: 5px;
+      font-weight: bold;
+    }
   }
 
   & > ul {
     /* border: 1px solid red; */
     padding: 0 !important;
-
+    @media (max-width: ${({ theme }) => theme.size.sm}) {
+      margin: 0 !important;
+    }
     & > li {
       list-style-type: none;
       /* border: 1px solid red; */
@@ -99,6 +106,9 @@ export const Desc = styled.div`
       text-align: justify;
       height: 85%;
       padding-bottom: 0.5rem;
+      @media (max-width: ${({ theme }) => theme.size.sm}) {
+        font-size: 1rem;
+      }
     }
   }
 `;
