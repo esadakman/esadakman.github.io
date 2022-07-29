@@ -38,7 +38,8 @@ export const IMG = styled.img`
   border: 3px solid ${({ theme }) => theme.colors.turqo};
   border-radius: 50%;
   padding: 8px;
-  width: 12rem;
+  width: 15rem;
+  /* height: 10rem; */
 `;
 
 export const AboutParagraph = styled.div`

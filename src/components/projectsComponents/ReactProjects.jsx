@@ -7,7 +7,7 @@ import {
   ProjectsContainer,
   TitleCard,
 } from "../componentsStyles/ReactProjects.styled";
-import mando from "../../assets/mando.png";
+// import mando from "../../assets/mando.png";
 import fireContact from "../../assets/projectPreviews/ReactJS/fireContact.png";
 import MovieApp from "../../assets/projectPreviews/ReactJS/MovieApp.jpg";
 import RecipeApp from "../../assets/projectPreviews/ReactJS/RecipeApp.jpg";
