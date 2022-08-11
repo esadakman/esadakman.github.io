@@ -22,6 +22,7 @@ import stopWatch from "../../assets/projectPreviews/ReactJS/stopWatch.jpg";
 import TourPlaces from "../../assets/projectPreviews/ReactJS/TourPlaces.jpg";
 import digitalClock from "../../assets/projectPreviews/ReactJS/digitalClock.jpg";
 import languageCards from "../../assets/projectPreviews/ReactJS/languageCards.jpg";
+import fireBlog from "../../assets/projectPreviews/ReactJS/fireBlog.jpg";
 
 import { Title } from "../componentsStyles/About.styled";
 import { Flex } from "../componentsStyles/Main.styled";
@@ -38,6 +39,31 @@ const ReactProjects = () => {
         <Title>React Projects</Title>
       </Flex>
       <ProjectsContainer>
+        <CardWrapper
+          title="Click for details"
+          onClick={() =>
+            openInNewTab("https://github.com/esadakman/FireBlog-Milestone")
+          }
+        >
+          <Card>
+            <img src={fireBlog} alt="poster" />
+            <Desc>
+              <h2>Overview</h2>
+              <ul>
+                <li>
+                  In this project, I designed a Fire Blog with many features.
+                </li>
+                <li>
+                  I used context API for state management, Firebase for
+                  authentication, and Firestore database for CRUD operations.
+                </li>
+              </ul>
+            </Desc>
+          </Card>
+          <TitleCard>
+            <p>Fire Blog </p>
+          </TitleCard>
+        </CardWrapper>
         <CardWrapper
           title="Click for details"
           onClick={() =>
