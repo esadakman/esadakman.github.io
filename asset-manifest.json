@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.1c1cfb39.js",
+    "main.js": "/static/js/main.0283ed27.js",
+    "static/media/pp.jpeg": "/static/media/pp.66c338151e378014168e.jpeg",
     "static/media/fireContact.png": "/static/media/fireContact.657dd3d40a402ceb15b7.png",
     "static/media/WeatherApp.jpg": "/static/media/WeatherApp.2794886e7ff82e5a746d.jpg",
     "static/media/MovieApp.jpg": "/static/media/MovieApp.411c2ebd4b2e1801ef49.jpg",
     "static/media/netflix.jpg": "/static/media/netflix.b38227695d7b2dfc8f2d.jpg",
-    "static/media/mando.png": "/static/media/mando.f8ea11dd89f9963eb16c.png",
     "static/media/bootstrapLandingPage.jpg": "/static/media/bootstrapLandingPage.7534f380d686c5100239.jpg",
     "static/media/TourPlaces.jpg": "/static/media/TourPlaces.5d18c2caf3909d203c99.jpg",
     "static/media/fireBlog.jpg": "/static/media/fireBlog.ca1c0b4e49a2d8e3d94b.jpg",
@@ -43,10 +43,10 @@
     "static/media/education-logo.svg": "/static/media/education-logo.814f1b591f617ead6ded5b002303691b.svg",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.1c1cfb39.js.map": "/static/js/main.1c1cfb39.js.map"
+    "main.0283ed27.js.map": "/static/js/main.0283ed27.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.1c1cfb39.js"
+    "static/js/main.0283ed27.js"
   ]
 }
