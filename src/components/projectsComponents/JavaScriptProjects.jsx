@@ -303,7 +303,7 @@ const JavaScript = () => {
         {/* //! ============Divider=========================== */}
       </ProjectsContainer>
       <ButtonStyleCard
-        onClick={() => navigate(`/`)}
+        onClick={() => navigate(-1)}
         style={{ width: "fit-content", height: "3rem" }}
       >
         GO TO HOMEPAGE{" "}

@@ -5,13 +5,13 @@ import {
   IMG,
   Title,
 } from "./componentsStyles/About.styled";
-import mando from "../assets/mando.png";
+import pp from "../assets/pp.jpeg";
 
 const About = () => {
   return (
     <AboutContainer id="about">
       <Title>About Esad</Title>
-      <IMG src={mando} alt="picture"></IMG>
+      <IMG src={pp} alt="picture"></IMG>
       <AboutParagraph>
         <p>
           A web developer who is proficient in front-end frameworks. Has the

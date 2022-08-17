@@ -39,7 +39,7 @@ export const IMG = styled.img`
   border-radius: 50%;
   padding: 8px;
   width: 15rem;
-  /* height: 10rem; */
+  // height: 20rem;
 `;
 
 export const AboutParagraph = styled.div`
