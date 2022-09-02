@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.0283ed27.js",
+    "main.js": "/static/js/main.dd4df607.js",
     "static/media/pp.jpeg": "/static/media/pp.66c338151e378014168e.jpeg",
     "static/media/fireContact.png": "/static/media/fireContact.657dd3d40a402ceb15b7.png",
     "static/media/WeatherApp.jpg": "/static/media/WeatherApp.2794886e7ff82e5a746d.jpg",
@@ -16,6 +16,7 @@
     "static/media/udemy.jpg": "/static/media/udemy.894155a3219ffe6c876b.jpg",
     "static/media/parallax.jpg": "/static/media/parallax.c9acebf88ebc62064c7b.jpg",
     "static/media/fourCard.jpg": "/static/media/fourCard.d971f654b24c0d836a33.jpg",
+    "static/media/fakeTweet.jpg": "/static/media/fakeTweet.2082d8b38dfc8535ff8a.jpg",
     "static/media/checkoutForm.jpg": "/static/media/checkoutForm.03896826838593fe7065.jpg",
     "static/media/guessTheNumber.jpg": "/static/media/guessTheNumber.36976abfe79d0bdad09b.jpg",
     "static/media/checkoutHtml.jpg": "/static/media/checkoutHtml.27b0931c00b88d7901df.jpg",
@@ -25,13 +26,14 @@
     "static/media/randomUserTwo.jpg": "/static/media/randomUserTwo.b3ee84cb7d16aae47c40.jpg",
     "static/media/weatherApp.jpg": "/static/media/weatherApp.8d4aa0f4b99d7d53c66d.jpg",
     "static/media/randomUser.jpg": "/static/media/randomUser.4f593775084937370264.jpg",
-    "static/media/stopWatch.jpg": "/static/media/stopWatch.76ae1ebfa428ab136290.jpg",
+    "static/media/stopWatchJS.jpg": "/static/media/stopWatchJS.59522dfb159191754dfd.jpg",
     "static/media/randomUserOne.jpg": "/static/media/randomUserOne.f96401a77796b9fd137d.jpg",
     "static/media/reviewsProject.jpg": "/static/media/reviewsProject.be444e424303b2bf9122.jpg",
     "static/media/taskTracker.jpg": "/static/media/taskTracker.4eb1982607bfb1c0bc26.jpg",
     "static/media/flagApp.jpg": "/static/media/flagApp.5d6f18f7b940da191988.jpg",
     "static/media/google.jpg": "/static/media/google.d6a0dff9ca952cee628b.jpg",
     "static/media/todoList.jpg": "/static/media/todoList.076877674d3e33b65573.jpg",
+    "static/media/stopWatch.jpg": "/static/media/stopWatch.76ae1ebfa428ab136290.jpg",
     "static/media/digitalClock.jpg": "/static/media/digitalClock.4498408a2fe3f09ae955.jpg",
     "static/media/iosCalculator.jpg": "/static/media/iosCalculator.1bf8570dd03121fb5a50.jpg",
     "static/media/digitalClockJS.jpg": "/static/media/digitalClockJS.a8b0783facd8c712ce62.jpg",
@@ -43,10 +45,10 @@
     "static/media/education-logo.svg": "/static/media/education-logo.814f1b591f617ead6ded5b002303691b.svg",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.0283ed27.js.map": "/static/js/main.0283ed27.js.map"
+    "main.dd4df607.js.map": "/static/js/main.dd4df607.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.0283ed27.js"
+    "static/js/main.dd4df607.js"
   ]
 }
