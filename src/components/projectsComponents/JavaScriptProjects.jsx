@@ -17,7 +17,7 @@ import iosCalculator from "../../assets/projectPreviews/JavaScript/iosCalculator
 import guessTheNumber from "../../assets/projectPreviews/JavaScript/guessTheNumber.jpg";
 import checkoutForm from "../../assets/projectPreviews/JavaScript/checkoutForm.jpg";
 import digitalClockJS from "../../assets/projectPreviews/JavaScript/digitalClockJS.jpg";
-import stopWatch from "../../assets/projectPreviews/JavaScript/stopWatch.jpg";
+import stopWatch from "../../assets/projectPreviews/JavaScript/stopWatchJS.jpg";
 import interactiveRating from "../../assets/projectPreviews/JavaScript/interactiveRating.jpg";
 import todoList from "../../assets/projectPreviews/JavaScript/todoList.jpg";
 import { useNavigate } from "react-router-dom";
