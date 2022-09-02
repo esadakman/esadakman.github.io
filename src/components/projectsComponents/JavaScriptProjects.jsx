@@ -8,18 +8,7 @@ import {
   ProjectsContainer,
   ProjectsTitles,
   TitleCard,
-} from "../componentsStyles/ReactProjects.styled";
-// import weatherApp from "../../assets/projectPreviews/JavaScript/WeatherApp.jpg";
-// import githubApi from "../../assets/projectPreviews/JavaScript/githubApp.jpg";
-// import flagApp from "../../assets/projectPreviews/JavaScript/flagApp.jpg";
-// import randomUser from "../../assets/projectPreviews/JavaScript/randomUser.jpg";
-// import iosCalculator from "../../assets/projectPreviews/JavaScript/iosCalculator.jpg";
-// import guessTheNumber from "../../assets/projectPreviews/JavaScript/guessTheNumber.jpg";
-// import checkoutForm from "../../assets/projectPreviews/JavaScript/checkoutForm.jpg";
-// import digitalClockJS from "../../assets/projectPreviews/JavaScript/digitalClockJS.jpg";
-// import stopWatch from "../../assets/projectPreviews/JavaScript/stopWatchJS.jpg";
-// import interactiveRating from "../../assets/projectPreviews/JavaScript/interactiveRating.jpg";
-// import todoList from "../../assets/projectPreviews/JavaScript/todoList.jpg";
+} from "../componentsStyles/ReactProjects.styled"; 
 import { useNavigate } from "react-router-dom";
 import jsData from "../../helpers/jsProjects";
 
@@ -60,11 +49,8 @@ const JavaScript = () => {
               </TitleCard>
             </CardWrapper>
           );
-        })}
+        })} 
         
-         
-       
-
         {/* //! ============Divider=========================== */}
       </ProjectsContainer>
       <ButtonStyleCard
