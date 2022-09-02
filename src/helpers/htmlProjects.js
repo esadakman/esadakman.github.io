@@ -47,7 +47,7 @@ const htmlData = [
       overview: [
         "Responsive web page project called 'four-card feature' which i found in 'frontendmentor.com'.",
       ],
-      link: "https://esadakman.github.io/four_card_feature/",
+      link: "https://github.com/esadakman/four_card_feature",
     },
     {
       id: 5,

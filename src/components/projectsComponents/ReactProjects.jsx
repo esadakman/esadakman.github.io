@@ -14,7 +14,7 @@ import reactData from "../../helpers/reactProjects";
 const ReactProjects = () => {
   const navigate = useNavigate();
   const openInNewTab = (url) => {
-    // 👇️ IMDb linkine tıklanıldığında yeni sekmede açmak için aşağıdaki func. kullandım
+    // 👇️ Proje linkine tıklanıldığında yeni sekmede açmak için aşağıdaki func. kullandım
     window.open(url, "_blank", "noopener,noreferrer");
   }; 
   return (
@@ -26,12 +26,12 @@ const ReactProjects = () => {
         {reactData.map((info) => {
           return (
             <CardWrapper
-              key={info.id}
+              key={info?.id}
               title="Click for details"
-              onClick={() => openInNewTab(info.link)}
+              onClick={() => openInNewTab(info?.link)}
             >
               <Card>
-                <img src={info.imgSrc} alt="poster" />
+                <img src={info?.imgSrc} alt="poster" />
                 <Desc>
                   <h2>Overview</h2>
                   <ul>
@@ -42,7 +42,7 @@ const ReactProjects = () => {
                 </Desc>
               </Card>
               <TitleCard>
-                <p>{info.projectName}</p>
+                <p>{info?.projectName}</p>
               </TitleCard>
             </CardWrapper>
           );
