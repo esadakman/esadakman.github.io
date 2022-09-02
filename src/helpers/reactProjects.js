@@ -123,14 +123,13 @@ const reactData = [
   },
   {
     id: 11,
-    imgSrc:  randomUserOne ,
-    projectName: "Random User App",
+    imgSrc:  fakeTweet ,
+    projectName: "Fake Tweet Generator",
     overview: [
-      "In this project i tried to make a simple random user app.",
-      "I use axios for fetching data.",
-      "User can get random profiles by clicking the button",
+      "In this project, I designed fake tweet generator.",
+      "After the necessary information is entered, the relevant tweet can be downloaded or the last tweet of the user can be downloaded by searching for the user name.",
     ],
-    link: "https://github.com/esadakman/random-user-react",
+    link: "https://github.com/esadakman/fake-tweet-generator",
   },
   {
     id: 12,

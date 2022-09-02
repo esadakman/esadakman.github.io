@@ -1,4 +1,3 @@
-import React from "react";
 import {
   ButtonStyleCard,
   Card,
@@ -6,11 +5,10 @@ import {
   Desc,
   ProjectsContainer,
   TitleCard,
-} from "../componentsStyles/ReactProjects.styled";
-
+} from "../componentsStyles/ReactProjects.styled"; 
+import { useNavigate } from "react-router-dom";
 import { Title } from "../componentsStyles/About.styled";
 import { Flex } from "../componentsStyles/Main.styled";
-import { useNavigate } from "react-router-dom";
 import reactData from "../../helpers/reactProjects";
 
 const ReactProjects = () => {
@@ -18,8 +16,7 @@ const ReactProjects = () => {
   const openInNewTab = (url) => {
     // 👇️ IMDb linkine tıklanıldığında yeni sekmede açmak için aşağıdaki func. kullandım
     window.open(url, "_blank", "noopener,noreferrer");
-  };
-  // console.log(reactData.map((info) => info.imgSrc));
+  }; 
   return (
     <Flex justify="center" wrap="wrap">
       <Flex>

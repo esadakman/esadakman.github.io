@@ -4,7 +4,8 @@ import { Flex } from "../componentsStyles/Main.styled";
 import { HashLink as Link } from "react-router-hash-link";
 
 export const Nav = styled(Flex)`
-  background: ${({ theme }) => theme.colors.logoColor};
+  // background: ${({ theme }) => theme.colors.logoColor};
+  background: rgba(40, 40, 40, 0.874);
   position: sticky;
   top: 0;
   z-index: 6;
