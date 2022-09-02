@@ -1,25 +1,24 @@
-import {
-  apiTutorial,
-  axiosRouterExercise,
-  digitalClock,
-  fireBlog,
-  fireContact,
-  languageCards,
-  MovieApp,
-  randomUserOne,
-  randomUserTwo,
-  RecipeApp,
-  reviewsProject,
-  stopWatch,
-  taskTracker,
-  TourPlaces,
-  weatherApp,
-} from "../assets/projectPreviews";
+import fireContact from "../assets/projectPreviews/ReactJS/fireContact.png"; 
+import MovieApp from "../assets/projectPreviews/ReactJS/MovieApp.jpg";
+import RecipeApp from "../assets/projectPreviews/ReactJS/RecipeApp.jpg";
+import taskTracker from "../assets/projectPreviews/ReactJS/taskTracker.jpg";
+import apiTutorial from "../assets/projectPreviews/ReactJS/apiTutorial.png";
+import randomUserTwo from "../assets/projectPreviews/ReactJS/randomUserTwo.jpg";
+import weatherApp from "../assets/projectPreviews/ReactJS/weatherApp.jpg";
+import randomUserOne from "../assets/projectPreviews/ReactJS/randomUserOne.jpg";
+import axiosRouterExercise from "../assets/projectPreviews/ReactJS/axiosRouterExercise.jpg";
+import reviewsProject from "../assets/projectPreviews/ReactJS/reviewsProject.jpg";
+import stopWatch from "../assets/projectPreviews/ReactJS/stopWatch.jpg";
+import TourPlaces from "../assets/projectPreviews/ReactJS/TourPlaces.jpg";
+import digitalClock from "../assets/projectPreviews/ReactJS/digitalClock.jpg";
+import languageCards from "../assets/projectPreviews/ReactJS/languageCards.jpg";
+import fireBlog from "../assets/projectPreviews/ReactJS/fireBlog.jpg";
+import fakeTweet from "../assets/projectPreviews/ReactJS/fakeTweet.jpg";
 
 const reactData = [
   {
     id: 1,
-    imgSrc: { fireBlog },
+    imgSrc:  fireBlog ,
     projectName: "Fire Blog",
     overview: [
       " In this project, I designed a Fire Blog with many features.",
@@ -29,7 +28,7 @@ const reactData = [
   },
   {
     id: 2,
-    imgSrc: { fireContact },
+    imgSrc: fireContact ,
     projectName: "FireContact",
     overview: [
       "In this project, I designed a Contact App for understanding CRUD operations.",
@@ -40,7 +39,7 @@ const reactData = [
   },
   {
     id: 3,
-    imgSrc: { MovieApp },
+    imgSrc:  MovieApp ,
     projectName: "Movie App",
     overview: [
       "In this project, I designed a Movie App with many features. I provided the movie information with the TMDB API.",
@@ -51,7 +50,7 @@ const reactData = [
   },
   {
     id: 4,
-    imgSrc: { RecipeApp },
+    imgSrc:  RecipeApp ,
     projectName: "Recipe App",
     overview: [
       "In this project i tried to make a recipe app.",
@@ -62,7 +61,7 @@ const reactData = [
   },
   {
     id: 5,
-    imgSrc: { taskTracker },
+    imgSrc: taskTracker ,
     projectName: "Task Tracker",
     overview: [
       "In this project i tried to make a build simple task tracker app.",
@@ -73,7 +72,7 @@ const reactData = [
   },
   {
     id: 6,
-    imgSrc: { apiTutorial },
+    imgSrc:  apiTutorial ,
     projectName: "API Tutorial",
     overview: [
       "In this project, I made CRUD operations using the real API.",
@@ -83,7 +82,7 @@ const reactData = [
   },
   {
     id: 7,
-    imgSrc: { randomUserTwo },
+    imgSrc:  randomUserTwo ,
     projectName: "Random User App 2",
     overview: [
       "In this project i make random user app, but this time you can save the users info's and when you hover the logos in the menu",
@@ -93,7 +92,7 @@ const reactData = [
   },
   {
     id: 8,
-    imgSrc: { weatherApp },
+    imgSrc:  weatherApp ,
     projectName: "Weather App",
     overview: [
       "Remake of the javaScript Weather App with React",
@@ -103,7 +102,7 @@ const reactData = [
   },
   {
     id: 9,
-    imgSrc: { axiosRouterExercise },
+    imgSrc:  axiosRouterExercise ,
     projectName: "Axios-Router Project",
     overview: [
       "I prepared a small-scale project in order to understand the Router Dom and the Material UI framework that I have learned recently.",
@@ -113,7 +112,7 @@ const reactData = [
   },
   {
     id: 10,
-    imgSrc: { randomUserOne },
+    imgSrc:  randomUserOne ,
     projectName: "Random User App",
     overview: [
       "In this project i tried to make a simple random user app.",
@@ -124,7 +123,18 @@ const reactData = [
   },
   {
     id: 11,
-    imgSrc: { reviewsProject },
+    imgSrc:  randomUserOne ,
+    projectName: "Random User App",
+    overview: [
+      "In this project i tried to make a simple random user app.",
+      "I use axios for fetching data.",
+      "User can get random profiles by clicking the button",
+    ],
+    link: "https://github.com/esadakman/random-user-react",
+  },
+  {
+    id: 12,
+    imgSrc:  reviewsProject ,
     projectName: "Reviews Project",
     overview: [
       "Project aims to create a Review Project App.",
@@ -134,8 +144,8 @@ const reactData = [
     link: "https://github.com/esadakman/reviews-project",
   },
   {
-    id: 12,
-    imgSrc: { stopWatch },
+    id: 13,
+    imgSrc:  stopWatch ,
     projectName: "StopWatch",
     overview: [
       "For understanding useState hooks and components i made a simple StopWatch app",
@@ -144,15 +154,15 @@ const reactData = [
     link: "https://github.com/esadakman/stopWatch-react",
   },
   {
-    id: 13,
-    imgSrc: { digitalClock },
+    id: 14,
+    imgSrc:  digitalClock ,
     projectName: "Digital Clock",
     overview: ["Remake of the javaScript digital clock project with React"],
     link: "https://github.com/esadakman/react-digital-clock",
   },
   {
-    id: 14,
-    imgSrc: { languageCards },
+    id: 15,
+    imgSrc:  languageCards ,
     projectName: "Language Cards",
     overview: [
       "In this project for understanding react structure, i tried to make a simple language cards app.",
@@ -161,8 +171,8 @@ const reactData = [
     link: "https://github.com/esadakman/language-cards-react",
   },
   {
-    id: 15,
-    imgSrc: {TourPlaces},
+    id: 16,
+    imgSrc: TourPlaces,
     projectName: "Tour Places",
     overview: [
       "In this project for understanding react structure, i tried to make a simple tour places app.",
