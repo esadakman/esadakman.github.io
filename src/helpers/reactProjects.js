@@ -1,4 +1,4 @@
-import fireContact from "../assets/projectPreviews/ReactJS/fireContact.png"; 
+import fireContact from "../assets/projectPreviews/ReactJS/fireContact.png";
 import MovieApp from "../assets/projectPreviews/ReactJS/MovieApp.jpg";
 import RecipeApp from "../assets/projectPreviews/ReactJS/RecipeApp.jpg";
 import taskTracker from "../assets/projectPreviews/ReactJS/taskTracker.jpg";
@@ -14,11 +14,13 @@ import digitalClock from "../assets/projectPreviews/ReactJS/digitalClock.jpg";
 import languageCards from "../assets/projectPreviews/ReactJS/languageCards.jpg";
 import fireBlog from "../assets/projectPreviews/ReactJS/fireBlog.jpg";
 import fakeTweet from "../assets/projectPreviews/ReactJS/fakeTweet.jpg";
+import githubFinder from "../assets/projectPreviews/ReactJS/githubFinder.jpg";
+import youtubeClone from "../assets/projectPreviews/ReactJS/youtubeClone.jpg";
 
 const reactData = [
   {
     id: 1,
-    imgSrc:  fireBlog ,
+    imgSrc: fireBlog,
     projectName: "Fire Blog",
     overview: [
       " In this project, I designed a Fire Blog with many features.",
@@ -28,7 +30,7 @@ const reactData = [
   },
   {
     id: 2,
-    imgSrc: fireContact ,
+    imgSrc: fireContact,
     projectName: "FireContact",
     overview: [
       "In this project, I designed a Contact App for understanding CRUD operations.",
@@ -39,7 +41,7 @@ const reactData = [
   },
   {
     id: 3,
-    imgSrc:  MovieApp ,
+    imgSrc: MovieApp,
     projectName: "Movie App",
     overview: [
       "In this project, I designed a Movie App with many features. I provided the movie information with the TMDB API.",
@@ -50,7 +52,7 @@ const reactData = [
   },
   {
     id: 4,
-    imgSrc:  RecipeApp ,
+    imgSrc: RecipeApp,
     projectName: "Recipe App",
     overview: [
       "In this project i tried to make a recipe app.",
@@ -61,7 +63,7 @@ const reactData = [
   },
   {
     id: 5,
-    imgSrc: taskTracker ,
+    imgSrc: taskTracker,
     projectName: "Task Tracker",
     overview: [
       "In this project i tried to make a build simple task tracker app.",
@@ -72,7 +74,7 @@ const reactData = [
   },
   {
     id: 6,
-    imgSrc:  apiTutorial ,
+    imgSrc: apiTutorial,
     projectName: "API Tutorial",
     overview: [
       "In this project, I made CRUD operations using the real API.",
@@ -82,7 +84,7 @@ const reactData = [
   },
   {
     id: 7,
-    imgSrc:  randomUserTwo ,
+    imgSrc: randomUserTwo,
     projectName: "Random User App 2",
     overview: [
       "In this project i make random user app, but this time you can save the users info's and when you hover the logos in the menu",
@@ -92,7 +94,7 @@ const reactData = [
   },
   {
     id: 8,
-    imgSrc:  weatherApp ,
+    imgSrc: weatherApp,
     projectName: "Weather App",
     overview: [
       "Remake of the javaScript Weather App with React",
@@ -102,7 +104,14 @@ const reactData = [
   },
   {
     id: 9,
-    imgSrc:  axiosRouterExercise ,
+    imgSrc: youtubeClone,
+    projectName: "Youtube Clone",
+    overview: ["I made a Youtube Clone project with rapidAPI"],
+    link: "https://github.com/esadakman/youtube_clone",
+  },
+  {
+    id: 10,
+    imgSrc: axiosRouterExercise,
     projectName: "Axios-Router Project",
     overview: [
       "I prepared a small-scale project in order to understand the Router Dom and the Material UI framework that I have learned recently.",
@@ -111,8 +120,18 @@ const reactData = [
     link: "https://github.com/esadakman/axios-router-project",
   },
   {
-    id: 10,
-    imgSrc:  randomUserOne ,
+    id: 11,
+    imgSrc: githubFinder,
+    projectName: "Github Finder",
+    overview: [
+      "I prepared a small-scale project in order to remember the Fetch API and the react structure. ",
+      "To get the data i used the Github API",
+    ],
+    link: "https://github.com/esadakman/react-github-finder",
+  },
+  {
+    id: 12,
+    imgSrc: randomUserOne,
     projectName: "Random User App",
     overview: [
       "In this project i tried to make a simple random user app.",
@@ -122,8 +141,8 @@ const reactData = [
     link: "https://github.com/esadakman/random-user-react",
   },
   {
-    id: 11,
-    imgSrc:  fakeTweet ,
+    id: 13,
+    imgSrc: fakeTweet,
     projectName: "Fake Tweet Generator",
     overview: [
       "In this project, I designed fake tweet generator.",
@@ -132,8 +151,8 @@ const reactData = [
     link: "https://github.com/esadakman/fake-tweet-generator",
   },
   {
-    id: 12,
-    imgSrc:  reviewsProject ,
+    id: 14,
+    imgSrc: reviewsProject,
     projectName: "Reviews Project",
     overview: [
       "Project aims to create a Review Project App.",
@@ -143,8 +162,8 @@ const reactData = [
     link: "https://github.com/esadakman/reviews-project",
   },
   {
-    id: 13,
-    imgSrc:  stopWatch ,
+    id: 15,
+    imgSrc: stopWatch,
     projectName: "StopWatch",
     overview: [
       "For understanding useState hooks and components i made a simple StopWatch app",
@@ -153,15 +172,15 @@ const reactData = [
     link: "https://github.com/esadakman/stopWatch-react",
   },
   {
-    id: 14,
-    imgSrc:  digitalClock ,
+    id: 16,
+    imgSrc: digitalClock,
     projectName: "Digital Clock",
     overview: ["Remake of the javaScript digital clock project with React"],
     link: "https://github.com/esadakman/react-digital-clock",
   },
   {
-    id: 15,
-    imgSrc:  languageCards ,
+    id: 17,
+    imgSrc: languageCards,
     projectName: "Language Cards",
     overview: [
       "In this project for understanding react structure, i tried to make a simple language cards app.",
@@ -170,12 +189,12 @@ const reactData = [
     link: "https://github.com/esadakman/language-cards-react",
   },
   {
-    id: 16,
+    id: 18,
     imgSrc: TourPlaces,
     projectName: "Tour Places",
     overview: [
       "In this project for understanding react structure, i tried to make a simple tour places app.",
-      "I get the data from locally and i use SASS for the design", 
+      "I get the data from locally and i use SASS for the design",
     ],
     link: "https://github.com/esadakman/tour-places-react",
   },

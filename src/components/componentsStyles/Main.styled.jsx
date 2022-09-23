@@ -21,7 +21,7 @@ export const LinesWrapper = styled.div`
   font-weight: 900;
   text-transform: uppercase;
   margin-left: -15%;
-  margin-top: -2%;
+  margin-top: 3%;
   @media (max-width: ${({ theme }) => theme.size.lg}) {
     margin-left: -20%;
     font-size: 4rem;
@@ -79,7 +79,7 @@ export const SkewLine = styled.div`
   }
   &:nth-child(2) {
     left: 40px;
-    bottom: 7px;
+    bottom: 6px;
     background: #25a8ba;
     @media (max-width: ${({ theme }) => theme.size.md}) {
       left: 50px;
