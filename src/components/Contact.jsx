@@ -6,15 +6,15 @@ import {
 } from "./componentsStyles/Contact.styled";
 
 import emailjs from "@emailjs/browser";
+import { toastError, toastSuccess } from "../helpers/customToastify";
 
 const Contact = () => {
   const openInNewTab = (url) => {
     // 👇️ IMDb linkine tıklanıldığında yeni sekmede açmak için aşağıdaki func. kullandım
     window.open(url, "_blank", "noopener,noreferrer");
   };
-
   const form = useRef();
-
+  // toastSuccess("Your email was sent successfully");
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -28,12 +28,16 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message sent");
+          // console.log("message sent");
+          toastSuccess("Your email was sent successfully");
+
         },
         (error) => {
-          console.log(error.text);
+          toastError(error.text)
+          // console.log(error.text);
         }
       );
+      e.target.reset()
   };
   return (
     <ContactContainer id="contact">
