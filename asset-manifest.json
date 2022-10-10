@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c76e50d.css",
-    "main.js": "/static/js/main.d328ce2f.js",
+    "main.css": "/static/css/main.7d9a5d1f.css",
+    "main.js": "/static/js/main.b7cf156c.js",
     "static/media/pp.jpeg": "/static/media/pp.66c338151e378014168e.jpeg",
     "static/media/fireContact.png": "/static/media/fireContact.657dd3d40a402ceb15b7.png",
     "static/media/WeatherApp.jpg": "/static/media/WeatherApp.2794886e7ff82e5a746d.jpg",
@@ -46,11 +46,11 @@
     "static/media/styledComponents.svg": "/static/media/styledComponents.8e4a2ee52c0713bedfb9511a05c17511.svg",
     "static/media/education-logo.svg": "/static/media/education-logo.814f1b591f617ead6ded5b002303691b.svg",
     "index.html": "/index.html",
-    "main.4c76e50d.css.map": "/static/css/main.4c76e50d.css.map",
-    "main.d328ce2f.js.map": "/static/js/main.d328ce2f.js.map"
+    "main.7d9a5d1f.css.map": "/static/css/main.7d9a5d1f.css.map",
+    "main.b7cf156c.js.map": "/static/js/main.b7cf156c.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c76e50d.css",
-    "static/js/main.d328ce2f.js"
+    "static/css/main.7d9a5d1f.css",
+    "static/js/main.b7cf156c.js"
   ]
 }
