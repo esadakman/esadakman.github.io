@@ -26,7 +26,7 @@ const reactData = [
       " In this project, I designed a Fire Blog with many features.",
       "I used context API for state management, Firebase for authentication, and Firestore database for CRUD operations.",
     ],
-    link: "https://github.com/esadakman/FireBlog-Milestone",
+    link: "https://github.com/esadakman/reactjs-fireblog",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const reactData = [
       "I used Firebase Realtime Database for database.",
       "User can update the list by entering name, phone number and gender information.And also user can delete or fix any contact from table..",
     ],
-    link: "https://github.com/esadakman/firecontact-app",
+    link: "https://github.com/esadakman/reactjs-fireContact",
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ const reactData = [
       "I used Firebase for authentication.",
       "The user can log in and register with both their email address and their Google account.",
     ],
-    link: "https://github.com/esadakman/movie-app-firebase",
+    link: "https://github.com/esadakman/reactjs-movie-app",
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const reactData = [
       "I used local storage for authentication.",
       "After login you can search food's recipe by their name and type.",
     ],
-    link: "https://github.com/esadakman/recipe-app",
+    link: "https://github.com/esadakman/reactjs-recipe-app",
   },
   {
     id: 5,
@@ -70,7 +70,7 @@ const reactData = [
       "User can add new task to tracker list with date and time",
       "And remove them from list after finish the task.",
     ],
-    link: "https://github.com/esadakman/task-tracker-react",
+    link: "https://github.com/esadakman/reactjs-task-tracker",
   },
   {
     id: 6,
@@ -80,7 +80,7 @@ const reactData = [
       "In this project, I made CRUD operations using the real API.",
       "You can add, delete or edit new entries in the list.",
     ],
-    link: "https://github.com/esadakman/api-tutorial-project",
+    link: "https://github.com/esadakman/reactjs-task-tracker",
   },
   {
     id: 7,
@@ -90,7 +90,7 @@ const reactData = [
       "In this project i make random user app, but this time you can save the users info's and when you hover the logos in the menu",
       "User's information will change depending on the logo.",
     ],
-    link: "https://github.com/esadakman/random-user-app-2",
+    link: "https://github.com/esadakman/reactjs-random-user-2",
   },
   {
     id: 8,
@@ -100,14 +100,14 @@ const reactData = [
       "Remake of the javaScript Weather App with React",
       "Project aims to display current weather data of searched city around the world with fetching Weather Api data.",
     ],
-    link: "https://github.com/esadakman/react-weather-app",
+    link: "https://github.com/esadakman/reactjs-weather-app",
   },
   {
     id: 9,
     imgSrc: youtubeClone,
     projectName: "Youtube Clone",
     overview: ["I made a Youtube Clone project with rapidAPI"],
-    link: "https://github.com/esadakman/youtube_clone",
+    link: "https://github.com/esadakman/reactjs-youtube-clone",
   },
   {
     id: 10,
@@ -117,7 +117,7 @@ const reactData = [
       "I prepared a small-scale project in order to understand the Router Dom and the Material UI framework that I have learned recently.",
       "In addition to Material UI, I also used the Bootstrap for pagination process and card design.",
     ],
-    link: "https://github.com/esadakman/axios-router-project",
+    link: "https://github.com/esadakman/reactjs-axios-router",
   },
   {
     id: 11,
@@ -127,7 +127,7 @@ const reactData = [
       "I prepared a small-scale project in order to remember the Fetch API and the react structure. ",
       "To get the data i used the Github API",
     ],
-    link: "https://github.com/esadakman/react-github-finder",
+    link: "https://github.com/esadakman/reactjs-github-finder",
   },
   {
     id: 12,
@@ -138,7 +138,7 @@ const reactData = [
       "I use axios for fetching data.",
       "User can get random profiles by clicking the button",
     ],
-    link: "https://github.com/esadakman/random-user-react",
+    link: "https://github.com/esadakman/reactjs-github-finder",
   },
   {
     id: 13,
@@ -148,7 +148,7 @@ const reactData = [
       "In this project, I designed fake tweet generator.",
       "After the necessary information is entered, the relevant tweet can be downloaded or the last tweet of the user can be downloaded by searching for the user name.",
     ],
-    link: "https://github.com/esadakman/fake-tweet-generator",
+    link: "https://github.com/esadakman/reactjs-tweet-generator",
   },
   {
     id: 14,
@@ -159,7 +159,7 @@ const reactData = [
       "Customers comments change automatically, and they can also be changed by clicking the go and back buttons",
       "If the user wants to see a random comment, he/she can press the 'Surprise me' button and see it. Customer informations comes from local json file.",
     ],
-    link: "https://github.com/esadakman/reviews-project",
+    link: "https://github.com/esadakman/reactjs-reviews-project",
   },
   {
     id: 15,
@@ -169,14 +169,14 @@ const reactData = [
       "For understanding useState hooks and components i made a simple StopWatch app",
       "It has only three features which are play, pause and reset.",
     ],
-    link: "https://github.com/esadakman/stopWatch-react",
+    link: "https://github.com/esadakman/reactjs-stop-watch",
   },
   {
     id: 16,
     imgSrc: digitalClock,
     projectName: "Digital Clock",
     overview: ["Remake of the javaScript digital clock project with React"],
-    link: "https://github.com/esadakman/react-digital-clock",
+    link: "https://github.com/esadakman/reactjs-digital-clock",
   },
   {
     id: 17,
@@ -186,7 +186,7 @@ const reactData = [
       "In this project for understanding react structure, i tried to make a simple language cards app.",
       "I get the data from locally and i use SASS for the design",
     ],
-    link: "https://github.com/esadakman/language-cards-react",
+    link: "https://github.com/esadakman/reactjs-lang-cards",
   },
   {
     id: 18,
@@ -196,7 +196,7 @@ const reactData = [
       "In this project for understanding react structure, i tried to make a simple tour places app.",
       "I get the data from locally and i use SASS for the design",
     ],
-    link: "https://github.com/esadakman/tour-places-react",
+    link: "https://github.com/esadakman/reactjs-lang-cards",
   },
 ];
 

@@ -89,3 +89,28 @@ export const ProjectsIcons = styled.div`
     }
   }
 `;
+
+export const ScrollBtn = styled.button`
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem; 
+  box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex; 
+  letter-spacing: 1px;
+  font-weight:bold;
+  cursor: pointer;
+  background: ${({ theme }) => theme.colors.turqo};
+  color: ${({ theme }) => theme.colors.navBgColor};
+  align-items: center;
+  justify-content: center;  
+  &:hover {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+  }
+`;
+

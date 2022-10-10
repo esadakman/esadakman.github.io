@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../components/About";
+import BackToTopButton from "../components/BackToTopButton";
 import Contact from "../components/Contact";
 import Education from "../components/Education";
 import Main from "../components/Main";
@@ -15,6 +16,7 @@ const Home = () => {
       <Education />
       <Skills />
       <Contact />
+      <BackToTopButton/>
     </>
   );
 };
