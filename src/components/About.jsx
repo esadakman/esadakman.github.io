@@ -14,13 +14,7 @@ const About = () => {
       <IMG src={pp} alt="picture"></IMG>
       <AboutParagraph>
         <p>
-          A web developer who is proficient in front-end frameworks. Has the
-          ability to create algorithms, interact positively, and communicate
-          appropriately with team members. Able to grasp new technologies and
-          concepts quickly to develop innovative and creative solutions to
-          problems. Always eager to learn new technologies, tools, libraries and
-          other things. Committed to utilizing skills to further the mission of
-          a company.
+          A web developer who is proficient in front-end frameworks. Skilled at devoloping complex solutions, creating user friendly designs, excellent and dependable team player with strong analytical thinking skills. Learns and adapts to new technologies quickly, and create new solutions according to problems.  Knowledgeable in JavaScript, React, Python and Django. Always persist in their goals, self-disciplined and reliable. Committed to utilizing skills to further the mission of a company.
         </p>
       </AboutParagraph>
     </AboutContainer>

@@ -4,6 +4,7 @@ const theme = {
     turqo: "#03bfcb",
     cardBack: "#183152",
     cardText: "#ABC8E2",
+    transparent: "rgba(0, 0, 0, 0.4)",
     buttonBg: "#090325",
     Bloggy1: "#E1E6FA",
     Bloggy2: "#C4D7ED",

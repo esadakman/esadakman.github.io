@@ -55,6 +55,7 @@ export const AboutParagraph = styled.div`
     text-align: center;
     line-height: 2rem;
     @media (max-width: ${({ theme }) => theme.size.sm}) {
+      /* text-align: justify; */
       font-size: 1.2rem;
     }
   }

@@ -29,9 +29,9 @@ const Navbar = () => {
       </Hamburger>
 
       <Menu isOpen={isOpen} onClick={() => setIsOpen(false)}>
-        <MenuLink to="/#about">About Me</MenuLink>
-        <MenuLink to="/#projects">Projects</MenuLink>
-        <MenuLink to="/#contact">Contact</MenuLink>
+        <MenuLink to="/#about" smooth={true}>About Me</MenuLink>
+        <MenuLink to="/#projects" smooth={true}>Projects</MenuLink>
+        <MenuLink to="/#contact" smooth={true}>Contact</MenuLink>
       </Menu>
     </Nav>
   );

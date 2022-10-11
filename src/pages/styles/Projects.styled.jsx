@@ -92,8 +92,8 @@ export const ProjectsIcons = styled.div`
 
 export const ScrollBtn = styled.button`
   position: fixed;
-  bottom: 3rem;
-  right: 3rem; 
+  bottom: 3.5rem;
+  right: 1.5rem; 
   box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   width: 4rem;

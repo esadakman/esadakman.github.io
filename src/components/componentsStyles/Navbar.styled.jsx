@@ -3,13 +3,12 @@ import { Flex } from "../componentsStyles/Main.styled";
 // import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 
-export const Nav = styled(Flex)`
-  // background: ${({ theme }) => theme.colors.logoColor};
-  background: rgba(40, 40, 40, 0.874);
+export const Nav = styled(Flex)` 
+  background: ${({ theme }) => theme.colors.transparent};;
   position: fixed;
   top: 0;
   z-index: 6;
-   width: 100%;  
+  width: 100%;
   /* @media (max-width: ${({ theme }) => theme.size.lg}) {
     position: relative;
   } */
@@ -74,15 +73,16 @@ export const Menu = styled(Flex)`
 export const MenuLink = styled(Link)`
   text-align: center;
   padding: 11px 8px;
+  letter-spacing:1px;
   font-size: 1.2rem;
   cursor: pointer;
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.turqo};
+  color: white;
   transition: all 0.5s ease-in-out;
-  border-radius: 5px;
+  border-radius: 5px; 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.navBgColor};
-    color: white;
+    /* background-color: ${({ theme }) => theme.colors.navBgColor}; */
+    color: ${({ theme }) => theme.colors.turqo};
   }
   @media (max-width: ${({ theme }) => theme.size.sm}) {
     border-bottom: 1px solid white;
