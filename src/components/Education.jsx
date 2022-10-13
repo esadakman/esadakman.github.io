@@ -12,7 +12,7 @@ const Education = () => {
     <EducationContainer>
       <h1 className="title">Education</h1>
       <EducationArea>
-        <EducationInfo>
+        {/* <EducationInfo>
           <div className="circle">
             <img src={education} alt="education" />
             <div className="straightLine" />
@@ -22,7 +22,7 @@ const Education = () => {
             <h5>Full Stack Development Course </h5>
             <p>Jan. 2022 - Sep. 2022</p>
           </SchoolInfos>
-        </EducationInfo>
+        </EducationInfo> */}
         <EducationInfo>
           <div className="circle">
             <img src={education} alt="education" />

@@ -21,16 +21,20 @@ const Skills = () => {
           <span className="name">JavaScript</span>
         </div>
         <div className="iconContainer">
-          <i className="icon devicon-python-plain"></i>
-          <span className="name">Python</span>
-        </div>
-        <div className="iconContainer">
           <i className="icon devicon-react-plain"></i>
           <span className="name">React</span>
         </div>
         <div className="iconContainer">
           <i className="icon devicon-redux-original"></i>
           <span className="name">Redux</span>
+        </div>
+        <div className="iconContainer">
+          <i className="icon devicon-python-plain"></i>
+          <span className="name">Python</span>
+        </div>
+        <div className="iconContainer">
+          <i className="icon devicon-django-plain"></i>
+          <span className="name">Django</span>
         </div>
         <div className="iconContainer">
           <i className="icon devicon-firebase-plain"></i>

@@ -41,7 +41,7 @@ export const ProjectsIcons = styled.div`
   }
   @media (max-width: ${({ theme }) => theme.size.md}) {
     width: 90%;
-  }
+  } 
   & > div.iconContainer {
     display: flex;
     flex-direction: column;
@@ -93,19 +93,19 @@ export const ProjectsIcons = styled.div`
 export const ScrollBtn = styled.button`
   position: fixed;
   bottom: 3.5rem;
-  right: 1.5rem; 
+  right: 1.5rem;
   box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
-  display: flex; 
+  display: flex;
   letter-spacing: 1px;
-  font-weight:bold;
+  font-weight: bold;
   cursor: pointer;
   background: ${({ theme }) => theme.colors.turqo};
   color: ${({ theme }) => theme.colors.navBgColor};
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   &:hover {
     animation-name: rotate;
     animation-duration: 1s;
@@ -113,4 +113,3 @@ export const ScrollBtn = styled.button`
     animation-timing-function: linear;
   }
 `;
-
