@@ -18,7 +18,7 @@ const jsData = [
       overview: [
         " In this project, a simple Weather-App was made using the Weather Api data and axios library. User can can select the language (English or Turkish) and display current weather data of searched city around the world.",
       ],
-      link: "https://github.com/esadakman/weatherApp",
+      link: "https://github.com/esadakman/javascript-weather-app",
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ const jsData = [
       overview: [
         "In this project i used Bootstrap for styling and JavaScript for DOM manipulation. I tried to make responsible design and for the first time i use local storage in my projects.",
       ],
-      link: "https://github.com/esadakman/todo_list_project",
+      link: "https://github.com/esadakman/javascript-todo-app",
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ const jsData = [
         " For understanding API operations I designed a simple github users app",
         "You can searc users by their name and visit their profile with the provided link.",
       ],
-      link: "https://github.com/esadakman/github_api",
+      link: "https://github.com/esadakman/javascript-github-searcher",
     },
     {
       id: 4,
@@ -47,7 +47,7 @@ const jsData = [
         "In this project i made a simple flag app.",
         "After selecting the country from the dropdown list, you can see the relevant country's flag, capital, region, language and currency information.",
       ],
-      link: "https://github.com/esadakman/flag_app",
+      link: "https://github.com/esadakman/javascript-flag-app",
     },
     {
       id: 5,
@@ -58,7 +58,7 @@ const jsData = [
         "With this project I learned:",
         "Web API usage, try and catch blocks, async and await functions.",
       ],
-      link: "https://github.com/esadakman/randomUserGenerator",
+      link: "https://github.com/esadakman/javascript-random-user-generator",
     },
     {
       id: 6,
@@ -67,7 +67,7 @@ const jsData = [
       overview: [
         "For understanding DOM structure and javascript I made a simple ios calculator app",
       ],
-      link: "https://github.com/esadakman/ios_calculator",
+      link: "https://github.com/esadakman/javascript-ios-calculator",
     },
     {
       id: 7,
@@ -76,7 +76,7 @@ const jsData = [
       overview: [
         "I build a simple Guess the number game for improving my algorithmic design skills",
       ],
-      link: "https://github.com/esadakman/guess-the-number",
+      link: "https://github.com/esadakman/javascript-guess-the-number",
     },
     {
       id: 8,
@@ -86,7 +86,7 @@ const jsData = [
         " Project aims to create a real checkout page of e-commerce website.",
         "After the project i improved my knowledge of algorithmic design principles for dynamic calculation of product's cart",
       ],
-      link: "https://github.com/esadakman/shopping_cart",
+      link: "https://github.com/esadakman/javascript-shopping-cart",
     },
     {
       id: 9,
@@ -96,7 +96,7 @@ const jsData = [
         "Project aims to create a digital clock.",
         "I used async functions to create this app.",
       ],
-      link: "https://github.com/esadakman/digital_clock",
+      link: "https://github.com/esadakman/javascript-digital-clock",
     },
     {
       id: 10,
@@ -106,7 +106,7 @@ const jsData = [
         "Project aims to create a StopWatch App.",
         "I made a simple StopWatch app with javaScript. It has only three features which are play, pause and reset.",
       ],
-      link: "https://github.com/esadakman/stopWatch",
+      link: "https://github.com/esadakman/javascript-stop-watch",
     },
     {
       id: 11,
@@ -115,7 +115,7 @@ const jsData = [
       overview: [
         "Interactive Rating Component project which i found in frontendmentor.com and make with my friends from bootcamp.",
       ],
-      link: "https://github.com/esadakman/Interactive-Rating-Component",
+      link: "https://github.com/esadakman/javascript-interactive-rating",
     },
      
      

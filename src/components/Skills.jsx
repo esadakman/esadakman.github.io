@@ -35,11 +35,7 @@ const Skills = () => {
         <div className="iconContainer">
           <i className="icon devicon-django-plain"></i>
           <span className="name">Django</span>
-        </div>
-        <div className="iconContainer">
-          <i className="icon devicon-firebase-plain"></i>
-          <span className="name">Firebase</span>
-        </div>
+        </div> 
         <div className="iconContainer">
           <i className="icon devicon-sass-plain"></i>
           <span className="name">Sass</span>
@@ -49,14 +45,21 @@ const Skills = () => {
           <span className="name">Bootstrap</span>
         </div>
         <div className="iconContainer">
+          <i className="icon devicon-tailwindcss-plain"></i> 
+          <span className="name">Tailwind</span>
+        </div>
+        <div className="iconContainer">
           <i className="icon devicon-materialui-plain"></i>
           <span className="name">Material UI</span>
         </div>
         <div className="iconContainer">
           <img src={styled} alt="" />
           <span className="name">Styled Comp.</span>
+        </div> 
+        <div className="iconContainer">
+          <i className="icon devicon-firebase-plain"></i>
+          <span className="name">Firebase</span>
         </div>
-
         <div className="iconContainer">
           <i className="icon devicon-git-plain"></i>
           <span className="name">Git</span>
@@ -65,13 +68,10 @@ const Skills = () => {
           <i className="icon devicon-github-original"></i>
           <span className="name">Github</span>
         </div>
+
         <div className="iconContainer">
           <i className="icon devicon-linux-plain"></i>
           <span className="name">Linux</span>
-        </div>
-        <div className="iconContainer">
-          <i className="icon devicon-slack-plain"></i>
-          <span className="name">Slack</span>
         </div>
 
         <div className="iconContainer">

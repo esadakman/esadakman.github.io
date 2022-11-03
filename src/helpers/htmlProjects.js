@@ -20,7 +20,7 @@ const htmlData = [
         "I used Carousel, Card, and Nav components for styling.",
         "I created form element using Bootstrap. ",
       ],
-      link: "https://github.com/esadakman/bootstrap-landing-page",
+      link: "https://github.com/esadakman/html-bootstrap-landing-page",
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ const htmlData = [
       overview: [
         "Portfolio website is designed using HTML and SASS (SCSS) codes for style.",
       ],
-      link: "https://github.com/esadakman/Sass-Portfolio",
+      link: "https://github.com/esadakman/html-sass-portfolio-project",
     },
     {
       id: 3,
@@ -38,7 +38,7 @@ const htmlData = [
       overview: [
         "Checkout Form for improving responsive design abilities.",
       ],
-      link: "https://github.com/esadakman/checkout_form_responsive",
+      link: "https://github.com/esadakman/html-checkout-form",
     },
     {
       id: 4,
