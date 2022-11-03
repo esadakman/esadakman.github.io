@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7d9a5d1f.css",
-    "main.js": "/static/js/main.45b70e4f.js",
+    "main.js": "/static/js/main.32811509.js",
     "static/media/pp.jpeg": "/static/media/pp.66c338151e378014168e.jpeg",
     "static/media/fireContact.png": "/static/media/fireContact.657dd3d40a402ceb15b7.png",
     "static/media/WeatherApp.jpg": "/static/media/WeatherApp.2794886e7ff82e5a746d.jpg",
@@ -14,6 +14,7 @@
     "static/media/youtubeClone.jpg": "/static/media/youtubeClone.52c9bd914a25048a33b6.jpg",
     "static/media/RecipeApp.jpg": "/static/media/RecipeApp.53d728560128e59977f5.jpg",
     "static/media/axiosRouterExercise.jpg": "/static/media/axiosRouterExercise.33e7a063d302cf31ac96.jpg",
+    "static/media/personnelApp.jpg": "/static/media/personnelApp.7f5c6dfd64d0fcae287d.jpg",
     "static/media/udemy.jpg": "/static/media/udemy.894155a3219ffe6c876b.jpg",
     "static/media/parallax.jpg": "/static/media/parallax.c9acebf88ebc62064c7b.jpg",
     "static/media/githubFinder.jpg": "/static/media/githubFinder.56abe577176c8303657f.jpg",
@@ -47,10 +48,10 @@
     "static/media/education-logo.svg": "/static/media/education-logo.814f1b591f617ead6ded5b002303691b.svg",
     "index.html": "/index.html",
     "main.7d9a5d1f.css.map": "/static/css/main.7d9a5d1f.css.map",
-    "main.45b70e4f.js.map": "/static/js/main.45b70e4f.js.map"
+    "main.32811509.js.map": "/static/js/main.32811509.js.map"
   },
   "entrypoints": [
     "static/css/main.7d9a5d1f.css",
-    "static/js/main.45b70e4f.js"
+    "static/js/main.32811509.js"
   ]
 }
