@@ -18,7 +18,7 @@ const ReactProjects = () => {
     window.open(url, "_blank", "noopener,noreferrer");
   }; 
   return (
-    <Flex justify="center" wrap="wrap">
+    <Flex justify="center" wrap="wrap" style={{marginTop:'3rem'}}>
       <Flex>
         <Title>React Projects</Title>
       </Flex>

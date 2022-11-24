@@ -9,9 +9,16 @@ import {
   Nav,
 } from "./componentsStyles/Navbar.styled";
 import hamburger from "../assets/hamburger.png";
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const scrollWithOffset = (el, offset) => {
+    const elementPosition = el.offsetTop - offset;
+    window.scroll({
+      top: elementPosition,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <Nav justify="space-between" wrap="wrap">
@@ -29,9 +36,27 @@ const Navbar = () => {
       </Hamburger>
 
       <Menu isOpen={isOpen} onClick={() => setIsOpen(false)}>
-        <MenuLink to="/#about" smooth={true}>About Me</MenuLink>
-        <MenuLink to="/#projects" smooth={true}>Projects</MenuLink>
-        <MenuLink to="/#contact" smooth={true}>Contact</MenuLink>
+        <MenuLink
+          to="/#about"
+          smooth={true}
+          scroll={(el) => scrollWithOffset(el, 70)}
+        >
+          About Me
+        </MenuLink>
+        <MenuLink
+          to="/#projects"
+          smooth={true}
+          scroll={(el) => scrollWithOffset(el, 69)}
+        >
+          Projects
+        </MenuLink>
+        <MenuLink
+          to="/#contact"
+          smooth={true}
+          scroll={(el) => scrollWithOffset(el, 70)}
+        >
+          Contact
+        </MenuLink>
       </Menu>
     </Nav>
   );
