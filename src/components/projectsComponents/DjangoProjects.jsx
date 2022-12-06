@@ -1,5 +1,3 @@
-import React from "react";
-import { Flex } from "../componentsStyles/Main.styled";
 import {
   ButtonStyleCard,
   Card,
@@ -9,11 +7,12 @@ import {
   ProjectsTitles,
   TitleCard,
 } from "../componentsStyles/ReactProjects.styled";
-import { useNavigate } from "react-router-dom";
-import htmlData from "../../helpers/htmlProjects";
-const HtmlCssProjects = () => {
-  const navigate = useNavigate();
+import { useNavigate } from "react-router-dom"; 
+import { Flex } from "../componentsStyles/Main.styled";
+import djangoData from "../../helpers/djangoProjects";
 
+const DjangoProjects = () => {
+  const navigate = useNavigate();
   const openInNewTab = (url) => {
     // 👇️ Proje linkine tıklanıldığında yeni sekmede açmak için aşağıdaki func. kullandım
     window.open(url, "_blank", "noopener,noreferrer");
@@ -21,10 +20,10 @@ const HtmlCssProjects = () => {
   return (
     <Flex justify="center" wrap="wrap" style={{ marginTop: "3rem" }}>
       <Flex>
-        <ProjectsTitles className="titles">Html/CSS Projects</ProjectsTitles>
+        <ProjectsTitles>Django Projects</ProjectsTitles>
       </Flex>
       <ProjectsContainer>
-        {htmlData.map((info) => {
+        {djangoData.map((info) => {
           return (
             <CardWrapper
               key={info?.id}
@@ -40,7 +39,6 @@ const HtmlCssProjects = () => {
                     <li>{info?.overview[0]}</li>
                     <li>{info?.overview[1]}</li>
                     <li>{info?.overview[2]}</li>
-                    <li>{info?.overview[3]}</li>
                   </ul>
                 </Desc>
               </Card>
@@ -50,6 +48,8 @@ const HtmlCssProjects = () => {
             </CardWrapper>
           );
         })}
+
+        {/* //! ============Divider=========================== */}
       </ProjectsContainer>
       <ButtonStyleCard
         onClick={() => navigate(-1)}
@@ -61,4 +61,4 @@ const HtmlCssProjects = () => {
   );
 };
 
-export default HtmlCssProjects;
+export default DjangoProjects;

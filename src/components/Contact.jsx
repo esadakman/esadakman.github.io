@@ -7,6 +7,7 @@ import {
 
 import emailjs from "@emailjs/browser";
 import { toastError, toastSuccess } from "../helpers/customToastify";
+import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
 
 const Contact = () => {
   const openInNewTab = (url) => {
@@ -27,21 +28,18 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          // console.log("message sent");
+          console.log(result.text); 
           toastSuccess("Your email was sent successfully");
-
         },
         (error) => {
-          toastError(error.text)
-          // console.log(error.text);
+          toastError(error.text); 
         }
       );
-      e.target.reset()
+    e.target.reset();
   };
   return (
     <ContactContainer id="contact">
-      <h1 className="title">Contact</h1>
+      <ProjectsTitles style={{ color: "white" }}>Contact</ProjectsTitles>
       <SocialIcons>
         <div
           className="iconContainer"
@@ -74,6 +72,10 @@ const Contact = () => {
       </SocialIcons>
       <StyledContactForm>
         <h2>Send me a message</h2>
+        {/* <p>
+          Please feel free to contact me if you have any questions or would like
+          to discuss working together.
+        </p> */}
         <div>
           <form ref={form} onSubmit={sendEmail}>
             <input

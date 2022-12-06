@@ -6,11 +6,12 @@ import {
   SchoolInfos,
 } from "./componentsStyles/Education.styled";
 import education from "../assets/education-logo.svg";
+import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
 
 const Education = () => {
   return (
     <EducationContainer>
-      <h1 className="title">Education</h1>
+      <ProjectsTitles>Education</ProjectsTitles>
       <EducationArea>
         {/* <EducationInfo>
           <div className="circle">

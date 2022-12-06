@@ -8,32 +8,6 @@ export const AboutContainer = styled.div`
   align-items: center;
 `;
 
-export const Title = styled.h1`
-  /* border: 1px solid red; */
-  color: ${({ theme }) => theme.colors.navBgColor};
-  position: relative;
-  @media (max-width: ${({ theme }) => theme.size.sm}) {
-    font-size: 2rem;
-  }
-  ::after {
-    content: "";
-    background: ${({ theme }) => theme.colors.turqo};
-
-    position: absolute;
-    /* text-align: center; */
-    bottom: 0;
-    left: 15%;
-    height: 5%;
-    width: 12rem;
-    @media (max-width: ${({ theme }) => theme.size.sm}) {
-      left: 5%;
-    }
-  }
-  .titles {
-    font-size: 1rem;
-  }
-`;
-
 export const IMG = styled.img`
   border: 3px solid ${({ theme }) => theme.colors.turqo};
   border-radius: 50%;
@@ -46,17 +20,17 @@ export const AboutParagraph = styled.div`
   /* border: 1px solid ${({ theme }) => theme.colors.turqo}; */
   width: 80%;
   min-width: 20rem;
-  margin: 1rem;
+  margin-bottom: 1rem;
   @media (max-width: ${({ theme }) => theme.size.md}) {
     width: 90%;
   }
-  & > p {
-    /* height: 20rem; */
+  & > p { 
     text-align: center;
     line-height: 2rem;
+    font-size: 1.3rem;
     @media (max-width: ${({ theme }) => theme.size.sm}) {
       /* text-align: justify; */
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 `;

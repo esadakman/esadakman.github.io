@@ -53,7 +53,7 @@ const Navbar = () => {
         <MenuLink
           to="/#contact"
           smooth={true}
-          scroll={(el) => scrollWithOffset(el, 70)}
+          scroll={(el) => scrollWithOffset(el, 69)}
         >
           Contact
         </MenuLink>

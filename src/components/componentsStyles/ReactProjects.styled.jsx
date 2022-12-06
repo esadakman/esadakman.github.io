@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import clickPNG from "../../assets/clickPNG.png";
 
 export const ProjectsContainer = styled.div`
   flex-wrap: wrap;
@@ -45,6 +46,7 @@ export const Card = styled.div`
   }
   & > img {
     width: 100%;
+    // object-fit: cover;
     height: 100%;
     transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   }
@@ -77,6 +79,13 @@ export const Desc = styled.div`
   padding: 1rem 1.5rem;
   box-sizing: border-box;
   clip-path: circle(0% at 100% 100%);
+  & > img {
+    width: 3rem;
+    position: absolute;
+    right: 1rem;
+    content: url(${clickPNG});
+    transform: rotate(320deg);
+  }
   & > h2 {
     text-align: left;
     color: ${({ theme }) => theme.colors.navBgColor};

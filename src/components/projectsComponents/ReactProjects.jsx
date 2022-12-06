@@ -4,12 +4,12 @@ import {
   CardWrapper,
   Desc,
   ProjectsContainer,
+  ProjectsTitles,
   TitleCard,
 } from "../componentsStyles/ReactProjects.styled"; 
-import { useNavigate } from "react-router-dom";
-import { Title } from "../componentsStyles/About.styled";
+import { useNavigate } from "react-router-dom"; 
 import { Flex } from "../componentsStyles/Main.styled";
-import reactData from "../../helpers/reactProjects";
+import reactData from "../../helpers/reactProjects"; 
 
 const ReactProjects = () => {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ const ReactProjects = () => {
   return (
     <Flex justify="center" wrap="wrap" style={{marginTop:'3rem'}}>
       <Flex>
-        <Title>React Projects</Title>
+        <ProjectsTitles>React Projects</ProjectsTitles>
       </Flex>
       <ProjectsContainer>
         {reactData.map((info) => {
@@ -32,7 +32,8 @@ const ReactProjects = () => {
             >
               <Card>
                 <img src={info?.imgSrc} alt="poster" />
-                <Desc>
+                <Desc> 
+                  <img  alt="detail"  title="Click for details ..."/>
                   <h2>Overview</h2>
                   <ul>
                     <li>{info?.overview[0]}</li>

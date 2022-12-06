@@ -9,20 +9,6 @@ export const MainProjectsContainer = styled.div`
   justify-content: center;
   width: 100%;
   padding-bottom: 2rem;
-  /* height: 100vh; */
-  & > h1.title {
-    position: relative;
-    ::after {
-      content: "";
-      background: ${({ theme }) => theme.colors.turqo};
-      position: absolute;
-      text-align: center;
-      bottom: -20px;
-      left: 10%;
-      height: 10%;
-      width: 80%;
-    }
-  }
 `;
 
 export const ProjectsIcons = styled.div`
@@ -41,16 +27,42 @@ export const ProjectsIcons = styled.div`
   }
   @media (max-width: ${({ theme }) => theme.size.md}) {
     width: 90%;
-  } 
+  }
+  & > div.js { 
+    :hover {
+      color: #F0DB4F;
+    }
+  }
+  & > div.html { 
+    :hover {
+      color: #E34C26;
+    }
+  }
+  & > div.react { 
+    :hover {
+      color: #61DBFB;
+    }
+  }
+  & > div.django { 
+    :hover {
+      color: #023b25;
+    }
+  }
   & > div.iconContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: 0.5s all ease-in-out;
     :hover {
-      color: ${({ theme }) => theme.colors.turqo};
+      /* color: ${({ theme }) => theme.colors.turqo}; */
       animation: shake 0.3s linear;
     }
+    /* & > i.js {
+      :hover {
+        color: yellow;
+        animation: shake 0.3s linear;
+      }
+    } */
     & > i.icon {
       font-size: 10rem;
       text-transform: none;
@@ -62,6 +74,7 @@ export const ProjectsIcons = styled.div`
       margin-top: 1rem;
       font-size: 1.2rem;
       font-weight: bold;
+      color: white;
       font-family: "Roboto", sans-serif;
       @media (max-width: ${({ theme }) => theme.size.md}) {
         font-size: 1rem;

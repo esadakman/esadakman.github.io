@@ -6,20 +6,7 @@ export const EducationContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
-  & > h1.title {
-    position: relative;
-    ::after {
-      content: "";
-      background: ${({ theme }) => theme.colors.turqo};
-      position: absolute;
-      text-align: center;
-      bottom: -20px;
-      left: 10%;
-      height: 10%;
-      width: 80%;
-    }
-  }
+  height: 100vh; 
 `;
 
 export const EducationArea = styled.div`

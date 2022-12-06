@@ -8,19 +8,28 @@ import weatherApp from "../assets/projectPreviews/ReactJS/weatherApp.jpg";
 import randomUserOne from "../assets/projectPreviews/ReactJS/randomUserOne.jpg";
 import axiosRouterExercise from "../assets/projectPreviews/ReactJS/axiosRouterExercise.jpg";
 import reviewsProject from "../assets/projectPreviews/ReactJS/reviewsProject.jpg";
-import stopWatch from "../assets/projectPreviews/ReactJS/stopWatch.jpg";
-import TourPlaces from "../assets/projectPreviews/ReactJS/TourPlaces.jpg";
-import digitalClock from "../assets/projectPreviews/ReactJS/digitalClock.jpg";
-import languageCards from "../assets/projectPreviews/ReactJS/languageCards.jpg";
+import stopWatch from "../assets/projectPreviews/ReactJS/stopWatch.jpg"; 
+import digitalClock from "../assets/projectPreviews/ReactJS/digitalClock.jpg"; 
 import fireBlog from "../assets/projectPreviews/ReactJS/fireBlog.jpg";
 import fakeTweet from "../assets/projectPreviews/ReactJS/fakeTweet.jpg";
 import githubFinder from "../assets/projectPreviews/ReactJS/githubFinder.jpg";
 import youtubeClone from "../assets/projectPreviews/ReactJS/youtubeClone.jpg";
 import personnelApp from "../assets/projectPreviews/ReactJS/personnelApp.jpg";
+import fsBlogApp from "../assets/projectPreviews/ReactJS/fsBlogApp.jpg";
 
 const reactData = [
   {
     id: 1,
+    imgSrc: fsBlogApp,
+    projectName: "Full Stack Blog App",
+    overview: [
+      "This is the frontend side of my full stack blog app project.",
+      "I used django for backend.",
+    ],
+    link: "https://github.com/esadakman/fs-reactjs-blog-app",
+  },
+  {
+    id: 2,
     imgSrc: fireBlog,
     projectName: "Fire Blog",
     overview: [
@@ -30,7 +39,19 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-fireblog",
   },
   {
-    id: 2,
+    id: 3,
+    imgSrc: personnelApp,
+    projectName: "Full Stack Personnel App",
+    overview: [
+      "This is the frontend side of my personnel list app project.",
+      "Company personnel who have logged into the system will be able to see the company's departments on the home page and the personnel working under that section in detail.",
+      "There will be update delete and add personnel buttons for the personnel who are staff. And these personnel will be able to add new personnel to the list and update them.",
+      "Only superusers will have the authority to delete staff.",
+    ],
+    link: "https://github.com/esadakman/reactjs-personnel-app-frontend",
+  },
+  {
+    id: 4,
     imgSrc: fireContact,
     projectName: "Fire Contact",
     overview: [
@@ -41,7 +62,7 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-fireContact",
   },
   {
-    id: 3,
+    id: 5,
     imgSrc: MovieApp,
     projectName: "Movie App",
     overview: [
@@ -52,7 +73,7 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-movie-app",
   },
   {
-    id: 4,
+    id: 6,
     imgSrc: RecipeApp,
     projectName: "Recipe App",
     overview: [
@@ -63,19 +84,7 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-recipe-app",
   },
   {
-    id: 5,
-    imgSrc: personnelApp,
-    projectName: "Personnel List App",
-    overview: [
-      "This is the frontend side of my personal list app project.",
-      "Company personnel who have logged into the system will be able to see the company's departments on the home page and the personnel working under that section in detail.",
-      "There will be update delete and add personnel buttons for the personnel who are staff. And these personnel will be able to add new personnel to the list and update them.",
-      "Only superusers will have the authority to delete staff.",
-    ],
-    link: "https://github.com/esadakman/reactjs-personnel-app-frontend",
-  },
-  {
-    id: 6,
+    id: 7,
     imgSrc: apiTutorial,
     projectName: "API Tutorial",
     overview: [
@@ -85,7 +94,7 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-api-tutorial",
   },
   {
-    id: 7,
+    id: 8,
     imgSrc: taskTracker,
     projectName: "Task Tracker",
     overview: [
@@ -96,7 +105,7 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-task-tracker",
   },
   {
-    id: 8,
+    id: 9,
     imgSrc: randomUserTwo,
     projectName: "Random User App 2",
     overview: [
@@ -106,7 +115,7 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-random-user-2",
   },
   {
-    id: 9,
+    id: 10,
     imgSrc: weatherApp,
     projectName: "Weather App",
     overview: [
@@ -116,14 +125,14 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-weather-app",
   },
   {
-    id: 10,
+    id: 11,
     imgSrc: youtubeClone,
     projectName: "Youtube Clone",
     overview: ["I made a Youtube Clone project with rapidAPI"],
     link: "https://github.com/esadakman/reactjs-youtube-clone",
   },
   {
-    id: 11,
+    id: 12,
     imgSrc: axiosRouterExercise,
     projectName: "Axios-Router Project",
     overview: [
@@ -133,7 +142,7 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-axios-router",
   },
   {
-    id: 12,
+    id: 13,
     imgSrc: githubFinder,
     projectName: "Github Finder",
     overview: [
@@ -143,7 +152,7 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-github-finder",
   },
   {
-    id: 13,
+    id: 14,
     imgSrc: randomUserOne,
     projectName: "Random User App",
     overview: [
@@ -154,7 +163,7 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-github-finder",
   },
   {
-    id: 14,
+    id: 15,
     imgSrc: fakeTweet,
     projectName: "Fake Tweet Generator",
     overview: [
@@ -164,7 +173,7 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-tweet-generator",
   },
   {
-    id: 15,
+    id: 16,
     imgSrc: reviewsProject,
     projectName: "Reviews Project",
     overview: [
@@ -175,7 +184,7 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-reviews-project",
   },
   {
-    id: 16,
+    id: 17,
     imgSrc: stopWatch,
     projectName: "StopWatch",
     overview: [
@@ -185,32 +194,12 @@ const reactData = [
     link: "https://github.com/esadakman/reactjs-stop-watch",
   },
   {
-    id: 17,
+    id: 18,
     imgSrc: digitalClock,
     projectName: "Digital Clock",
     overview: ["Remake of the javaScript digital clock project with React"],
     link: "https://github.com/esadakman/reactjs-digital-clock",
-  },
-  {
-    id: 18,
-    imgSrc: languageCards,
-    projectName: "Language Cards",
-    overview: [
-      "In this project for understanding react structure, i tried to make a simple language cards app.",
-      "I get the data from locally and i use SASS for the design",
-    ],
-    link: "https://github.com/esadakman/reactjs-lang-cards",
-  },
-  {
-    id: 19,
-    imgSrc: TourPlaces,
-    projectName: "Tour Places",
-    overview: [
-      "In this project for understanding react structure, i tried to make a simple tour places app.",
-      "I get the data from locally and i use SASS for the design",
-    ],
-    link: "https://github.com/esadakman/reactjs-tour-places",
-  },
+  }, 
 ];
 
 export default reactData;

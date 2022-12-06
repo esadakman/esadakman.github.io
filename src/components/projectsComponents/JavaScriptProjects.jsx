@@ -8,7 +8,7 @@ import {
   ProjectsContainer,
   ProjectsTitles,
   TitleCard,
-} from "../componentsStyles/ReactProjects.styled"; 
+} from "../componentsStyles/ReactProjects.styled";
 import { useNavigate } from "react-router-dom";
 import jsData from "../../helpers/jsProjects";
 
@@ -20,13 +20,12 @@ const JavaScript = () => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
-    <Flex justify="center" wrap="wrap" style={{marginTop:'3rem'}}>
+    <Flex justify="center" wrap="wrap" style={{ marginTop: "3rem" }}>
       <Flex>
         <ProjectsTitles className="titles">JavaScript Projects</ProjectsTitles>
       </Flex>
       <ProjectsContainer>
-        
-      {jsData.map((info) => {
+        {jsData.map((info) => {
           return (
             <CardWrapper
               key={info?.id}
@@ -36,6 +35,7 @@ const JavaScript = () => {
               <Card>
                 <img src={info?.imgSrc} alt="poster" />
                 <Desc>
+                  <img alt="detail" title="Click for details ..." />
                   <h2>Overview</h2>
                   <ul>
                     <li>{info?.overview[0]}</li>
@@ -49,7 +49,7 @@ const JavaScript = () => {
               </TitleCard>
             </CardWrapper>
           );
-        })} 
+        })}
 
         {/* //! ============Divider=========================== */}
       </ProjectsContainer>

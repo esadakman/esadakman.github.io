@@ -8,7 +8,7 @@ export const ContactContainer = styled.div`
   min-height: 100vh;
   background-color: ${({ theme }) => theme.colors.navBgColor};
 
-  & > h1.title {
+  /* & > h1.title {
     position: relative;
     color: white;
     ::after {
@@ -21,7 +21,7 @@ export const ContactContainer = styled.div`
       height: 8%;
       width: 80%;
     }
-  }
+  } */
 `;
 
 export const SocialIcons = styled.div`
@@ -126,15 +126,19 @@ export const StyledContactForm = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 1.5rem;
-  /* margin-bottom: 1.5rem; */
+  padding-bottom: 1.5rem; 
 
   color: white;
   & > h2 {
-    margin: 1.5rem;
+    margin: 1.5rem; 
     width: 22rem;
     text-align: center;
   }
+  /* & > p {
+    font-size:1rem;
+    width: 80%;
+    text-align: center;
+  } */
 
   & > div {
     display: flex;

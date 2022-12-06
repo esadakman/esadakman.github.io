@@ -1,11 +1,12 @@
 import React from "react";
 import { SkillIcons, SkillsContainer } from "./componentsStyles/Skills.styled";
 import styled from "../assets/styledComponents.svg";
+import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
 
 const Skills = () => {
   return (
-    <SkillsContainer>
-      <h1 className="title">Skills</h1>
+    <SkillsContainer> 
+      <ProjectsTitles>Skills</ProjectsTitles>
       <SkillIcons>
         <div className="iconContainer">
           <i className="icon devicon-html5-plain"></i>

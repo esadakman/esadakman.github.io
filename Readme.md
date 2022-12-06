@@ -1,15 +1,15 @@
 ## Portfolio Page  
 ## Introduction
 
-When I started learning software, I wanted to create my own portfolio website. I wanted it to showcase my experience, education, projects and skills. I wasn't that good at designing websites in the beginning and I was looking for a portfolio template to help me get started. And after great research I found Harvey Delaney's devportfolio template on Github.
+When I first started learning software development, I wanted to create my own portfolio website to showcase my experience, education, projects, and skills. I wasn't very good at designing websites at the time, so I was looking for a portfolio template to help me get started.
 
-I loved its design, simplicity and customizability - it had everything I wanted in a template. So I built my portfolio using the template that still lives here. 
+After doing some research, I found Harvey Delaney's devportfolio template on GitHub. I loved its design, simplicity, and customizability, so I built my portfolio using that template.
 
-Although the original project was created with Angular and Typescript,  as time went on I wanted to add to new things to the portfolio, I was restricted by how it was implemented. I found myself shoehorning new features into the project. So, I decided to create my own portfolio using a more modern stack: React, Javascript and Styled Components.
+Over time, I wanted to add new features to my portfolio, but I was limited by the way the original template was implemented. I found myself trying to force new features into the project, and I realized that I needed to create my own portfolio using a more modern stack.
 
-Harvey's portfolio template helped me so much to get started with creating my own portfolio - I hope that this template will provide the same benefit to you!
+That's why I created this portfolio template using React, JavaScript, and Styled Components. It's designed to be simple, customizable, and easy to use, and I hope it will provide the same benefit to you that Harvey's template provided to me.
 
-Although I created this template from scratch, it is useful to point out that the design of the website is heavily influenced by the template that Harvey has created.
+Although I created this template from scratch, I must acknowledge that the design of the website is heavily influenced by Harvey's original template. Thank you, Harvey, for providing the inspiration for this project. 
 
 ## Project Link 
 #### You can reach my project from [here](https://esadakman.github.io/) 👈

@@ -7,21 +7,7 @@ export const SkillsContainer = styled.div`
   width: 100%;
   /* height: 100%; */
   transition: 0.5s all linear;
-  margin-bottom: 5rem;
-
-  & > h1.title {
-    position: relative;
-    ::after {
-      content: "";
-      background: ${({ theme }) => theme.colors.mainColor};
-      position: absolute;
-      text-align: center;
-      bottom: 0;
-      left: 10%;
-      height: 8%;
-      width: 80%;
-    }
-  }
+  margin-bottom: 5rem; 
 `;
 
 export const SkillIcons = styled.div`
