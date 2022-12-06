@@ -28,7 +28,7 @@ const Projects = () => {
           </div>
           <div className="iconContainer django" onClick={() => navigate("/django")}>
             <i className="icon devicon-django-plain"></i>
-            <span className="name">Django</span>
+            <span className="name">Django Projects</span>
           </div>
         </ProjectsIcons>
       </MainProjectsContainer>

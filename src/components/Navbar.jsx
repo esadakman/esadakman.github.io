@@ -39,7 +39,7 @@ const Navbar = () => {
         <MenuLink
           to="/#about"
           smooth={true}
-          scroll={(el) => scrollWithOffset(el, 70)}
+          scroll={(el) => scrollWithOffset(el, 40)}
         >
           About Me
         </MenuLink>
