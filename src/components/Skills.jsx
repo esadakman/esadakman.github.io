@@ -66,6 +66,10 @@ const Skills = () => {
           <span className="name">Firebase</span>
         </div>
         <div className="iconContainer">
+          <i className="icon devicon-sqlite-plain"></i>
+          <span className="name">SQlite</span>
+        </div>
+        <div className="iconContainer">
           <i className="icon devicon-git-plain"></i>
           <span className="name">Git</span>
         </div>
