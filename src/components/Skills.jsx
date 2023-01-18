@@ -30,6 +30,10 @@ const Skills = () => {
           <span className="name">Redux</span>
         </div>
         <div className="iconContainer">
+          <i className="icon devicon-nextjs-original"></i>
+          <span className="name">NextJS</span>
+        </div>
+        <div className="iconContainer">
           <i className="icon devicon-python-plain"></i>
           <span className="name">Python</span>
         </div>

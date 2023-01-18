@@ -34,7 +34,8 @@ const Education = () => {
             <h3>Eskisehir Technical University</h3>
             <h5>Air Traffic Control (Bachelor Degree)</h5>
             <p>
-              Dec. 2017 - June 2023 <sup>(One class short of graduating)</sup>{" "}
+              Dec. 2017 - June 2023
+               {/* <sup>(One class short of graduating)</sup>{" "} */}
             </p>
           </SchoolInfos>
         </EducationInfo>
