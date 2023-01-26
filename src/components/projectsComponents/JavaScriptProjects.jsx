@@ -32,6 +32,12 @@ const JavaScript = () => {
               title="Click for details"
               onClick={() => openInNewTab(info?.link)}
             >
+              <TitleCard>
+                <div className="fa fa-circle red" />
+                <div className="fa fa-circle yellow" />
+                <div className="fa fa-circle green" />
+                <p>{info?.projectName}</p>
+              </TitleCard>
               <Card>
                 <img src={info?.imgSrc} alt="poster" />
                 <Desc>
@@ -43,10 +49,7 @@ const JavaScript = () => {
                     <li>{info?.overview[2]}</li>
                   </ul>
                 </Desc>
-              </Card>
-              <TitleCard>
-                <p>{info?.projectName}</p>
-              </TitleCard>
+              </Card> 
             </CardWrapper>
           );
         })}

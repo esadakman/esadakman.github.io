@@ -8,14 +8,16 @@ import weatherApp from "../assets/projectPreviews/ReactJS/weatherApp.jpg";
 import randomUserOne from "../assets/projectPreviews/ReactJS/randomUserOne.jpg";
 import axiosRouterExercise from "../assets/projectPreviews/ReactJS/axiosRouterExercise.jpg";
 import reviewsProject from "../assets/projectPreviews/ReactJS/reviewsProject.jpg";
-import stopWatch from "../assets/projectPreviews/ReactJS/stopWatch.jpg"; 
-import digitalClock from "../assets/projectPreviews/ReactJS/digitalClock.jpg"; 
+import stopWatch from "../assets/projectPreviews/ReactJS/stopWatch.jpg";
+import digitalClock from "../assets/projectPreviews/ReactJS/digitalClock.jpg";
 import fireBlog from "../assets/projectPreviews/ReactJS/fireBlog.jpg";
 import fakeTweet from "../assets/projectPreviews/ReactJS/fakeTweet.jpg";
 import githubFinder from "../assets/projectPreviews/ReactJS/githubFinder.jpg";
 import youtubeClone from "../assets/projectPreviews/ReactJS/youtubeClone.jpg";
 import personnelApp from "../assets/projectPreviews/ReactJS/personnelApp.jpg";
 import fsBlogApp from "../assets/projectPreviews/ReactJS/fsBlogApp.jpg";
+import nextjsAirbnbClone from "../assets/projectPreviews/ReactJS/nextjsAirbnbClone.jpg";
+import nextjsPhotography from "../assets/projectPreviews/ReactJS/nextjsPhotography.jpg";
 
 const reactData = [
   {
@@ -82,6 +84,25 @@ const reactData = [
       "After login you can search food's recipe by their name and type.",
     ],
     link: "https://github.com/esadakman/reactjs-recipe-app",
+  },
+  {
+    id: 19,
+    imgSrc: nextjsAirbnbClone,
+    projectName: "NextJS Airbnb Clone",
+    overview: [
+      "I prepared a small-scale project in order to understand the NextJS that I have learned recently.",
+      "I use Mabpox, react-map-gl and geolib for maps and locations and TailwindCSS for styling.",
+    ],
+    link: "https://github.com/esadakman/nextjs-airbnb-clone",
+  },
+  {
+    id: 20,
+    imgSrc: nextjsPhotography,
+    projectName: "NextJS Photography App",
+    overview: [
+      "I prepared a small-scale project in order to understand the NextJS that I have learned recently.",
+    ],
+    link: "https://github.com/esadakman/nextjs-photography-app",
   },
   {
     id: 7,
@@ -199,7 +220,7 @@ const reactData = [
     projectName: "Digital Clock",
     overview: ["Remake of the javaScript digital clock project with React"],
     link: "https://github.com/esadakman/reactjs-digital-clock",
-  }, 
+  },
 ];
 
 export default reactData;

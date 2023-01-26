@@ -11,9 +11,12 @@ const Projects = () => {
       <MainProjectsContainer id="projects">
         <ProjectsTitles>My Projects</ProjectsTitles>
         <ProjectsIcons>
-          <div className="iconContainer react" onClick={() => navigate("/react")}>
+          <div
+            className="iconContainer react"
+            onClick={() => navigate("/react")}
+          >
             <i className="icon devicon-react-plain"></i>
-            <span className="name">React Projects</span>
+            <span className="name">ReactJS Projects</span>
           </div>
           <div
             className="iconContainer js"
@@ -22,11 +25,17 @@ const Projects = () => {
             <i className="icon devicon-javascript-plain "></i>
             <span className="name">JavaScript Projects</span>
           </div>
-          <div className="iconContainer html" onClick={() => navigate("/htmlCss")}>
+          <div
+            className="iconContainer html"
+            onClick={() => navigate("/htmlCss")}
+          >
             <i className="icon devicon-html5-plain"></i>
             <span className="name">HTML & CSS Projects</span>
           </div>
-          <div className="iconContainer django" onClick={() => navigate("/django")}>
+          <div
+            className="iconContainer django"
+            onClick={() => navigate("/django")}
+          >
             <i className="icon devicon-django-plain"></i>
             <span className="name">Django Projects</span>
           </div>

@@ -126,19 +126,36 @@ export const Desc = styled.div`
 
 export const TitleCard = styled.div`
   position: relative;
-
   height: 3rem;
-  background-color: ${({ theme }) => theme.colors.cardBack};
+  background-color: ${({ theme }) => theme.colors.buttonBg};
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 0 1rem;
+  gap:.5rem;
+  
+  .fa-circle {
+    width: 1.5rem;
+    /* height: 2rem; */
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    /* padding-right: 1rem; */
+    &.red {
+      background-color: red;
+    }
 
+    &.yellow {
+      background-color: yellow;
+    }
+
+    &.green {
+      background-color: green;
+    }
+  }
   & > p {
-    color: white;
-    font-family: "Roboto", sans-serif;
-    width: 85%;
-    overflow: auto;
+    color: white; 
+    width: 100%;
+    overflow: auto; 
   }
   & > span {
     position: absolute;

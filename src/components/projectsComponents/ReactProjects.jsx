@@ -6,21 +6,21 @@ import {
   ProjectsContainer,
   ProjectsTitles,
   TitleCard,
-} from "../componentsStyles/ReactProjects.styled"; 
-import { useNavigate } from "react-router-dom"; 
+} from "../componentsStyles/ReactProjects.styled";
+import { useNavigate } from "react-router-dom";
 import { Flex } from "../componentsStyles/Main.styled";
-import reactData from "../../helpers/reactProjects"; 
+import reactData from "../../helpers/reactProjects";
 
 const ReactProjects = () => {
   const navigate = useNavigate();
   const openInNewTab = (url) => {
     // 👇️ Proje linkine tıklanıldığında yeni sekmede açmak için aşağıdaki func. kullandım
     window.open(url, "_blank", "noopener,noreferrer");
-  }; 
+  };
   return (
-    <Flex justify="center" wrap="wrap" style={{marginTop:'3rem'}}>
+    <Flex justify="center" wrap="wrap" style={{ marginTop: "3rem" }}>
       <Flex>
-        <ProjectsTitles>React Projects</ProjectsTitles>
+        <ProjectsTitles>ReactJS Projects</ProjectsTitles>
       </Flex>
       <ProjectsContainer>
         {reactData.map((info) => {
@@ -30,10 +30,16 @@ const ReactProjects = () => {
               title="Click for details"
               onClick={() => openInNewTab(info?.link)}
             >
+              <TitleCard>
+                <div className="fa fa-circle red" />
+                <div className="fa fa-circle yellow" />
+                <div className="fa fa-circle green" />
+                <p>{info?.projectName}</p>
+              </TitleCard>
               <Card>
                 <img src={info?.imgSrc} alt="poster" />
-                <Desc> 
-                  <img  alt="detail"  title="Click for details ..."/>
+                <Desc>
+                  <img alt="detail" title="Click for details ..." />
                   <h2>Overview</h2>
                   <ul>
                     <li>{info?.overview[0]}</li>
@@ -42,9 +48,6 @@ const ReactProjects = () => {
                   </ul>
                 </Desc>
               </Card>
-              <TitleCard>
-                <p>{info?.projectName}</p>
-              </TitleCard>
             </CardWrapper>
           );
         })}
