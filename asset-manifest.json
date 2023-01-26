@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.7d9a5d1f.css",
-    "main.js": "/static/js/main.71dbab03.js",
+    "main.js": "/static/js/main.c4f8dd8b.js",
     "static/media/pp.jpeg": "/static/media/pp.66c338151e378014168e.jpeg",
     "static/media/fireContact.png": "/static/media/fireContact.657dd3d40a402ceb15b7.png",
     "static/media/WeatherApp.jpg": "/static/media/WeatherApp.2794886e7ff82e5a746d.jpg",
     "static/media/MovieApp.jpg": "/static/media/MovieApp.411c2ebd4b2e1801ef49.jpg",
+    "static/media/nextjsAirbnbClone.jpg": "/static/media/nextjsAirbnbClone.34b377fc3e7663beaa70.jpg",
     "static/media/netflix.jpg": "/static/media/netflix.b38227695d7b2dfc8f2d.jpg",
     "static/media/bootstrapLandingPage.jpg": "/static/media/bootstrapLandingPage.7534f380d686c5100239.jpg",
+    "static/media/jQueryMovieApp.jpg": "/static/media/jQueryMovieApp.ef5c7662de6e9ec7761d.jpg",
     "static/media/fireBlog.jpg": "/static/media/fireBlog.ca1c0b4e49a2d8e3d94b.jpg",
     "static/media/sassPortfolio.jpg": "/static/media/sassPortfolio.dbc32d844b9a424013da.jpg",
     "static/media/fsBlogApp.jpg": "/static/media/fsBlogApp.45c1ffdc10844b69a916.jpg",
@@ -15,6 +17,7 @@
     "static/media/RecipeApp.jpg": "/static/media/RecipeApp.53d728560128e59977f5.jpg",
     "static/media/djangoBlogApp.jpg": "/static/media/djangoBlogApp.2ec918040ae53371f819.jpg",
     "static/media/axiosRouterExercise.jpg": "/static/media/axiosRouterExercise.33e7a063d302cf31ac96.jpg",
+    "static/media/nextjsPhotography.jpg": "/static/media/nextjsPhotography.3bc153310aa5c46cf784.jpg",
     "static/media/personnelApp.jpg": "/static/media/personnelApp.7f5c6dfd64d0fcae287d.jpg",
     "static/media/udemy.jpg": "/static/media/udemy.894155a3219ffe6c876b.jpg",
     "static/media/parallax.jpg": "/static/media/parallax.c9acebf88ebc62064c7b.jpg",
@@ -29,6 +32,7 @@
     "static/media/checkoutHtml.jpg": "/static/media/checkoutHtml.27b0931c00b88d7901df.jpg",
     "static/media/breakpointsNavbar.jpg": "/static/media/breakpointsNavbar.bc6375db657b05060dbe.jpg",
     "static/media/djangoPersonnelAppDRF.jpg": "/static/media/djangoPersonnelAppDRF.d0bf2119670f514403d3.jpg",
+    "static/media/jQueryGithubFinder.jpg": "/static/media/jQueryGithubFinder.53803cfc8b672c2dbf57.jpg",
     "static/media/djangoTodoAuth.jpg": "/static/media/djangoTodoAuth.904f365e51edd3600a3c.jpg",
     "static/media/githubApp.jpg": "/static/media/githubApp.ba1538bff3a16925efd1.jpg",
     "static/media/djangoStudentForm.jpg": "/static/media/djangoStudentForm.adddde42b31cf92c5610.jpg",
@@ -42,6 +46,7 @@
     "static/media/reviewsProject.jpg": "/static/media/reviewsProject.be444e424303b2bf9122.jpg",
     "static/media/taskTracker.jpg": "/static/media/taskTracker.4eb1982607bfb1c0bc26.jpg",
     "static/media/djangoPizzaApp.jpg": "/static/media/djangoPizzaApp.6c64cddbf67dceb8fff7.jpg",
+    "static/media/jQueryFlagApp.jpg": "/static/media/jQueryFlagApp.42afc96e871894cc47eb.jpg",
     "static/media/flagApp.jpg": "/static/media/flagApp.5d6f18f7b940da191988.jpg",
     "static/media/google.jpg": "/static/media/google.d6a0dff9ca952cee628b.jpg",
     "static/media/todoList.jpg": "/static/media/todoList.076877674d3e33b65573.jpg",
@@ -58,10 +63,10 @@
     "static/media/education-logo.svg": "/static/media/education-logo.814f1b591f617ead6ded5b002303691b.svg",
     "index.html": "/index.html",
     "main.7d9a5d1f.css.map": "/static/css/main.7d9a5d1f.css.map",
-    "main.71dbab03.js.map": "/static/js/main.71dbab03.js.map"
+    "main.c4f8dd8b.js.map": "/static/js/main.c4f8dd8b.js.map"
   },
   "entrypoints": [
     "static/css/main.7d9a5d1f.css",
-    "static/js/main.71dbab03.js"
+    "static/js/main.c4f8dd8b.js"
   ]
 }
