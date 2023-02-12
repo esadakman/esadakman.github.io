@@ -22,6 +22,10 @@ const Skills = () => {
           <span className="name">JavaScript</span>
         </div>
         <div className="iconContainer">
+          <i className="icon devicon-jquery-plain"></i>
+          <span className="name">jQuery</span>
+        </div>
+        <div className="iconContainer">
           <i className="icon devicon-react-plain"></i>
           <span className="name">ReactJS</span>
         </div>
