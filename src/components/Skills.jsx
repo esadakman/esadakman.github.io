@@ -5,7 +5,7 @@ import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
 
 const Skills = () => {
   return (
-    <SkillsContainer> 
+    <SkillsContainer>
       <ProjectsTitles>Skills</ProjectsTitles>
       <SkillIcons>
         <div className="iconContainer">
@@ -44,7 +44,7 @@ const Skills = () => {
         <div className="iconContainer">
           <i className="icon devicon-django-plain"></i>
           <span className="name">Django</span>
-        </div> 
+        </div>
         <div className="iconContainer">
           <i className="icon devicon-sass-plain"></i>
           <span className="name">Sass</span>
@@ -54,7 +54,7 @@ const Skills = () => {
           <span className="name">Bootstrap</span>
         </div>
         <div className="iconContainer">
-          <i className="icon devicon-tailwindcss-plain"></i> 
+          <i className="icon devicon-tailwindcss-plain"></i>
           <span className="name">TailwindCSS</span>
         </div>
         <div className="iconContainer">
@@ -64,7 +64,7 @@ const Skills = () => {
         <div className="iconContainer">
           <img src={styled} alt="" />
           <span className="name">Styled Comp.</span>
-        </div> 
+        </div>
         <div className="iconContainer">
           <i className="icon devicon-firebase-plain"></i>
           <span className="name">Firebase</span>

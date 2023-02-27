@@ -6,7 +6,7 @@ export const EducationContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   @media (max-width: ${({ theme }) => theme.size.md}) {
     height: fit-content;
   }
@@ -15,16 +15,13 @@ export const EducationContainer = styled.div`
 export const EducationArea = styled.div`
   margin-top: 1rem;
   width: 70%;
-  /* min-width: 566px; */
-  /* max-height: 470px; */
-  max-width: 42rem;
   background-color: "white";
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 2rem 0;
+  padding: 2rem 0 1.4rem 0;
   background-color: ${({ theme }) => theme.colors.cardText};
   box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 14px;
   transition: 0.4s all linear;
@@ -44,14 +41,22 @@ export const EducationInfo = styled.div`
   display: flex;
 
   & > div.circle {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 3.2rem;
     border-radius: 50%;
     border: 3px solid ${({ theme }) => theme.colors.navBgColor};
     position: relative;
-    /* margin-left: 1.5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media (max-width: ${({ theme }) => theme.size.sm}) {
       height: 2.7rem;
+    }
+    & > img {
+      width: 100%;
+    }
+    & > .job {
+      width: 75%;
     }
     & > div.straightLine {
       position: absolute;
@@ -69,7 +74,7 @@ export const EducationInfo = styled.div`
     content: "";
     background: ${({ theme }) => theme.colors.turqo};
     position: absolute;
-    bottom: -20px;
+    bottom: -15px;
     left: 10%;
     height: 2%;
     width: 90%;
@@ -82,12 +87,10 @@ export const EducationInfo = styled.div`
 
 export const SchoolInfos = styled.div`
   margin: 0 1rem;
-  /* border: 2px solid black; */
+  width: 100%;
   padding: 0 1rem;
-
   & > h3 {
-    margin: 1rem 0;
-    margin-top: 0;
+    margin: 0;
     @media (max-width: ${({ theme }) => theme.size.md}) {
       font-size: 1.2rem;
       margin: 0.5rem 0;
