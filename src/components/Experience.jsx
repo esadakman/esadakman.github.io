@@ -3,7 +3,7 @@ import {
   EducationContainer,
   EducationInfo,
   SchoolInfos,
-} from "./componentsStyles/Education.styled"; 
+} from "./componentsStyles/Education.styled";
 import efectura from "../assets/efectura.png";
 import dedew from "../assets/dedew.png";
 import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
@@ -14,7 +14,7 @@ const Experience = () => {
       <ProjectsTitles>Experince</ProjectsTitles>
       <EducationArea>
         <EducationInfo>
-          <div className="circle" style={{ background: "white" }}>
+          <div className="circle">
             <img className="job" src={efectura} alt="education" />
             <div className="straightLine" style={{ height: "8rem" }} />
           </div>
@@ -25,7 +25,7 @@ const Experience = () => {
           </SchoolInfos>
         </EducationInfo>
         <EducationInfo>
-          <div className="circle" style={{ background: "white" }}>
+          <div className="circle">
             <img className="job" src={dedew} alt="education" />
             <div />
           </div>

@@ -6,7 +6,7 @@ export const EducationContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
   @media (max-width: ${({ theme }) => theme.size.md}) {
     height: fit-content;
   }
@@ -14,7 +14,7 @@ export const EducationContainer = styled.div`
 
 export const EducationArea = styled.div`
   margin-top: 1rem;
-  width: 70%;
+  width: 60%;
   background-color: "white";
   display: flex;
   flex-direction: column;
@@ -25,6 +25,9 @@ export const EducationArea = styled.div`
   background-color: ${({ theme }) => theme.colors.cardText};
   box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 14px;
   transition: 0.4s all linear;
+  @media (max-width: ${({ theme }) => theme.size.lg}) {
+    width: 70%;
+  }
   @media (max-width: ${({ theme }) => theme.size.md}) {
     width: 80%;
   }
@@ -41,8 +44,10 @@ export const EducationInfo = styled.div`
   display: flex;
 
   & > div.circle {
-    width: 4rem;
-    height: 3.2rem;
+    background: white;
+    z-index: 2;
+    width: 4.8rem;
+    height: 4rem;
     border-radius: 50%;
     border: 3px solid ${({ theme }) => theme.colors.navBgColor};
     position: relative;
@@ -50,7 +55,8 @@ export const EducationInfo = styled.div`
     justify-content: center;
     align-items: center;
     @media (max-width: ${({ theme }) => theme.size.sm}) {
-      height: 2.7rem;
+      width: 4.4rem;
+      height: 3.5rem;
     }
     & > img {
       width: 100%;
@@ -76,7 +82,7 @@ export const EducationInfo = styled.div`
     position: absolute;
     bottom: -15px;
     left: 10%;
-    height: 2%;
+    height: 2px;
     width: 90%;
     @media (max-width: ${({ theme }) => theme.size.sm}) {
       left: 15%;
@@ -89,6 +95,9 @@ export const SchoolInfos = styled.div`
   margin: 0 1rem;
   width: 100%;
   padding: 0 1rem;
+  @media (max-width: ${({ theme }) => theme.size.sm}) {
+    margin: 0;
+  }
   & > h3 {
     margin: 0;
     @media (max-width: ${({ theme }) => theme.size.md}) {

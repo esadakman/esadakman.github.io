@@ -1,4 +1,5 @@
-## Portfolio Page  
+## Portfolio Page
+
 ## Introduction
 
 When I first started learning software development, I wanted to create my own portfolio website to showcase my experience, education, projects, and skills. I wasn't very good at designing websites at the time, so I was looking for a portfolio template to help me get started.
@@ -9,9 +10,10 @@ Over time, I wanted to add new features to my portfolio, but I was limited by th
 
 That's why I created this portfolio template using React, JavaScript, and Styled Components. It's designed to be simple, customizable, and easy to use, and I hope it will provide the same benefit to you that Harvey's template provided to me.
 
-Although I created this template from scratch, I must acknowledge that the design of the website is heavily influenced by Harvey's original template. Thank you, Harvey, for providing the inspiration for this project. 
+Although I created this template from scratch, I must acknowledge that the design of the website is heavily influenced by Harvey's original template. Thank you, Harvey, for providing the inspiration for this project.
 
-## Project Link 
+## Project Link
+
 #### You can reach my project from [here](https://esadakman.github.io/) 👈
 
 ## Project Skeleton
@@ -41,7 +43,7 @@ SOLUTION
 │    │       │     ├── ReactProjects.styled.jsx
 │    │       │     └── Skills.styled.jsx
 │    │       ├── globalStyles
-│    │       │     ├── Global.styled.jsx 
+│    │       │     ├── Global.styled.jsx
 │    │       │     └── theme
 │    │       ├── projectsComponents
 │    │       │     ├── HtmlCssProjects.jsx
@@ -50,6 +52,7 @@ SOLUTION
 │    │       ├── About.jsx
 │    │       ├── Contact.jsx
 │    │       ├── Education.jsx
+│    │       ├── Experience.jsx
 │    │       ├── Footer.jsx
 │    │       ├── Main.jsx
 │    │       ├── Navbar.jsx
@@ -58,24 +61,23 @@ SOLUTION
 │    │       ├── customToastify.js
 │    │       ├── htmlProjects.js
 │    │       ├── jsProjects.js
-│    │       └── reactProjects.js 
+│    │       └── reactProjects.js
 │    ├── pages
-│    │      ├── styles 
+│    │      ├── styles
 │    │      │     └── Projects.styled.jsx
-│    │      ├── Home.jsx 
+│    │      ├── Home.jsx
 │    │      ├── Projects.jsx
 │    │      └── ScrollToTop.jsx
 │    ├── router
-│    │       └─── Router.jsx 
+│    │       └─── Router.jsx
 │    ├── App.js
 │    ├── App.csss
 │    ├── index.js
-│    └── index.scss 
+│    └── index.scss
 ├── package.json
 └── yarn.lock
 
 ```
-
 
 ### At the end of the project, following topics are to be covered;
 
@@ -83,9 +85,10 @@ SOLUTION
 - CSS
 - JS
 - ReactJS
-- Styled components
+- Styled Components
 - React-router-dom
 - gh-pages
+- emailjs
 - react-toastify
 
 To run this project;
@@ -99,5 +102,5 @@ $ npm start / yarn start
 
 ### Preview of the Project
 
-![portfolio](https://user-images.githubusercontent.com/98649983/192007388-fca07b07-9396-40c7-985f-fb02ba869bc8.gif)
+![portfolio](https://user-images.githubusercontent.com/98649983/221642819-1b1a6979-5862-43c5-8325-5daa3a5c3ca7.gif)
 
