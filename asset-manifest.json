@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7d9a5d1f.css",
-    "main.js": "/static/js/main.f89ea157.js",
+    "main.js": "/static/js/main.92a8352e.js",
     "static/media/pp.jpeg": "/static/media/pp.66c338151e378014168e.jpeg",
     "static/media/fireContact.png": "/static/media/fireContact.657dd3d40a402ceb15b7.png",
     "static/media/WeatherApp.jpg": "/static/media/WeatherApp.2794886e7ff82e5a746d.jpg",
@@ -58,15 +58,16 @@
     "static/media/interactiveRating.jpg": "/static/media/interactiveRating.c1525d19d34f7130ae5c.jpg",
     "static/media/lightSaber.jpg": "/static/media/lightSaber.99d462cdf3c8c64f9856.jpg",
     "static/media/apiTutorial.png": "/static/media/apiTutorial.a0e773f193791581deed.png",
+    "static/media/efectura.png": "/static/media/efectura.155fdc6c5d8e4bc1547d.png",
     "static/media/logo.png": "/static/media/logo.30df9950ea76a8017957.png",
     "static/media/styledComponents.svg": "/static/media/styledComponents.8e4a2ee52c0713bedfb9511a05c17511.svg",
     "static/media/education-logo.svg": "/static/media/education-logo.814f1b591f617ead6ded5b002303691b.svg",
     "index.html": "/index.html",
     "main.7d9a5d1f.css.map": "/static/css/main.7d9a5d1f.css.map",
-    "main.f89ea157.js.map": "/static/js/main.f89ea157.js.map"
+    "main.92a8352e.js.map": "/static/js/main.92a8352e.js.map"
   },
   "entrypoints": [
     "static/css/main.7d9a5d1f.css",
-    "static/js/main.f89ea157.js"
+    "static/js/main.92a8352e.js"
   ]
 }
