@@ -22,6 +22,7 @@ export const LinesWrapper = styled.div`
   text-transform: uppercase;
   margin-left: -15%;
   margin-top: 3%;
+  user-select:none;
   @media (max-width: ${({ theme }) => theme.size.lg}) {
     margin-left: -20%;
     font-size: 4rem;

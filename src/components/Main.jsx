@@ -21,7 +21,7 @@ const Main = () => {
           </SkewLine>
           <SkewLine>
             <Paragraph>AKMAN</Paragraph>
-            <Paragraph>Backend</Paragraph>
+            <Paragraph>Frontend</Paragraph>
           </SkewLine>
           <SkewLine>
             <Paragraph>Frontend</Paragraph>
