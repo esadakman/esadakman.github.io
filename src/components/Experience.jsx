@@ -16,12 +16,22 @@ const Experience = () => {
         <EducationInfo>
           <div className="circle">
             <img className="job" src={efectura} alt="education" />
-            <div className="straightLine" style={{ height: "8rem" }} />
+            <div className="straightLine" style={{ height: "300%" }} />
           </div>
           <SchoolInfos>
             <h3>Efectura</h3>
             <h5>Frontend Developer (Internship)</h5>
             <p style={{ fontWeight: "bold" }}>Feb. 2023 - Present</p>
+            <p>
+              {/* ● Developed UI components with jQuery, HTML, and CSS for a SalesForce-like CRM system.
+              ● Contributed to the development of APIs using .NET MVC for frontend applications.
+              ● Gained experience in customer relationship management and integrating business processes with the CRM system. */}
+              ● Worked as a frontend developer on a CRM system using jQuery, HTML, and CSS for the user interface
+              {/* <br /> */}
+              {/* ● Leveraged data from .NET MVC backend to inform and enhance frontend development efforts. */}
+              <br />
+              ● Gained valuable experience in data management and integrating business processes into software applications.
+            </p>
           </SchoolInfos>
         </EducationInfo>
         <EducationInfo>
