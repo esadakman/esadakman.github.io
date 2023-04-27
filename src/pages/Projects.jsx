@@ -8,7 +8,7 @@ const Projects = () => {
   const navigate = useNavigate();
   return (
     <>
-      <MainProjectsContainer id="projects">
+      <MainProjectsContainer id="projects" name="projects">
         <ProjectsTitles>My Projects</ProjectsTitles>
         <ProjectsIcons>
           <div

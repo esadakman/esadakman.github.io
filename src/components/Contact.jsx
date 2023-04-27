@@ -38,7 +38,7 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <ContactContainer id="contact">
+    <ContactContainer id="contact" name="contact">
       <ProjectsTitles style={{ color: "white" }}>Contact</ProjectsTitles>
       <SocialIcons>
         <div

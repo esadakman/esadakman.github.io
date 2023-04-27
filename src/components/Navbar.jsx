@@ -12,11 +12,10 @@ import hamburger from "../assets/hamburger.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const scrollWithOffset = (el, offset) => {
-    const elementPosition = el.offsetTop - offset;
-    window.scroll({
-      top: elementPosition,
-      left: 0,
-      behavior: "smooth",
+    const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: "smooth"
     });
   };
 
@@ -37,21 +36,21 @@ const Navbar = () => {
 
       <Menu isOpen={isOpen} onClick={() => setIsOpen(false)}>
         <MenuLink
-          to="/#about"
+          to="about"
           smooth={true}
           scroll={(el) => scrollWithOffset(el, 69)}
         >
           About Me
         </MenuLink>
         <MenuLink
-          to="/#projects"
+          to="projects"
           smooth={true}
           scroll={(el) => scrollWithOffset(el, 69)}
         >
           Projects
         </MenuLink>
         <MenuLink
-          to="/#contact"
+          to="contact"
           smooth={true}
           scroll={(el) => scrollWithOffset(el, 69)}
         >

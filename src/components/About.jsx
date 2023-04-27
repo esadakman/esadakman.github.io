@@ -9,7 +9,7 @@ import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
 
 const About = () => {
   return (
-    <AboutContainer id="about">
+    <AboutContainer id="about" name="about">
       <ProjectsTitles>About Esad</ProjectsTitles>
       <IMG src={pp} alt="picture"></IMG>
       <AboutParagraph>
@@ -18,7 +18,7 @@ const About = () => {
           {" "}
           I am a web developer with expertise in front-end frameworks. I have a
           strong ability to develop complex solutions and create user-friendly
-          designs and solid understanding of JavaScript, ReactJS, Python, and
+          designs and solid understanding of JavaScript, jQuery, ReactJS, Python, and
           Django. I am a team player with excellent analytical thinking skills
           and the ability to adapt quickly to new technologies and always
           looking to learn and improve my skills.

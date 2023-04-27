@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Flex } from "../componentsStyles/Main.styled";
+import { Link as ScrollLink } from "react-scroll";
 // import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -70,7 +71,7 @@ export const Menu = styled(Flex)`
   }
 `;
 
-export const MenuLink = styled(Link)`
+export const MenuLink = styled(ScrollLink)`
   text-align: center;
   padding: 11px 8px;
   letter-spacing:1px;
