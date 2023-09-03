@@ -9,7 +9,7 @@ import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
 
 const About = () => {
   return (
-    <AboutContainer id="about" name="about">
+    <AboutContainer id="about" name="about" >
       <ProjectsTitles>About Esad</ProjectsTitles>
       <IMG src={pp} alt="picture"></IMG>
       <AboutParagraph>

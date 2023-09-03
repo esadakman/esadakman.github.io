@@ -6,7 +6,7 @@ export const EducationContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 80vh;
+  min-height: 70vh;
   @media (max-width: ${({ theme }) => theme.size.md}) {
     height: fit-content;
   }
@@ -66,10 +66,16 @@ export const EducationInfo = styled.div`
     }
     & > div.straightLine {
       position: absolute;
-      height: 5.9rem;
+      height: 14rem;
       border-left: 3px solid ${({ theme }) => theme.colors.navBgColor};
       top: 100%;
       left: 50%;
+      @media (max-width: ${({ theme }) => theme.size.xxlg}) {
+        height: 15rem;
+      }
+      @media (max-width: ${({ theme }) => theme.size.xlg}) {
+        height: 17rem;
+      }
       @media (max-width: ${({ theme }) => theme.size.md}) {
         display: none;
       }
@@ -111,6 +117,11 @@ export const SchoolInfos = styled.div`
       font-size: 1rem;
       margin: 0.5rem 0;
     }
+  }
+  & > ul {
+    margin: 0;
+    padding: 0 1rem;
+    font-size: 1rem;
   }
   & > p {
     margin: 0.5rem 0;

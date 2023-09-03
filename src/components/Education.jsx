@@ -17,7 +17,7 @@ const Education = () => {
           <div className="circle">
             <img src={education} alt="education" />
 
-            <div className="straightLine" />
+            <div className="straightLine" style={{ height: "140%" }}  />
           </div>
           <SchoolInfos>
             <h3>Eskisehir Technical University</h3>

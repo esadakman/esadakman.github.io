@@ -28,7 +28,7 @@ export const Logos = styled.div`
   }
 `;
 export const TextStyle = styled.div`
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: white;
   & > p {
     color: white;

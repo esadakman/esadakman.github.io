@@ -11,7 +11,7 @@ import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
 
 const Contact = () => {
   const openInNewTab = (url) => {
-    // 👇️ IMDb linkine tıklanıldığında yeni sekmede açmak için aşağıdaki func. kullandım
+    // 👇️ For opening the link in new tab
     window.open(url, "_blank", "noopener,noreferrer");
   };
   const form = useRef();

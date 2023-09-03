@@ -104,3 +104,5 @@ $ npm start / yarn start
 
 ![portfolio](https://user-images.githubusercontent.com/98649983/221642819-1b1a6979-5862-43c5-8325-5daa3a5c3ca7.gif)
 
+<!-- <img width="759" alt="gh-pages" src="https://user-images.githubusercontent.com/98649983/221643249-a32297dd-d68e-4a70-baa0-29f3d5de79dd.png">
+yarn run deploy -->
