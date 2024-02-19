@@ -82,7 +82,7 @@ export const EducationInfo = styled.div`
     }
   }
   position: relative;
-  ::after {
+  &::after {
     content: "";
     background: ${({ theme }) => theme.colors.turqo};
     position: absolute;

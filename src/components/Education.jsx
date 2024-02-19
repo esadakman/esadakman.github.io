@@ -24,7 +24,6 @@ const Education = () => {
             <h5>Air Traffic Control (Bachelor Degree)</h5>
             <p>
               Dec. 2017 - June 2023
-              {/* <sup>(One class short of graduating)</sup>{" "} */}
             </p>
           </SchoolInfos>
         </EducationInfo>
@@ -46,15 +45,3 @@ const Education = () => {
 };
 
 export default Education;
-
-//  {/* <EducationInfo>
-//           <div className="circle">
-//             <img src={education} alt="education" />
-//             <div className="straightLine" />
-//           </div>
-//           <SchoolInfos>
-//             <h3>Clarusway (Bootcamp) </h3>
-//             <h5>Full Stack Development Course </h5>
-//             <p>Jan. 2022 - Sep. 2022</p>
-//           </SchoolInfos>
-//         </EducationInfo> */}
