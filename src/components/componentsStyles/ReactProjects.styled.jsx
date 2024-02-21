@@ -173,7 +173,7 @@ export const ProjectsTitles = styled.h1`
   @media (max-width: ${({ theme }) => theme.size.sm}) {
     font-size: 2rem;
   }
-  ::after {
+  &::after {
     content: "";
     background: ${({ theme }) => theme.colors.mainColor};
     position: absolute;
