@@ -55,13 +55,13 @@ const Contact = () => {
           <i className="icon github  devicon-github-original"></i>
           <span className="name">Github</span>
         </div>
-        <div
+        {/* <div
           className="iconContainer"
           onClick={() => openInNewTab("https://twitter.com/esadakman")}
         >
           <i className="icon twitter devicon-twitter-original"></i>
           <span className="name">Twitter</span>
-        </div>
+        </div> */}
         <div
           className="iconContainer"
           onClick={() => (window.location = "mailto:esadd26@gmail.com")}
