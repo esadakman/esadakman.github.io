@@ -141,6 +141,7 @@ export const SocialIcons = styled.div`
 `;
 >>>>>>> c67eded (css updates)
 
+<<<<<<< HEAD
     emailjs
       .sendForm(
         "service_givwcr5",
@@ -218,3 +219,100 @@ export const SocialIcons = styled.div`
 };
 
 export default Contact;
+=======
+export const StyledContactForm = styled.div`
+  width: 70%;
+  min-width: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+
+  color: white;
+  & > h2 {
+    margin: 1.5rem;
+    width: 22rem;
+    text-align: center;
+  }
+  @media (max-width: ${({ theme }) => theme.size.md}) { 
+    flex: 1;
+  }
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 35rem;
+    color: white;
+    form {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 90%;
+      font-size: 1rem;
+      gap: 1rem;
+      input {
+        color: white;
+        transition: 0.3s all linear;
+        width: 100%;
+        height: 2rem;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        text-indent: 1rem;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid rgb(220, 220, 220);
+        background-color: ${({ theme }) => theme.colors.formColor};
+        ::placeholder {
+          color: white;
+        }
+        &:focus {
+          border: 1px solid ${({ theme }) => theme.colors.mainColor};
+        }
+      }
+      textarea {
+        color: white;
+        font-size: 1rem;
+        transition: 0.3s all linear;
+        text-indent: 1rem;
+        padding: 1rem 0;
+        width: 100% !important;
+        border: none;
+        outline: none;
+        resize: none;
+        height: 5rem !important;
+        border-radius: 5px;
+        border: 1px solid rgb(220, 220, 220);
+        background-color: ${({ theme }) => theme.colors.formColor};
+        ::placeholder {
+          color: white;
+        }
+        &:focus {
+          border: 1px solid ${({ theme }) => theme.colors.mainColor};
+        }
+      }
+
+      & > button {
+        cursor: pointer;
+        transition: 0.3s all linear;
+        background-color: ${({ theme }) => theme.colors.formColor};
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+        color: white;
+        border: 1px solid white;
+        border-radius: 0.3rem;
+        padding: 0.8rem;
+        width: 100%;
+        opacity: 0.7;
+
+        &:hover {
+          opacity: 1;
+          border: 1px solid ${({ theme }) => theme.colors.mainColor};
+        }
+      }
+    }
+  }
+`;
+>>>>>>> 6fb0435364fd4a6a6a01b3a0a460faa81078cf9e
