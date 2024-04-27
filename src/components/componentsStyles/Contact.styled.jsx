@@ -5,7 +5,7 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: calc(100vh - 7rem);
+  min-height: calc(100vh - 7.5rem);
   background-color: ${({ theme }) => theme.colors.navBgColor};
 `;
 
@@ -20,6 +20,10 @@ export const SocialIcons = styled.div`
   @media (max-width: ${({ theme }) => theme.size.lg}) {
     gap: 1rem;
   }
+  @media (max-width: ${({ theme }) => theme.size.md}) { 
+    flex: 1;
+    align-items: center;
+  }
   & > div.iconContainer {
     color: white;
     flex-wrap: wrap;
@@ -32,6 +36,9 @@ export const SocialIcons = styled.div`
     @media (max-width: ${({ theme }) => theme.size.lg}) {
       min-width: 8rem;
     }
+    @media (max-width: ${({ theme }) => theme.size.sm}) {
+      min-width: 6rem;
+    }
     & > i.linkedin {
       font-size: 8rem;
       border-radius: 50%;
@@ -42,6 +49,9 @@ export const SocialIcons = styled.div`
       @media (max-width: ${({ theme }) => theme.size.md}) {
         font-size: 6rem;
         padding: 0.5rem;
+      }
+      @media (max-width: ${({ theme }) => theme.size.sm}) {
+        font-size: 5rem;
       }
       &:hover {
         color: #4c60c9;
@@ -59,6 +69,9 @@ export const SocialIcons = styled.div`
       @media (max-width: ${({ theme }) => theme.size.md}) {
         padding: 0.5rem;
         font-size: 6rem;
+      }
+      @media (max-width: ${({ theme }) => theme.size.sm}) {
+        font-size: 5rem;
       }
     }
     & > i.twitter {
@@ -91,6 +104,9 @@ export const SocialIcons = styled.div`
         padding: 0.5rem;
         font-size: 6rem;
       }
+      @media (max-width: ${({ theme }) => theme.size.sm}) {
+        font-size: 5rem;
+      }
     }
     & > span {
       margin-top: 0.5rem;
@@ -119,11 +135,9 @@ export const StyledContactForm = styled.div`
     width: 22rem;
     text-align: center;
   }
-  /* & > p {
-    font-size:1rem;
-    width: 80%;
-    text-align: center;
-  } */
+  @media (max-width: ${({ theme }) => theme.size.md}) { 
+    flex: 1;
+  }
 
   & > div {
     display: flex;
@@ -141,7 +155,6 @@ export const StyledContactForm = styled.div`
       gap: 1rem;
       input {
         color: white;
-
         transition: 0.3s all linear;
         width: 100%;
         height: 2rem;
@@ -161,7 +174,6 @@ export const StyledContactForm = styled.div`
       }
       textarea {
         color: white;
-
         font-size: 1rem;
         transition: 0.3s all linear;
         text-indent: 1rem;
@@ -174,7 +186,6 @@ export const StyledContactForm = styled.div`
         border-radius: 5px;
         border: 1px solid rgb(220, 220, 220);
         background-color: ${({ theme }) => theme.colors.formColor};
-
         ::placeholder {
           color: white;
         }
@@ -192,7 +203,6 @@ export const StyledContactForm = styled.div`
         color: white;
         border: 1px solid white;
         border-radius: 0.3rem;
-        /* margin-top: 1rem; */
         padding: 0.8rem;
         width: 100%;
         opacity: 0.7;

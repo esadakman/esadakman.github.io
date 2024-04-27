@@ -23,9 +23,9 @@ export const ProjectsIcons = styled.div`
   transition: all 0.3s linear;
   cursor: pointer;
   @media (max-width: ${({ theme }) => theme.size.lg}) {
-    width: 80%;
+    width: 70%;
   }
-  @media (max-width: ${({ theme }) => theme.size.md}) {
+  @media (max-width: ${({ theme }) => theme.size.sm}) {
     width: 90%;
   }
   & > div.js {
@@ -54,18 +54,14 @@ export const ProjectsIcons = styled.div`
     align-items: center;
     transition: 0.5s all ease-in-out;
     &:hover {
-      /* color: ${({ theme }) => theme.colors.turqo}; */
       animation: shake 0.3s linear;
     }
-    /* & > i.js {
-      &:hover {
-        color: yellow;
-        animation: shake 0.3s linear;
-      }
-    } */
     & > i.icon {
-      font-size: 10rem;
+      font-size: 9rem;
       text-transform: none;
+      @media (max-width: ${({ theme }) => theme.size.lg}) {
+        font-size: 7rem; 
+      }
       @media (max-width: ${({ theme }) => theme.size.md}) {
         font-size: 5rem;
       }
