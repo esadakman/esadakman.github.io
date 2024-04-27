@@ -55,6 +55,7 @@ export const ProjectsIcons = styled.div`
     transition: 0.5s all ease-in-out;
     &:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
       animation: shake 0.3s linear;
     }
 =======
@@ -68,6 +69,10 @@ export const ProjectsIcons = styled.div`
       }
     } */
 >>>>>>> ede06a9 (other hover fixes)
+=======
+      animation: shake 0.3s linear;
+    }
+>>>>>>> b1c5e81 (responsibility updated)
     & > i.icon {
       font-size: 9rem;
       text-transform: none;

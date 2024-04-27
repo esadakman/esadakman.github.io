@@ -7,6 +7,7 @@ export const ContactContainer = styled.div`
   width: 100%;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   min-height: calc(100vh - 7.5rem);
 =======
   min-height: 85vh;
@@ -14,6 +15,9 @@ export const ContactContainer = styled.div`
 =======
   min-height: calc(100vh - 7rem);
 >>>>>>> a02e1b7 (footer & contact css)
+=======
+  min-height: calc(100vh - 7.5rem);
+>>>>>>> b1c5e81 (responsibility updated)
   background-color: ${({ theme }) => theme.colors.navBgColor};
 `;
 
@@ -59,11 +63,17 @@ export const SocialIcons = styled.div`
         padding: 0.5rem;
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
       @media (max-width: ${({ theme }) => theme.size.sm}) {
         font-size: 5rem;
       }
 =======
 >>>>>>> ede06a9 (other hover fixes)
+=======
+      @media (max-width: ${({ theme }) => theme.size.sm}) {
+        font-size: 5rem;
+      }
+>>>>>>> b1c5e81 (responsibility updated)
       &:hover {
         color: #4c60c9;
       }
