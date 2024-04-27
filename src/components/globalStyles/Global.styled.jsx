@@ -36,6 +36,4 @@ body{
     ${({ theme }) => theme.colors.Bloggy1};
     background-color:${({ theme }) => theme.colors.Bloggy1};
   }
-
-
 `;
