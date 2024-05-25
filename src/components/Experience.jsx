@@ -24,20 +24,28 @@ const Experience = () => {
             <p style={{ fontWeight: "bold" }}>Feb. 2023 - Present</p>
             <ul>
               <li>
-                Worked as a frontend developer on a CDP system using jQuery,
-                HTML, and CSS for the user interface
+                Leading the UI development team for a multichannel RevOps
+                platform used by clients such as DIAGEO, CocaCola, and Silktech.
               </li>
               <li>
-                Leveraged data from .NET MVC backend to inform and enhance
-                frontend development efforts.
+                Developed and optimized user interfaces using HTML, CSS, and
+                JavaScript frameworks.
               </li>
               <li>
-                Gained valuable experience in data management and integrating
-                business processes into software applications.
+                Integrated real-time data from multiple sources, enhancing
+                platform functionality and user experience.
               </li>
               <li>
-                Utilized libraries including: DataTables, Select2, jsTree, and
-                QueryBuilder
+                Collaborated with backend developers for seamless API
+                integration and data flow.
+              </li>
+              <li>
+                Utilized libraries like DataTables, Select2, jsTree, and
+                QueryBuilder for dynamic and responsive interfaces.
+              </li>
+              <li>
+                Contributed to improving marketing efficiency and customer
+                intelligence through intuitive UI design.
               </li>
             </ul>
           </SchoolInfos>
@@ -57,8 +65,15 @@ const Experience = () => {
                 Bootstrap, JavaScript, and React to meet business requirements.
               </li>
               <li>
-                Collaborated with the team to design new features for our web
-                page.
+                Created two landing pages to enhance client’s web presence.
+              </li>
+              <li>
+                Developed a lab results system over the last six months using
+                React, Material React, MUI, and Tailwind.
+              </li>
+              <li>
+                Collaborated with the team to design and integrate new features
+                for the web pages.
               </li>
             </ul>
           </SchoolInfos>
