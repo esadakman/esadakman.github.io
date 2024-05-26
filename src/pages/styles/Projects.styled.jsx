@@ -54,25 +54,8 @@ export const ProjectsIcons = styled.div`
     align-items: center;
     transition: 0.5s all ease-in-out;
     &:hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
       animation: shake 0.3s linear;
     }
-=======
-      /* color: ${({ theme }) => theme.colors.turqo}; */
-      animation: shake 0.3s linear;
-    }
-    /* & > i.js {
-      &:hover {
-        color: yellow;
-        animation: shake 0.3s linear;
-      }
-    } */
->>>>>>> ede06a9 (other hover fixes)
-=======
-      animation: shake 0.3s linear;
-    }
->>>>>>> b1c5e81 (responsibility updated)
     & > i.icon {
       font-size: 9rem;
       text-transform: none;
