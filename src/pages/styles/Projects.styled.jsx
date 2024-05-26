@@ -54,40 +54,8 @@ export const ProjectsIcons = styled.div`
     align-items: center;
     transition: 0.5s all ease-in-out;
     &:hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> 2d501646896c77e18500e5ae26df65035d7039e3
->>>>>>> 072a98c1caa6eb197aecffc4d67dd0197be0ca7a
       animation: shake 0.3s linear;
     }
-=======
-      /* color: ${({ theme }) => theme.colors.turqo}; */
-      animation: shake 0.3s linear;
-    }
-    /* & > i.js {
-      &:hover {
-        color: yellow;
-        animation: shake 0.3s linear;
-      }
-    } */
->>>>>>> ede06a9 (other hover fixes)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 072a98c1caa6eb197aecffc4d67dd0197be0ca7a
-=======
-      animation: shake 0.3s linear;
-    }
->>>>>>> b1c5e81 (responsibility updated)
-<<<<<<< HEAD
-=======
->>>>>>> 2d501646896c77e18500e5ae26df65035d7039e3
->>>>>>> 072a98c1caa6eb197aecffc4d67dd0197be0ca7a
     & > i.icon {
       font-size: 9rem;
       text-transform: none;

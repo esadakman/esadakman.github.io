@@ -1,9 +1,9 @@
-import './componentsStyles/Skills.css';
+import "./componentsStyles/Skills.css";
 import styled from "../assets/styledComponents.svg";
 import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
+import { useEffect } from "react";
 
 const Skills = () => {
-<<<<<<< HEAD
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller");
 
@@ -37,12 +37,6 @@ const Skills = () => {
       <ProjectsTitles className="skills-title">Skills</ProjectsTitles>
       <div className="scroller">
       <div className="skill-icons scroller__inner">
-=======
-  return (
-    <div className="skills-container">
-      <ProjectsTitles>Skills</ProjectsTitles>
-      <div className="skill-icons">
->>>>>>> parent of fb5f96e (marquee added for styles)
         <div className="icon-container">
           <i className="icon devicon-html5-plain"></i>
           <span className="name">HTML5</span>
@@ -117,6 +111,7 @@ const Skills = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
