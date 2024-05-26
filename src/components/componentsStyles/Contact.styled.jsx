@@ -5,6 +5,8 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  min-height: calc(100vh - 7.5rem);
+  background-color: ${({ theme }) => theme.colors.navBgColor};
 `;
 
 export const SocialIcons = styled.div`
@@ -47,6 +49,12 @@ export const SocialIcons = styled.div`
       @media (max-width: ${({ theme }) => theme.size.md}) {
         font-size: 6rem;
         padding: 0.5rem;
+      }
+      @media (max-width: ${({ theme }) => theme.size.sm}) {
+        font-size: 5rem;
+      }
+      &:hover {
+        color: #4c60c9;
       }
     }
     & > i.github {
