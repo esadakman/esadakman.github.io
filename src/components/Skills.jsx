@@ -13,29 +13,30 @@ const Skills = () => {
 
     function addAnimation() {
       scrollers.forEach((scroller) => {
-        scroller.setAttribute("data-animated", true);
-        const scrollerInner = scroller.querySelector(".scroller__inner");
-        const scrollerContent = Array.from(scrollerInner.children);
-        const contentWidth = scrollerInner.scrollWidth;
-        const containerWidth = scroller.clientWidth;
-        const timesToDuplicate = Math.ceil(containerWidth / contentWidth) + 1;
+          // add data-animated="true" to every `.scroller` on the page
+          scroller.setAttribute("data-animated", true);
 
-        for (let i = 0; i < timesToDuplicate; i++) {
+          // Make an array from the elements within `.scroller-inner`
+          const scrollerInner = scroller.querySelector(".scroller__inner");
+          const scrollerContent = Array.from(scrollerInner.children);
+
+          // For each item in the array, clone it
+          // add aria-hidden to it
+          // add it into the `.scroller-inner`
           scrollerContent.forEach((item) => {
-            const duplicatedItem = item.cloneNode(true);
-            duplicatedItem.setAttribute("aria-hidden", true);
-            scrollerInner.appendChild(duplicatedItem);
+              const duplicatedItem = item.cloneNode(true);
+              duplicatedItem.setAttribute("aria-hidden", true);
+              scrollerInner.appendChild(duplicatedItem);
           });
-        }
       });
-    }
+  }
   }, []);
 
   return (
     <section className="marquee-container">
       <ProjectsTitles className="skills-title">Skills</ProjectsTitles>
       <div className="scroller">
-      <div className="skill-icons scroller__inner" data-direction="right" data-speed="slow">
+      <div className="skill-icons scroller__inner">
         <div className="icon-container">
           <i className="icon devicon-html5-plain"></i>
           <span className="name">HTML5</span>

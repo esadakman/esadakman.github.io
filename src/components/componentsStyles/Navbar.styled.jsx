@@ -10,6 +10,8 @@ export const Nav = styled(Flex)`
   top: 0;
   z-index: 6;
   width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
   /* @media (max-width: ${({ theme }) => theme.size.lg}) {
     position: relative;
   } */

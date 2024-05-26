@@ -1,19 +1,21 @@
 .marquee-container {
   display: grid;
-  place-content: center; 
+  place-content: center;
+  /* min-height: 30vh; */
 }
 
-.scroller { 
+.scroller {
   max-width: 70%;
   margin: 0 auto;
   transition: 0.5s all linear;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
 }
 
 .skill-icons {
   display: flex;
-  flex-wrap: wrap; 
-  gap: 2rem; 
+  flex-wrap: wrap;
+  gap: 1rem;
   transition: all 0.3s linear;
 }
 
@@ -29,13 +31,18 @@
   animation: shake 0.3s linear;
 }
 
-.icon {
+.icon-container > .icon {
   font-size: 8rem;
 }
 
 @media (max-width: 768px) {
-  .icon {
-    font-size: 5rem;
+  .icon-container > .icon {
+    font-size: 4rem;
+  }
+  .scroller {
+    max-width: 90%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 }
 
@@ -85,48 +92,31 @@
 }
 
 .scroller[data-animated="true"] {
-    overflow: hidden;
-    -webkit-mask: linear-gradient(
-      90deg,
-      transparent,
-      white 20%,
-      white 80%,
-      transparent
-    );
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: fit-content;
+  flex-wrap: nowrap;
+  animation: scroll 40s forwards linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - .5rem));
   }
-  
-  .scroller[data-animated="true"] .scroller__inner {
-    width: max-content;
-    flex-wrap: nowrap;
-    animation: scroll var(--_animation-duration, 40s)
-      var(--_animation-direction, forwards) linear infinite;
-  }
-  
-  .scroller[data-direction="right"] {
-    --_animation-direction: reverse;
-  }
-  
-  .scroller[data-direction="left"] {
-    --_animation-direction: forwards;
-  }
-  
-  .scroller[data-speed="fast"] {
-    --_animation-duration: 20s;
-  }
-  
-  .scroller[data-speed="slow"] {
-    --_animation-duration: 120s;
-  }
-  
-  @keyframes scroll {
-    to {
-      transform: translate(calc(-50% - 0.5rem));
-    }
-  }
-  
-  .skills-title {
-    width: fit-content;
-    margin: .67em auto;
-    font-size: 2em;
-  }
+}
+
+.skills-title {
+  width: fit-content;
+  margin: 0.67em auto;
+  font-size: 2em;
+}
