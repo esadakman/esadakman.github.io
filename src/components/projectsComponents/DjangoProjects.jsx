@@ -7,11 +7,11 @@ import {
   ProjectsTitles,
   TitleCard,
 } from "../componentsStyles/ReactProjects.styled";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; 
 import { Flex } from "../componentsStyles/Main.styled";
-import reactData from "../../helpers/reactProjects";
+import djangoData from "../../helpers/djangoProjects";
 
-const ReactProjects = () => {
+const DjangoProjects = () => {
   const navigate = useNavigate();
   const openInNewTab = (url) => {
     // 👇️ Proje linkine tıklanıldığında yeni sekmede açmak için aşağıdaki func. kullandım
@@ -20,10 +20,10 @@ const ReactProjects = () => {
   return (
     <Flex justify="center" wrap="wrap" style={{ marginTop: "3rem" }}>
       <Flex>
-        <ProjectsTitles>ReactJS Projects</ProjectsTitles>
+        <ProjectsTitles>Django Projects</ProjectsTitles>
       </Flex>
       <ProjectsContainer>
-        {reactData.map((info) => {
+        {djangoData.map((info) => {
           return (
             <CardWrapper
               key={info?.id}
@@ -39,7 +39,7 @@ const ReactProjects = () => {
               <Card>
                 <img src={info?.imgSrc} alt="poster" />
                 <Desc>
-                  <img alt="detail" title="Click for details ..." />
+                  <img alt="detail" title="Click for details ..." /> 
                   <h2>Overview</h2>
                   <ul>
                     <li>{info?.overview[0]}</li>
@@ -47,7 +47,7 @@ const ReactProjects = () => {
                     <li>{info?.overview[2]}</li>
                   </ul>
                 </Desc>
-              </Card>
+              </Card> 
             </CardWrapper>
           );
         })}
@@ -64,4 +64,4 @@ const ReactProjects = () => {
   );
 };
 
-export default ReactProjects;
+export default DjangoProjects;

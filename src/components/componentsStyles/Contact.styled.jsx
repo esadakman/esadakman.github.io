@@ -5,23 +5,57 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0ec4d68 (other hover fixes)
+=======
+>>>>>>> d66430f (footer & contact css)
+=======
+>>>>>>> 2d50164 (responsibility updated)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 2d501646896c77e18500e5ae26df65035d7039e3
+>>>>>>> 072a98c1caa6eb197aecffc4d67dd0197be0ca7a
+  min-height: calc(100vh - 7.5rem);
+=======
+  min-height: 85vh;
+>>>>>>> ede06a9 (other hover fixes)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  min-height: calc(100vh - 7rem);
+>>>>>>> a02e1b7 (footer & contact css)
+=======
+<<<<<<< HEAD
+>>>>>>> 0ec4d68 (other hover fixes)
+=======
+=======
+  min-height: calc(100vh - 7rem);
+>>>>>>> a02e1b7 (footer & contact css)
+>>>>>>> d66430f (footer & contact css)
+=======
+  min-height: calc(100vh - 7.5rem);
+>>>>>>> b1c5e81 (responsibility updated)
+>>>>>>> 2d50164 (responsibility updated)
+=======
+=======
+  min-height: calc(100vh - 7rem);
+>>>>>>> a02e1b7 (footer & contact css)
+<<<<<<< HEAD
+=======
+=======
+  min-height: calc(100vh - 7.5rem);
+>>>>>>> b1c5e81 (responsibility updated)
+>>>>>>> 2d501646896c77e18500e5ae26df65035d7039e3
+>>>>>>> 072a98c1caa6eb197aecffc4d67dd0197be0ca7a
   background-color: ${({ theme }) => theme.colors.navBgColor};
-
-  & > h1.title {
-    position: relative;
-    color: white;
-    ::after {
-      content: "";
-      background: ${({ theme }) => theme.colors.mainColor};
-      position: absolute;
-      text-align: center;
-      bottom: -5px;
-      left: 10%;
-      height: 8%;
-      width: 80%;
-    }
-  }
 `;
 
 export const SocialIcons = styled.div`
@@ -35,6 +69,10 @@ export const SocialIcons = styled.div`
   @media (max-width: ${({ theme }) => theme.size.lg}) {
     gap: 1rem;
   }
+  @media (max-width: ${({ theme }) => theme.size.md}) { 
+    flex: 1;
+    align-items: center;
+  }
   & > div.iconContainer {
     color: white;
     flex-wrap: wrap;
@@ -47,6 +85,9 @@ export const SocialIcons = styled.div`
     @media (max-width: ${({ theme }) => theme.size.lg}) {
       min-width: 8rem;
     }
+    @media (max-width: ${({ theme }) => theme.size.sm}) {
+      min-width: 6rem;
+    }
     & > i.linkedin {
       font-size: 8rem;
       border-radius: 50%;
@@ -58,7 +99,34 @@ export const SocialIcons = styled.div`
         font-size: 6rem;
         padding: 0.5rem;
       }
-      :hover {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 2d501646896c77e18500e5ae26df65035d7039e3
+>>>>>>> 072a98c1caa6eb197aecffc4d67dd0197be0ca7a
+      @media (max-width: ${({ theme }) => theme.size.sm}) {
+        font-size: 5rem;
+      }
+=======
+>>>>>>> ede06a9 (other hover fixes)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 072a98c1caa6eb197aecffc4d67dd0197be0ca7a
+=======
+      @media (max-width: ${({ theme }) => theme.size.sm}) {
+        font-size: 5rem;
+      }
+>>>>>>> b1c5e81 (responsibility updated)
+<<<<<<< HEAD
+=======
+>>>>>>> 2d501646896c77e18500e5ae26df65035d7039e3
+>>>>>>> 072a98c1caa6eb197aecffc4d67dd0197be0ca7a
+      &:hover {
         color: #4c60c9;
       }
     }
@@ -68,12 +136,15 @@ export const SocialIcons = styled.div`
       color: ${({ theme }) => theme.colors.logoColor};
       padding: 1rem;
       transition: 0.5s all linear;
-      :hover {
+      &:hover {
         color: white;
       }
       @media (max-width: ${({ theme }) => theme.size.md}) {
         padding: 0.5rem;
         font-size: 6rem;
+      }
+      @media (max-width: ${({ theme }) => theme.size.sm}) {
+        font-size: 5rem;
       }
     }
     & > i.twitter {
@@ -83,7 +154,7 @@ export const SocialIcons = styled.div`
       color: ${({ theme }) => theme.colors.logoColor};
       padding: 2rem;
       transition: 0.5s all linear;
-      :hover {
+      &:hover {
         color: #1da1f2;
       }
       @media (max-width: ${({ theme }) => theme.size.md}) {
@@ -99,12 +170,15 @@ export const SocialIcons = styled.div`
       color: ${({ theme }) => theme.colors.logoColor};
       padding: 2rem;
       transition: 0.5s all linear;
-      :hover {
+      &:hover {
         color: #d90d1e;
       }
       @media (max-width: ${({ theme }) => theme.size.md}) {
         padding: 0.5rem;
         font-size: 6rem;
+      }
+      @media (max-width: ${({ theme }) => theme.size.sm}) {
+        font-size: 5rem;
       }
     }
     & > span {
@@ -127,13 +201,15 @@ export const StyledContactForm = styled.div`
   align-items: center;
   justify-content: center;
   padding-bottom: 1.5rem;
-  /* margin-bottom: 1.5rem; */
 
   color: white;
   & > h2 {
     margin: 1.5rem;
     width: 22rem;
     text-align: center;
+  }
+  @media (max-width: ${({ theme }) => theme.size.md}) { 
+    flex: 1;
   }
 
   & > div {
@@ -152,7 +228,6 @@ export const StyledContactForm = styled.div`
       gap: 1rem;
       input {
         color: white;
-
         transition: 0.3s all linear;
         width: 100%;
         height: 2rem;
@@ -172,7 +247,6 @@ export const StyledContactForm = styled.div`
       }
       textarea {
         color: white;
-
         font-size: 1rem;
         transition: 0.3s all linear;
         text-indent: 1rem;
@@ -185,7 +259,6 @@ export const StyledContactForm = styled.div`
         border-radius: 5px;
         border: 1px solid rgb(220, 220, 220);
         background-color: ${({ theme }) => theme.colors.formColor};
-
         ::placeholder {
           color: white;
         }
@@ -203,12 +276,11 @@ export const StyledContactForm = styled.div`
         color: white;
         border: 1px solid white;
         border-radius: 0.3rem;
-        /* margin-top: 1rem; */
         padding: 0.8rem;
         width: 100%;
         opacity: 0.7;
 
-        :hover {
+        &:hover {
           opacity: 1;
           border: 1px solid ${({ theme }) => theme.colors.mainColor};
         }

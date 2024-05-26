@@ -18,3 +18,10 @@ code {
     transform: rotate(360deg);
   }
 }
+
+/* Change the body font size under 768px */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px !important;
+  }
+}

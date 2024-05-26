@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Flex } from "../componentsStyles/Main.styled";
+import { Link as ScrollLink } from "react-scroll";
 // import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -9,6 +10,8 @@ export const Nav = styled(Flex)`
   top: 0;
   z-index: 6;
   width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
   /* @media (max-width: ${({ theme }) => theme.size.lg}) {
     position: relative;
   } */
@@ -32,7 +35,7 @@ export const Logo = styled(Link)`
     @media (max-width: ${({ theme }) => theme.size.sm}) {
       display: none;
     }
-    :hover {
+    &:hover {
       color: ${({ theme }) => theme.colors.turqo};
     }
   }
@@ -70,7 +73,7 @@ export const Menu = styled(Flex)`
   }
 `;
 
-export const MenuLink = styled(Link)`
+export const MenuLink = styled(ScrollLink)`
   text-align: center;
   padding: 11px 8px;
   letter-spacing:1px;

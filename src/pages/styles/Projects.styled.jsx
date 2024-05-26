@@ -9,20 +9,6 @@ export const MainProjectsContainer = styled.div`
   justify-content: center;
   width: 100%;
   padding-bottom: 2rem;
-  /* height: 100vh; */
-  & > h1.title {
-    position: relative;
-    ::after {
-      content: "";
-      background: ${({ theme }) => theme.colors.turqo};
-      position: absolute;
-      text-align: center;
-      bottom: -20px;
-      left: 10%;
-      height: 10%;
-      width: 80%;
-    }
-  }
 `;
 
 export const ProjectsIcons = styled.div`
@@ -37,23 +23,77 @@ export const ProjectsIcons = styled.div`
   transition: all 0.3s linear;
   cursor: pointer;
   @media (max-width: ${({ theme }) => theme.size.lg}) {
-    width: 80%;
+    width: 70%;
   }
-  @media (max-width: ${({ theme }) => theme.size.md}) {
+  @media (max-width: ${({ theme }) => theme.size.sm}) {
     width: 90%;
-  } 
+  }
+  & > div.js {
+    &:hover {
+      color: #f0db4f;
+    }
+  }
+  & > div.html {
+    &:hover {
+      color: #e34c26;
+    }
+  }
+  & > div.react {
+    &:hover {
+      color: #61dbfb;
+    }
+  }
+  & > div.django {
+    &:hover {
+      color: #023b25;
+    }
+  }
   & > div.iconContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: 0.5s all ease-in-out;
-    :hover {
-      color: ${({ theme }) => theme.colors.turqo};
+    &:hover {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 2d501646896c77e18500e5ae26df65035d7039e3
+>>>>>>> 072a98c1caa6eb197aecffc4d67dd0197be0ca7a
       animation: shake 0.3s linear;
     }
+=======
+      /* color: ${({ theme }) => theme.colors.turqo}; */
+      animation: shake 0.3s linear;
+    }
+    /* & > i.js {
+      &:hover {
+        color: yellow;
+        animation: shake 0.3s linear;
+      }
+    } */
+>>>>>>> ede06a9 (other hover fixes)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 072a98c1caa6eb197aecffc4d67dd0197be0ca7a
+=======
+      animation: shake 0.3s linear;
+    }
+>>>>>>> b1c5e81 (responsibility updated)
+<<<<<<< HEAD
+=======
+>>>>>>> 2d501646896c77e18500e5ae26df65035d7039e3
+>>>>>>> 072a98c1caa6eb197aecffc4d67dd0197be0ca7a
     & > i.icon {
-      font-size: 10rem;
+      font-size: 9rem;
       text-transform: none;
+      @media (max-width: ${({ theme }) => theme.size.lg}) {
+        font-size: 7rem; 
+      }
       @media (max-width: ${({ theme }) => theme.size.md}) {
         font-size: 5rem;
       }
@@ -62,6 +102,7 @@ export const ProjectsIcons = styled.div`
       margin-top: 1rem;
       font-size: 1.2rem;
       font-weight: bold;
+      color: white;
       font-family: "Roboto", sans-serif;
       @media (max-width: ${({ theme }) => theme.size.md}) {
         font-size: 1rem;

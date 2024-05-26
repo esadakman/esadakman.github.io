@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import clickPNG from "../../assets/clickPNG.png";
 
 export const ProjectsContainer = styled.div`
   flex-wrap: wrap;
@@ -45,10 +46,11 @@ export const Card = styled.div`
   }
   & > img {
     width: 100%;
+    // object-fit: cover;
     height: 100%;
     transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   }
-  :hover {
+  &:hover {
     transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
     transform: scale(0.97);
@@ -77,6 +79,13 @@ export const Desc = styled.div`
   padding: 1rem 1.5rem;
   box-sizing: border-box;
   clip-path: circle(0% at 100% 100%);
+  & > img {
+    width: 3rem;
+    position: absolute;
+    right: 1rem;
+    content: url(${clickPNG});
+    transform: rotate(320deg);
+  }
   & > h2 {
     text-align: left;
     color: ${({ theme }) => theme.colors.navBgColor};
@@ -117,19 +126,36 @@ export const Desc = styled.div`
 
 export const TitleCard = styled.div`
   position: relative;
-
   height: 3rem;
-  background-color: ${({ theme }) => theme.colors.cardBack};
+  background-color: ${({ theme }) => theme.colors.buttonBg};
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 0 1rem;
+  gap:.5rem;
+  
+  .fa-circle {
+    width: 1.5rem;
+    /* height: 2rem; */
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    /* padding-right: 1rem; */
+    &.red {
+      background-color: red;
+    }
 
+    &.yellow {
+      background-color: yellow;
+    }
+
+    &.green {
+      background-color: green;
+    }
+  }
   & > p {
-    color: white;
-    font-family: "Roboto", sans-serif;
-    width: 85%;
-    overflow: auto;
+    color: white; 
+    width: 100%;
+    overflow: auto; 
   }
   & > span {
     position: absolute;
@@ -147,7 +173,7 @@ export const ProjectsTitles = styled.h1`
   @media (max-width: ${({ theme }) => theme.size.sm}) {
     font-size: 2rem;
   }
-  ::after {
+  &::after {
     content: "";
     background: ${({ theme }) => theme.colors.mainColor};
     position: absolute;
@@ -172,7 +198,7 @@ export const ButtonStyleCard = styled.button`
   font-size: 1.1rem;
   width: 8rem;
   margin: 1rem auto;
-  :hover {
+  &:hover {
     opacity: 0.9;
     color: ${({ theme }) => theme.colors.turqo};
     background-color: ${({ theme }) => theme.colors.navBgColor};

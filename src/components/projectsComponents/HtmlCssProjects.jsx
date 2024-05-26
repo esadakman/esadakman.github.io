@@ -19,21 +19,28 @@ const HtmlCssProjects = () => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
-    <Flex justify="center" wrap="wrap">
+    <Flex justify="center" wrap="wrap" style={{ marginTop: "3rem" }}>
       <Flex>
         <ProjectsTitles className="titles">Html/CSS Projects</ProjectsTitles>
       </Flex>
       <ProjectsContainer>
-      {htmlData.map((info) => {
+        {htmlData.map((info) => {
           return (
             <CardWrapper
               key={info?.id}
               title="Click for details"
               onClick={() => openInNewTab(info?.link)}
             >
+              <TitleCard>
+                <div className="fa fa-circle red" />
+                <div className="fa fa-circle yellow" />
+                <div className="fa fa-circle green" />
+                <p>{info?.projectName}</p>
+              </TitleCard>
               <Card>
                 <img src={info?.imgSrc} alt="poster" />
                 <Desc>
+                  <img alt="detail" title="Click for details ..." />
                   <h2>Overview</h2>
                   <ul>
                     <li>{info?.overview[0]}</li>
@@ -43,12 +50,9 @@ const HtmlCssProjects = () => {
                   </ul>
                 </Desc>
               </Card>
-              <TitleCard>
-                <p>{info?.projectName}</p>
-              </TitleCard>
             </CardWrapper>
           );
-        })} 
+        })}
       </ProjectsContainer>
       <ButtonStyleCard
         onClick={() => navigate(-1)}

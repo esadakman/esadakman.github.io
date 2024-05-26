@@ -21,10 +21,10 @@ const Main = () => {
           </SkewLine>
           <SkewLine>
             <Paragraph>AKMAN</Paragraph>
-            <Paragraph>Back-End</Paragraph>
+            <Paragraph>Frontend</Paragraph>
           </SkewLine>
           <SkewLine>
-            <Paragraph>Front-End</Paragraph>
+            <Paragraph>Frontend</Paragraph>
             <Paragraph>Developer</Paragraph>
           </SkewLine>
           <SkewLine>

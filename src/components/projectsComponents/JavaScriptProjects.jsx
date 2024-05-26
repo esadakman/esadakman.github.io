@@ -8,7 +8,7 @@ import {
   ProjectsContainer,
   ProjectsTitles,
   TitleCard,
-} from "../componentsStyles/ReactProjects.styled"; 
+} from "../componentsStyles/ReactProjects.styled";
 import { useNavigate } from "react-router-dom";
 import jsData from "../../helpers/jsProjects";
 
@@ -20,22 +20,28 @@ const JavaScript = () => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
-    <Flex justify="center" wrap="wrap">
+    <Flex justify="center" wrap="wrap" style={{ marginTop: "3rem" }}>
       <Flex>
         <ProjectsTitles className="titles">JavaScript Projects</ProjectsTitles>
       </Flex>
       <ProjectsContainer>
-        
-      {jsData.map((info) => {
+        {jsData.map((info) => {
           return (
             <CardWrapper
               key={info?.id}
               title="Click for details"
               onClick={() => openInNewTab(info?.link)}
             >
+              <TitleCard>
+                <div className="fa fa-circle red" />
+                <div className="fa fa-circle yellow" />
+                <div className="fa fa-circle green" />
+                <p>{info?.projectName}</p>
+              </TitleCard>
               <Card>
                 <img src={info?.imgSrc} alt="poster" />
                 <Desc>
+                  <img alt="detail" title="Click for details ..." />
                   <h2>Overview</h2>
                   <ul>
                     <li>{info?.overview[0]}</li>
@@ -43,13 +49,10 @@ const JavaScript = () => {
                     <li>{info?.overview[2]}</li>
                   </ul>
                 </Desc>
-              </Card>
-              <TitleCard>
-                <p>{info?.projectName}</p>
-              </TitleCard>
+              </Card> 
             </CardWrapper>
           );
-        })} 
+        })}
 
         {/* //! ============Divider=========================== */}
       </ProjectsContainer>

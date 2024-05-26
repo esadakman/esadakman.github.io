@@ -22,6 +22,7 @@ export const LinesWrapper = styled.div`
   text-transform: uppercase;
   margin-left: -15%;
   margin-top: 3%;
+  user-select:none;
   @media (max-width: ${({ theme }) => theme.size.lg}) {
     margin-left: -20%;
     font-size: 4rem;
@@ -38,7 +39,7 @@ export const LinesWrapper = styled.div`
     margin-left: -45%;
     font-size: 2rem;
   }
-  :hover {
+  &:hover {
     & > div {
       & > p {
         transform: translate(0, -75px);

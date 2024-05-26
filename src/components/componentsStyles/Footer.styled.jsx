@@ -4,16 +4,11 @@ const FooterStyle = styled.div`
   display: flex;
   text-decoration: none;
   justify-content: space-between;
-  /* background-color: ${({ theme }) => theme.colors.logoColor}; */
-  background-color: ${({ theme }) => theme.colors.transparent};
+  background-color: ${({ theme }) => theme.colors.logoColor};
+  /* background-color: ${({ theme }) => theme.colors.transparent}; */
   color: black;
-  font-family: "Roboto", sans-serif;
   align-items: center;
-  height: 8vh;
-  padding: 0 1.5rem;
-  /* position: fixed; */
-  /* width: 93vw; */
-  /* bottom: 0; */
+  padding: 0 1.5rem; 
 `;
 
 export const Logos = styled.div`
@@ -31,7 +26,7 @@ export const Logos = styled.div`
   }
 `;
 export const TextStyle = styled.div`
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: white;
   & > p {
     color: white;
