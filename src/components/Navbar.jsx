@@ -11,7 +11,7 @@ import {
 import hamburger from "../assets/hamburger.png";
 import { useNavigate } from "react-router-dom";
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const navigate = useNavigate();
   const scrollToWithOffset = (target, offset) => {
     if (window.location.pathname !== "/") {
@@ -31,13 +31,12 @@ const Navbar = () => {
   };
 
   return (
-    <Nav justify="space-between" wrap="wrap">
+    <Nav>
       <Logo to="/">
         <IMG src={logo} alt="logo" />
-
         <p>{"<esad/>"}</p>
       </Logo>
-      <Hamburger onClick={() => setIsOpen(!isOpen)}>
+      <Hamburger onClick={() => setIsNavOpen(!isNavOpen)}>
         <IMG
           src={hamburger}
           alt="logo"
@@ -45,20 +44,14 @@ const Navbar = () => {
         />
       </Hamburger>
 
-      <Menu isOpen={isOpen} onClick={() => setIsOpen(false)}>
-        <MenuLink smooth={true} onClick={() => scrollToWithOffset("about", 69)}>
+      <Menu isOpen={isNavOpen} onClick={() => setIsNavOpen(false)}>
+        <MenuLink to="#" onClick={() => scrollToWithOffset("about", 69)}>
           About Me
         </MenuLink>
-        <MenuLink
-          smooth={true}
-          onClick={() => scrollToWithOffset("projects", 69)}
-        >
+        <MenuLink to="#" onClick={() => scrollToWithOffset("projects", 69)}>
           Projects
         </MenuLink>
-        <MenuLink
-          smooth={true}
-          onClick={() => scrollToWithOffset("contact", 69)}
-        >
+        <MenuLink to="#" onClick={() => scrollToWithOffset("contact", 69)}>
           Contact
         </MenuLink>
       </Menu>
