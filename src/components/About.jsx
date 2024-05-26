@@ -9,25 +9,23 @@ import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
 
 const About = () => {
   return (
-    <AboutContainer id="about" name="about" >
+    <AboutContainer id="about" name="about">
       <ProjectsTitles>About Esad</ProjectsTitles>
       <IMG src={pp} alt="picture"></IMG>
       <AboutParagraph>
         <p>Hello there! My name is Esad</p>
         <p>
           {" "}
-          I am a web developer with expertise in front-end frameworks. I have a
-          strong ability to develop complex solutions and create user-friendly
-          designs and solid understanding of JavaScript, jQuery, ReactJS, Python, and
-          Django. I am a team player with excellent analytical thinking skills
-          and the ability to adapt quickly to new technologies and always
-          looking to learn and improve my skills.
+          I am a web developer with expertise in front-end frameworks, skilled
+          in creating complex solutions and user-friendly designs. I have a
+          strong grasp of JavaScript, jQuery and ReactJS. As a team player with
+          excellent analytical skills, I quickly adapt to new technologies and
+          constantly seek to improve my abilities.
         </p>
         <p>
-          Thank you for visiting my portfolio site. I hope you find my skills
-          and experience to be a good fit for your project or company. I am
-          ready to put my skills to work and help your company achieve its
-          goals. Let's create something amazing together!
+          Thank you for visiting my portfolio site. I am excited to leverage my
+          skills to help your company achieve its goals. Let's create something
+          amazing together!
         </p>
       </AboutParagraph>
     </AboutContainer>

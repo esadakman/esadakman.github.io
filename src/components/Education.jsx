@@ -23,8 +23,7 @@ const Education = () => {
             <h3>Eskisehir Technical University</h3>
             <h5>Air Traffic Control (Bachelor Degree)</h5>
             <p>
-              Dec. 2017 - June 2023
-              {/* <sup>(One class short of graduating)</sup>{" "} */}
+              {/* Dec. 2017 - June 2023 */}
             </p>
           </SchoolInfos>
         </EducationInfo>
@@ -37,7 +36,7 @@ const Education = () => {
           <SchoolInfos>
             <h3>National Defense University</h3>
             <h5>Air Traffic Control (Associate Degree)</h5>
-            <p>Sep. 2014 - July 2016</p>
+            {/* <p>Sep. 2014 - July 2016</p> */}
           </SchoolInfos>
         </EducationInfo>
       </EducationArea>
@@ -46,15 +45,3 @@ const Education = () => {
 };
 
 export default Education;
-
-//  {/* <EducationInfo>
-//           <div className="circle">
-//             <img src={education} alt="education" />
-//             <div className="straightLine" />
-//           </div>
-//           <SchoolInfos>
-//             <h3>Clarusway (Bootcamp) </h3>
-//             <h5>Full Stack Development Course </h5>
-//             <p>Jan. 2022 - Sep. 2022</p>
-//           </SchoolInfos>
-//         </EducationInfo> */}

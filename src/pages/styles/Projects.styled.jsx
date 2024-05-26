@@ -23,28 +23,28 @@ export const ProjectsIcons = styled.div`
   transition: all 0.3s linear;
   cursor: pointer;
   @media (max-width: ${({ theme }) => theme.size.lg}) {
-    width: 80%;
+    width: 70%;
   }
-  @media (max-width: ${({ theme }) => theme.size.md}) {
+  @media (max-width: ${({ theme }) => theme.size.sm}) {
     width: 90%;
   }
-  & > div.js { 
-    :hover {
-      color: #F0DB4F;
+  & > div.js {
+    &:hover {
+      color: #f0db4f;
     }
   }
-  & > div.html { 
-    :hover {
-      color: #E34C26;
+  & > div.html {
+    &:hover {
+      color: #e34c26;
     }
   }
-  & > div.react { 
-    :hover {
-      color: #61DBFB;
+  & > div.react {
+    &:hover {
+      color: #61dbfb;
     }
   }
-  & > div.django { 
-    :hover {
+  & > div.django {
+    &:hover {
       color: #023b25;
     }
   }
@@ -53,19 +53,15 @@ export const ProjectsIcons = styled.div`
     flex-direction: column;
     align-items: center;
     transition: 0.5s all ease-in-out;
-    :hover {
-      /* color: ${({ theme }) => theme.colors.turqo}; */
+    &:hover {
       animation: shake 0.3s linear;
     }
-    /* & > i.js {
-      :hover {
-        color: yellow;
-        animation: shake 0.3s linear;
-      }
-    } */
     & > i.icon {
-      font-size: 10rem;
+      font-size: 9rem;
       text-transform: none;
+      @media (max-width: ${({ theme }) => theme.size.lg}) {
+        font-size: 7rem; 
+      }
       @media (max-width: ${({ theme }) => theme.size.md}) {
         font-size: 5rem;
       }

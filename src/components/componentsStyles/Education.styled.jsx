@@ -6,9 +6,10 @@ export const EducationContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 70vh;
+  min-height: 60vh;
   @media (max-width: ${({ theme }) => theme.size.md}) {
     height: fit-content;
+    min-height: 50vh;
   }
 `;
 
@@ -66,15 +67,15 @@ export const EducationInfo = styled.div`
     }
     & > div.straightLine {
       position: absolute;
-      height: 14rem;
+      height: 17rem;
       border-left: 3px solid ${({ theme }) => theme.colors.navBgColor};
       top: 100%;
       left: 50%;
       @media (max-width: ${({ theme }) => theme.size.xxlg}) {
-        height: 15rem;
+        height: 18rem;
       }
       @media (max-width: ${({ theme }) => theme.size.xlg}) {
-        height: 17rem;
+        height: 20rem;
       }
       @media (max-width: ${({ theme }) => theme.size.md}) {
         display: none;
@@ -82,7 +83,7 @@ export const EducationInfo = styled.div`
     }
   }
   position: relative;
-  ::after {
+  &::after {
     content: "";
     background: ${({ theme }) => theme.colors.turqo};
     position: absolute;

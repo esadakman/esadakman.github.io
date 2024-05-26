@@ -50,7 +50,7 @@ export const Card = styled.div`
     height: 100%;
     transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   }
-  :hover {
+  &:hover {
     transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
     transform: scale(0.97);
@@ -173,7 +173,7 @@ export const ProjectsTitles = styled.h1`
   @media (max-width: ${({ theme }) => theme.size.sm}) {
     font-size: 2rem;
   }
-  ::after {
+  &::after {
     content: "";
     background: ${({ theme }) => theme.colors.mainColor};
     position: absolute;
@@ -198,7 +198,7 @@ export const ButtonStyleCard = styled.button`
   font-size: 1.1rem;
   width: 8rem;
   margin: 1rem auto;
-  :hover {
+  &:hover {
     opacity: 0.9;
     color: ${({ theme }) => theme.colors.turqo};
     background-color: ${({ theme }) => theme.colors.navBgColor};

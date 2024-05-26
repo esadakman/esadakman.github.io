@@ -1,0 +1,122 @@
+.marquee-container {
+  display: grid;
+  place-content: center;
+  /* min-height: 30vh; */
+}
+
+.scroller {
+  max-width: 70%;
+  margin: 0 auto;
+  transition: 0.5s all linear;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  transition: all 0.3s linear;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s all ease-in-out;
+}
+
+.icon-container:hover {
+  color: #03bfcb;
+  animation: shake 0.3s linear;
+}
+
+.icon-container > .icon {
+  font-size: 8rem;
+}
+
+@media (max-width: 768px) {
+  .icon-container > .icon {
+    font-size: 4rem;
+  }
+  .scroller {
+    max-width: 90%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+.styled-comp {
+  width: 8rem;
+}
+
+@media (max-width: 768px) {
+  .styled-comp {
+    width: 5rem;
+  }
+}
+
+.styled-comp:hover {
+  color: #03bfcb;
+}
+
+.icon-container span {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .icon-container span {
+    font-size: 1rem;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(2deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(-4deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(2deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(-4deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(2deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-4deg);
+  }
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: fit-content;
+  flex-wrap: nowrap;
+  animation: scroll 40s forwards linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - .5rem));
+  }
+}
+
+.skills-title {
+  width: fit-content;
+  margin: 0.67em auto;
+  font-size: 2em;
+}
