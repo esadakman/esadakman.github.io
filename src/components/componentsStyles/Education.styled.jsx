@@ -6,7 +6,7 @@ export const EducationContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 70vh;
+  min-height: 60vh;
   @media (max-width: ${({ theme }) => theme.size.md}) {
     height: fit-content;
     min-height: 50vh;
