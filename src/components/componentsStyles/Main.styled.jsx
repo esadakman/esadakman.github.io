@@ -39,7 +39,7 @@ export const LinesWrapper = styled.div`
     margin-left: -45%;
     font-size: 2rem;
   }
-  :hover {
+  &:hover {
     & > div {
       & > p {
         transform: translate(0, -75px);
