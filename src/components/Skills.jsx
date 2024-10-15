@@ -1,12 +1,41 @@
-import './componentsStyles/Skills.css';
+import "./componentsStyles/Skills.css";
 import styled from "../assets/styledComponents.svg";
 import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
+import { useEffect } from "react";
 
 const Skills = () => {
+  useEffect(() => {
+    const scrollers = document.querySelectorAll(".scroller");
+
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation();
+    }
+
+    function addAnimation() {
+      scrollers.forEach((scroller) => {
+        scroller.setAttribute("data-animated", true);
+        const scrollerInner = scroller.querySelector(".scroller__inner");
+        const scrollerContent = Array.from(scrollerInner.children);
+        const contentWidth = scrollerInner.scrollWidth;
+        const containerWidth = scroller.clientWidth;
+        const timesToDuplicate = Math.ceil(containerWidth / contentWidth) + 1;
+
+        for (let i = 0; i < timesToDuplicate; i++) {
+          scrollerContent.forEach((item) => {
+            const duplicatedItem = item.cloneNode(true);
+            duplicatedItem.setAttribute("aria-hidden", true);
+            scrollerInner.appendChild(duplicatedItem);
+          });
+        }
+      });
+    }
+  }, []);
+
   return (
-    <div className="skills-container">
-      <ProjectsTitles>Skills</ProjectsTitles>
-      <div className="skill-icons">
+    <section className="marquee-container">
+      <ProjectsTitles className="skills-title">Skills</ProjectsTitles>
+      <div className="scroller">
+      <div className="skill-icons scroller__inner" data-direction="right" data-speed="slow">
         <div className="icon-container">
           <i className="icon devicon-html5-plain"></i>
           <span className="name">HTML5</span>
@@ -81,6 +110,7 @@ const Skills = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
