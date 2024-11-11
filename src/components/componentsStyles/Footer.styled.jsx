@@ -7,9 +7,7 @@ const FooterStyle = styled.div`
   background-color: ${({ theme }) => theme.colors.logoColor};
   /* background-color: ${({ theme }) => theme.colors.transparent}; */
   color: black;
-  font-family: "Roboto", sans-serif;
   align-items: center;
-  height: 8vh;
   padding: 0 1.5rem; 
 `;
 
