@@ -6,10 +6,14 @@ export const ContactContainer = styled.div`
   align-items: center;
   width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   min-height: calc(100vh - 7.5rem);
 =======
   min-height: 85vh;
 >>>>>>> ede06a9 (other hover fixes)
+=======
+  min-height: calc(100vh - 7rem);
+>>>>>>> a02e1b7 (footer & contact css)
   background-color: ${({ theme }) => theme.colors.navBgColor};
 `;
 
