@@ -5,23 +5,8 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 85vh;
+  min-height: calc(100vh - 7rem);
   background-color: ${({ theme }) => theme.colors.navBgColor};
-
-  /* & > h1.title {
-    position: relative;
-    color: white;
-    ::after {
-      content: "";
-      background: ${({ theme }) => theme.colors.mainColor};
-      position: absolute;
-      text-align: center;
-      bottom: -5px;
-      left: 10%;
-      height: 8%;
-      width: 80%;
-    }
-  } */
 `;
 
 export const SocialIcons = styled.div`
