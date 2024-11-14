@@ -33,7 +33,7 @@ export const Logo = styled(Link)`
     @media (max-width: ${({ theme }) => theme.size.sm}) {
       display: none;
     }
-    :hover {
+    &:hover {
       color: ${({ theme }) => theme.colors.turqo};
     }
   }
