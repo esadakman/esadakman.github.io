@@ -5,7 +5,7 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 85vh;
   background-color: ${({ theme }) => theme.colors.navBgColor};
 
   /* & > h1.title {
@@ -58,7 +58,7 @@ export const SocialIcons = styled.div`
         font-size: 6rem;
         padding: 0.5rem;
       }
-      :hover {
+      &:hover {
         color: #4c60c9;
       }
     }
@@ -68,7 +68,7 @@ export const SocialIcons = styled.div`
       color: ${({ theme }) => theme.colors.logoColor};
       padding: 1rem;
       transition: 0.5s all linear;
-      :hover {
+      &:hover {
         color: white;
       }
       @media (max-width: ${({ theme }) => theme.size.md}) {
@@ -83,7 +83,7 @@ export const SocialIcons = styled.div`
       color: ${({ theme }) => theme.colors.logoColor};
       padding: 2rem;
       transition: 0.5s all linear;
-      :hover {
+      &:hover {
         color: #1da1f2;
       }
       @media (max-width: ${({ theme }) => theme.size.md}) {
@@ -99,7 +99,7 @@ export const SocialIcons = styled.div`
       color: ${({ theme }) => theme.colors.logoColor};
       padding: 2rem;
       transition: 0.5s all linear;
-      :hover {
+      &:hover {
         color: #d90d1e;
       }
       @media (max-width: ${({ theme }) => theme.size.md}) {
@@ -126,11 +126,11 @@ export const StyledContactForm = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 1.5rem; 
+  padding-bottom: 1.5rem;
 
   color: white;
   & > h2 {
-    margin: 1.5rem; 
+    margin: 1.5rem;
     width: 22rem;
     text-align: center;
   }
@@ -212,7 +212,7 @@ export const StyledContactForm = styled.div`
         width: 100%;
         opacity: 0.7;
 
-        :hover {
+        &:hover {
           opacity: 1;
           border: 1px solid ${({ theme }) => theme.colors.mainColor};
         }

@@ -28,23 +28,23 @@ export const ProjectsIcons = styled.div`
   @media (max-width: ${({ theme }) => theme.size.md}) {
     width: 90%;
   }
-  & > div.js { 
-    :hover {
-      color: #F0DB4F;
+  & > div.js {
+    &:hover {
+      color: #f0db4f;
     }
   }
-  & > div.html { 
-    :hover {
-      color: #E34C26;
+  & > div.html {
+    &:hover {
+      color: #e34c26;
     }
   }
-  & > div.react { 
-    :hover {
-      color: #61DBFB;
+  & > div.react {
+    &:hover {
+      color: #61dbfb;
     }
   }
-  & > div.django { 
-    :hover {
+  & > div.django {
+    &:hover {
       color: #023b25;
     }
   }
@@ -53,12 +53,12 @@ export const ProjectsIcons = styled.div`
     flex-direction: column;
     align-items: center;
     transition: 0.5s all ease-in-out;
-    :hover {
+    &:hover {
       /* color: ${({ theme }) => theme.colors.turqo}; */
       animation: shake 0.3s linear;
     }
     /* & > i.js {
-      :hover {
+      &:hover {
         color: yellow;
         animation: shake 0.3s linear;
       }
