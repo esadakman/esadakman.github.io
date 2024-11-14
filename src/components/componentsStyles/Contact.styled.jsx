@@ -5,7 +5,11 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+<<<<<<< HEAD
   min-height: calc(100vh - 7.5rem);
+=======
+  min-height: 85vh;
+>>>>>>> ede06a9 (other hover fixes)
   background-color: ${({ theme }) => theme.colors.navBgColor};
 `;
 
@@ -50,9 +54,12 @@ export const SocialIcons = styled.div`
         font-size: 6rem;
         padding: 0.5rem;
       }
+<<<<<<< HEAD
       @media (max-width: ${({ theme }) => theme.size.sm}) {
         font-size: 5rem;
       }
+=======
+>>>>>>> ede06a9 (other hover fixes)
       &:hover {
         color: #4c60c9;
       }
