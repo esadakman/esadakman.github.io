@@ -61,7 +61,9 @@ export const Hamburger = styled.div`
   }
 `;
 
-export const Menu = styled(Flex)`
+export const Menu = styled(Flex).withConfig({
+  shouldForwardProp: (prop) => prop !== "isOpen",
+})`
   margin-right: 1rem;
   @media (max-width: ${({ theme }) => theme.size.sm}) {
     flex-direction: column;
