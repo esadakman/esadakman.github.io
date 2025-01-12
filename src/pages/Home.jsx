@@ -1,11 +1,11 @@
 import React from "react";
 import About from "../components/About";
 import BackToTopButton from "../components/BackToTopButton";
-// import Contact from "../components/Contact";
-// import Education from "../components/Education";
-// import Experience from "../components/Experience";
+import Contact from "../components/Contact";
+import Education from "../components/Education";
+import Experience from "../components/Experience";
 import Main from "../components/Main";
-// import Skills from "../components/Skills";
+import Skills from "../components/Skills";
 import Projects from "./Projects";
 
 const Home = () => {
@@ -14,10 +14,10 @@ const Home = () => {
       <Main />
       <About />
       <Projects />
-      {/* <Experience />
+      <Experience />
       <Education />
       <Skills />
-      <Contact /> */}
+      <Contact />
       <BackToTopButton />
     </>
   );
