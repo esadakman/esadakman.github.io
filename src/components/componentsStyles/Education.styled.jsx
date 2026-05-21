@@ -54,7 +54,6 @@ export const EducationInfo = styled.div`
     height: 4rem;
     border-radius: 50%;
     border: 3px solid ${({ theme }) => theme.colors.turqo};
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,17 +68,18 @@ export const EducationInfo = styled.div`
       width: 75%;
     }
     & > div.straightLine {
+      /* Anchored to the EducationInfo row (position: relative) so it always
+         reaches the next circle regardless of how tall the content is.
+         Starts just below this circle (~4rem) and runs to the row bottom,
+         crossing the 2rem margin gap into the next circle. */
       position: absolute;
-      height: 17rem;
+      top: 4rem;
+      bottom: -2rem;
+      /* 15px row padding + half the 4.8rem circle = circle center */
+      left: 47px;
+      transform: translateX(-50%);
       border-left: 3px dashed ${({ theme }) => theme.colors.turqo};
-      top: 100%;
-      left: 50%;
-      @media (max-width: ${({ theme }) => theme.size.xxlg}) {
-        height: 18rem;
-      }
-      @media (max-width: ${({ theme }) => theme.size.xlg}) {
-        height: 20rem;
-      }
+      z-index: 0;
       @media (max-width: ${({ theme }) => theme.size.md}) {
         display: none;
       }
