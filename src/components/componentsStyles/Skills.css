@@ -22,7 +22,9 @@
 .skill-icons {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 1rem;
+  padding: 1.5rem 0;
   transition: all 0.3s linear;
 }
 
@@ -37,7 +39,7 @@
 
 .icon-container:hover {
   color: #03bfcb;
-  transform: translateY(-6px);
+  transform: scale(1.08);
   animation: shake 0.3s linear;
 }
 

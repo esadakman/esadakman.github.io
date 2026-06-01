@@ -60,13 +60,12 @@ const Main = () => {
             <HeroButton primary onClick={() => scrollToId("projects")}>
               View Projects
             </HeroButton>
+            <ScrollCue />
             <HeroButton onClick={() => scrollToId("contact")}>
               Get in Touch
             </HeroButton>
           </HeroActions>
         </motion.div>
-
-        <ScrollCue />
       </Body>
     </div>
   );

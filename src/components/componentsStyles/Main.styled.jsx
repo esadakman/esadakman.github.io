@@ -4,11 +4,12 @@ export const Body = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 1rem 2rem;
+  padding: 4rem 1rem .5rem;
   overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -40,9 +41,10 @@ export const HeroTagline = styled.p`
 
 export const HeroActions = styled.div`
   display: flex;
-  gap: 1rem;
-  margin-top: 1.75rem;
+  gap: 1.25rem;
+  margin-top: 1rem;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
 `;
 
@@ -72,10 +74,7 @@ export const HeroButton = styled.a`
 `;
 
 export const ScrollCue = styled.div`
-  position: absolute;
-  bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  flex-shrink: 0;
   width: 26px;
   height: 42px;
   border: 2px solid rgba(255, 255, 255, 0.4);
