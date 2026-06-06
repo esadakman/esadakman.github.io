@@ -5,7 +5,6 @@ export const GlobalStyles = createGlobalStyle`
   *::before,
   *::after {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
   }
 
   html {
@@ -14,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.05rem;
     line-height: 1.6;
     color: ${({ theme }) => theme.colors.text};

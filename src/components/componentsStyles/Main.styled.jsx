@@ -8,7 +8,8 @@ export const Body = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  padding: 4rem 1rem 2rem;
+  overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
   background-color: ${({ theme }) => theme.colors.heroBg};
@@ -105,28 +106,35 @@ export const LinesWrapper = styled.div`
   font-weight: 900;
   text-transform: uppercase;
   margin-left: -15%;
-  margin-top: 3%;
+  margin-top: 0;
+  /* Scale the whole animated name down as one unit so it fits the hero
+     without disturbing the tuned per-line skew offsets. */
+  transform: scale(0.78);
+  transform-origin: center;
   /* Reserve space for the skewed text that visually overflows below the box */
-  margin-bottom: 190px;
+  margin-bottom: 70px;
   user-select:none;
   @media (max-width: ${({ theme }) => theme.size.lg}) {
     margin-left: -20%;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
     font-size: 4rem;
   }
   @media (max-width: ${({ theme }) => theme.size.md}) {
     /* margin-left: -%; */
-    margin-bottom: 120px;
+    transform: scale(0.85);
+    margin-bottom: 60px;
     font-size: 3rem;
   }
   @media (max-width: ${({ theme }) => theme.size.sm}) {
     margin-left: -25%;
-    margin-bottom: 110px;
+    transform: scale(0.9);
+    margin-bottom: 50px;
     font-size: 3rem;
   }
   @media (max-width: ${({ theme }) => theme.size.xs}) {
     margin-left: -45%;
-    margin-bottom: 80px;
+    transform: scale(0.9);
+    margin-bottom: 40px;
     font-size: 2rem;
   }
   &:hover {
