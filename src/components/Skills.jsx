@@ -4,6 +4,7 @@ import cursor from "../assets/cursor.svg";
 import claude from "../assets/claude.svg";
 import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
 import { useEffect } from "react";
+import Reveal from "./Reveal";
 
 const Skills = () => {
   useEffect(() => {
@@ -36,7 +37,9 @@ const Skills = () => {
 
   return (
     <section className="marquee-container">
-      <ProjectsTitles className="skills-title">Skills</ProjectsTitles>
+      <Reveal>
+        <ProjectsTitles className="skills-title">Skills</ProjectsTitles>
+      </Reveal>
       <div className="scroller">
       <div className="skill-icons scroller__inner">
         <div className="icon-container">

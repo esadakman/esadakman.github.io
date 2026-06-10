@@ -2,13 +2,16 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ProjectsTitles } from "../components/componentsStyles/ReactProjects.styled";
 import { MainProjectsContainer, ProjectsIcons } from "./styles/Projects.styled";
+import Reveal from "../components/Reveal";
 
 const Projects = () => {
   const navigate = useNavigate();
   return (
     <>
       <MainProjectsContainer id="projects" name="projects">
-        <ProjectsTitles>My Projects</ProjectsTitles>
+        <Reveal>
+          <ProjectsTitles>My Projects</ProjectsTitles>
+        </Reveal>
         <ProjectsIcons>
           <div
             className="iconContainer react"

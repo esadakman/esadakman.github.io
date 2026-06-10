@@ -6,12 +6,17 @@ import {
 } from "./componentsStyles/About.styled";
 import pp from "../assets/pp.jpeg";
 import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
+import Reveal from "./Reveal";
 
 const About = () => {
   return (
     <AboutContainer id="about" name="about">
-      <ProjectsTitles>About Esad</ProjectsTitles>
-      <IMG src={pp} alt="picture"></IMG>
+      <Reveal>
+        <ProjectsTitles>About Esad</ProjectsTitles>
+      </Reveal>
+      <Reveal delay={0.1}>
+        <IMG src={pp} alt="Esad Akman" />
+      </Reveal>
       <AboutParagraph>
         <p>Hello there! My name is Esad</p>
         <p>

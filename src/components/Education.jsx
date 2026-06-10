@@ -7,11 +7,14 @@ import {
 } from "./componentsStyles/Education.styled";
 import education from "../assets/education-logo.svg";
 import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
+import Reveal from "./Reveal";
 
 const Education = () => {
   return (
     <EducationContainer>
-      <ProjectsTitles>Education</ProjectsTitles>
+      <Reveal>
+        <ProjectsTitles>Education</ProjectsTitles>
+      </Reveal>
       <EducationArea>
         <EducationInfo>
           <div className="circle">

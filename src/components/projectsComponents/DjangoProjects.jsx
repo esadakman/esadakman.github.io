@@ -10,6 +10,7 @@ import {
 import { useNavigate } from "react-router-dom"; 
 import { Flex } from "../componentsStyles/Main.styled";
 import djangoData from "../../helpers/djangoProjects";
+import Reveal from "../Reveal";
 
 const DjangoProjects = () => {
   const navigate = useNavigate();
@@ -23,10 +24,10 @@ const DjangoProjects = () => {
         <ProjectsTitles>Django Projects</ProjectsTitles>
       </Flex>
       <ProjectsContainer>
-        {djangoData.map((info) => {
+        {djangoData.map((info, i) => {
           return (
+            <Reveal key={info?.id} delay={(i % 3) * 0.08}>
             <CardWrapper
-              key={info?.id}
               title="Click for details"
               onClick={() => openInNewTab(info?.link)}
             >
@@ -47,8 +48,9 @@ const DjangoProjects = () => {
                     <li>{info?.overview[2]}</li>
                   </ul>
                 </Desc>
-              </Card> 
+              </Card>
             </CardWrapper>
+            </Reveal>
           );
         })}
 

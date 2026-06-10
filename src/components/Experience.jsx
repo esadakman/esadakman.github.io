@@ -7,11 +7,14 @@ import {
 import efectura from "../assets/efectura.png";
 import dedew from "../assets/dedew.png";
 import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
+import Reveal from "./Reveal";
 
 const Experience = () => {
   return (
     <EducationContainer>
-      <ProjectsTitles>Experience</ProjectsTitles>
+      <Reveal>
+        <ProjectsTitles>Experience</ProjectsTitles>
+      </Reveal>
       <EducationArea>
         <EducationInfo>
           <div className="circle">

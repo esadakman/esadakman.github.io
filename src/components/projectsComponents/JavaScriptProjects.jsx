@@ -11,6 +11,7 @@ import {
 } from "../componentsStyles/ReactProjects.styled";
 import { useNavigate } from "react-router-dom";
 import jsData from "../../helpers/jsProjects";
+import Reveal from "../Reveal";
 
 const JavaScript = () => {
   const navigate = useNavigate();
@@ -25,10 +26,10 @@ const JavaScript = () => {
         <ProjectsTitles className="titles">JavaScript Projects</ProjectsTitles>
       </Flex>
       <ProjectsContainer>
-        {jsData.map((info) => {
+        {jsData.map((info, i) => {
           return (
+            <Reveal key={info?.id} delay={(i % 3) * 0.08}>
             <CardWrapper
-              key={info?.id}
               title="Click for details"
               onClick={() => openInNewTab(info?.link)}
             >
@@ -49,8 +50,9 @@ const JavaScript = () => {
                     <li>{info?.overview[2]}</li>
                   </ul>
                 </Desc>
-              </Card> 
+              </Card>
             </CardWrapper>
+            </Reveal>
           );
         })}
 
