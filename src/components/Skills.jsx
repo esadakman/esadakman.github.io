@@ -1,5 +1,7 @@
 import "./componentsStyles/Skills.css";
 import styled from "../assets/styledComponents.svg";
+import cursor from "../assets/cursor.svg";
+import claude from "../assets/claude.svg";
 import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
 import { useEffect } from "react";
 
@@ -124,6 +126,14 @@ const Skills = () => {
         <div className="icon-container">
           <i className="icon devicon-postman-plain"></i>
           <span className="name">Postman</span>
+        </div>
+        <div className="icon-container">
+          <img className="svg-icon" src={cursor} alt="Cursor" />
+          <span className="name">Cursor</span>
+        </div>
+        <div className="icon-container">
+          <img className="svg-icon" src={claude} alt="Claude Code" />
+          <span className="name">Claude Code</span>
         </div>
       </div>
     </div>

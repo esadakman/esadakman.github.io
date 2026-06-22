@@ -50,6 +50,19 @@
   width: 8rem;
 }
 
+/* Inline-SVG skills (Cursor, Claude Code) sized to match the icon font glyphs */
+.svg-icon {
+  width: 8rem;
+  height: 8rem;
+}
+
+@media (max-width: 768px) {
+  .svg-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
 @media (max-width: 768px) {
   .styled-comp {
     width: 5rem;
