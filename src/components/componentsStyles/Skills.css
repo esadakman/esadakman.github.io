@@ -46,32 +46,6 @@
   }
 }
 
-/* Text badge for skills that have no devicon (DataTables, Select2, jsTree) */
-.text-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 8rem;
-  height: 8rem;
-  border: 3px solid currentColor;
-  border-radius: 1rem;
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-align: center;
-  padding: 0.5rem;
-  box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-  .text-icon {
-    width: 4rem;
-    height: 4rem;
-    font-size: 0.9rem;
-    border-width: 2px;
-    border-radius: 0.5rem;
-  }
-}
-
 .styled-comp {
   width: 8rem;
 }

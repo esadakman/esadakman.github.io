@@ -66,7 +66,7 @@ const Skills = () => {
           <span className="name">Redux</span>
         </div>
         <div className="icon-container">
-          <i className="icon devicon-nextjs-original"></i>
+          <i className="icon devicon-nextjs-plain"></i>
           <span className="name">NextJS</span>
         </div>
         <div className="icon-container">
@@ -102,16 +102,8 @@ const Skills = () => {
           <span className="name">Vite</span>
         </div>
         <div className="icon-container">
-          <div className="text-icon">DataTables</div>
-          <span className="name">DataTables</span>
-        </div>
-        <div className="icon-container">
-          <div className="text-icon">Select2</div>
-          <span className="name">Select2</span>
-        </div>
-        <div className="icon-container">
-          <div className="text-icon">jsTree</div>
-          <span className="name">jsTree</span>
+          <i className="icon devicon-nodejs-plain"></i>
+          <span className="name">Node.js</span>
         </div>
         <div className="icon-container">
           <i className="icon devicon-firebase-plain"></i>
@@ -128,6 +120,10 @@ const Skills = () => {
         <div className="icon-container">
           <i className="icon devicon-github-original"></i>
           <span className="name">Github</span>
+        </div>
+        <div className="icon-container">
+          <i className="icon devicon-postman-plain"></i>
+          <span className="name">Postman</span>
         </div>
       </div>
     </div>
