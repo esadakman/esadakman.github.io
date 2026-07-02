@@ -16,11 +16,17 @@ const About = () => {
         <p>Hello there! My name is Esad</p>
         <p>
           {" "}
-          I am a web developer with expertise in front-end frameworks, skilled
-          in creating complex solutions and user-friendly designs. I have a
-          strong grasp of JavaScript, jQuery and ReactJS. As a team player with
-          excellent analytical skills, I quickly adapt to new technologies and
-          constantly seek to improve my abilities.
+          I am a frontend developer who leads a UI development team building
+          enterprise, data-heavy web applications. My work centers on complex,
+          responsive interfaces, real-time data integration, and clean
+          collaboration with backend teams over REST APIs.
+        </p>
+        <p>
+          I have a strong grasp of JavaScript, TypeScript, and the React
+          ecosystem, and I enjoy the details that make a product feel solid —
+          from building complex, responsive UIs with libraries like DataTables,
+          Select2, and jsTree to modernizing tooling and keeping the codebase
+          fast and maintainable.
         </p>
         <p>
           Thank you for visiting my portfolio site. I am excited to leverage my
