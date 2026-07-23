@@ -11,11 +11,11 @@ import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
 const Experience = () => {
   return (
     <EducationContainer>
-      <ProjectsTitles>Experince</ProjectsTitles>
+      <ProjectsTitles>Experience</ProjectsTitles>
       <EducationArea>
         <EducationInfo>
           <div className="circle">
-            <img className="job" src={efectura} alt="education" />
+            <img className="job" src={efectura} alt="Efectura logo" />
             <div className="straightLine" />
           </div>
           <SchoolInfos>
@@ -24,52 +24,51 @@ const Experience = () => {
             <p style={{ fontWeight: "bold" }}>Feb. 2023 - Present</p>
             <ul>
               <li>
-                Leading the UI development team for a multichannel RevOps
-                platform used by clients such as DIAGEO, CocaCola, and Silktech.
+                Lead the UI development team for a multichannel RevOps platform
+                used by clients such as DIAGEO, Coca-Cola, and Silktech.
               </li>
               <li>
-                Developed and optimized user interfaces using HTML, CSS, and
-                JavaScript frameworks.
+                Built and maintain complex, data-heavy interfaces with
+                JavaScript, TypeScript, and React, using libraries like
+                DataTables, Select2, jsTree, and QueryBuilder.
               </li>
               <li>
-                Integrated real-time data from multiple sources, enhancing
-                platform functionality and user experience.
+                Integrated real-time data from multiple sources and collaborated
+                with backend teams on seamless REST API integration and data
+                flow.
               </li>
               <li>
-                Collaborated with backend developers for seamless API
-                integration and data flow.
+                Modernized the frontend tooling and build setup (React 19,
+                migrating from Create React App to Vite) to improve build speed
+                and long-term maintainability.
               </li>
               <li>
-                Utilized libraries like DataTables, Select2, jsTree, and
-                QueryBuilder for dynamic and responsive interfaces.
-              </li>
-              <li>
-                Contributed to improving marketing efficiency and customer
-                intelligence through intuitive UI design.
+                Set UI conventions and reviewed the team's work to keep the
+                codebase consistent, performant, and accessible.
               </li>
             </ul>
           </SchoolInfos>
         </EducationInfo>
         <EducationInfo>
           <div className="circle">
-            <img className="job" src={dedew} alt="education" />
+            <img className="job" src={dedew} alt="Dedew logo" />
             <div />
           </div>
           <SchoolInfos>
             <h3>Dedew</h3>
             <h5>Frontend Developer (Volunteer)</h5>
-            <p style={{ fontWeight: "bold" }}>Sep. 2022 - Present</p>
+            <p style={{ fontWeight: "bold" }}>Sep. 2022 - Sep. 2025</p>
             <ul>
               <li>
                 Developed and implemented front-end code using HTML, SASS,
                 Bootstrap, JavaScript, and React to meet business requirements.
               </li>
               <li>
-                Created two landing pages to enhance client’s web presence.
+                Created two landing pages to enhance the client's web presence.
               </li>
               <li>
-                Developed a lab results system over the last six months using
-                React, Material React, MUI, and Tailwind.
+                Built a lab results system using React, Material React, MUI, and
+                Tailwind.
               </li>
               <li>
                 Collaborated with the team to design and integrate new features

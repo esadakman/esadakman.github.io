@@ -50,6 +50,10 @@ const Skills = () => {
           <span className="name">JavaScript</span>
         </div>
         <div className="icon-container">
+          <i className="icon devicon-typescript-plain"></i>
+          <span className="name">TypeScript</span>
+        </div>
+        <div className="icon-container">
           <i className="icon devicon-jquery-plain"></i>
           <span className="name">jQuery</span>
         </div>
@@ -92,6 +96,22 @@ const Skills = () => {
         <div className="icon-container">
           <img className="styled-comp" src={styled} alt="Styled Components" />
           <span className="name">Styled Comp.</span>
+        </div>
+        <div className="icon-container">
+          <i className="icon devicon-vitejs-plain"></i>
+          <span className="name">Vite</span>
+        </div>
+        <div className="icon-container">
+          <div className="text-icon">DataTables</div>
+          <span className="name">DataTables</span>
+        </div>
+        <div className="icon-container">
+          <div className="text-icon">Select2</div>
+          <span className="name">Select2</span>
+        </div>
+        <div className="icon-container">
+          <div className="text-icon">jsTree</div>
+          <span className="name">jsTree</span>
         </div>
         <div className="icon-container">
           <i className="icon devicon-firebase-plain"></i>

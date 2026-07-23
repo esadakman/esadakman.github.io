@@ -16,11 +16,17 @@ const About = () => {
         <p>Hello there! My name is Esad</p>
         <p>
           {" "}
-          I am a web developer with expertise in front-end frameworks, skilled
-          in creating complex solutions and user-friendly designs. I have a
-          strong grasp of JavaScript, jQuery and ReactJS. As a team player with
-          excellent analytical skills, I quickly adapt to new technologies and
-          constantly seek to improve my abilities.
+          I am a frontend developer who leads a UI development team building
+          enterprise, data-heavy web applications. My work centers on complex,
+          responsive interfaces, real-time data integration, and clean
+          collaboration with backend teams over REST APIs.
+        </p>
+        <p>
+          I have a strong grasp of JavaScript, TypeScript, and the React
+          ecosystem, and I enjoy the details that make a product feel solid —
+          from building complex, responsive UIs with libraries like DataTables,
+          Select2, and jsTree to modernizing tooling and keeping the codebase
+          fast and maintainable.
         </p>
         <p>
           Thank you for visiting my portfolio site. I am excited to leverage my
@@ -33,32 +39,3 @@ const About = () => {
 };
 
 export default About;
-
-// {
-//   /* <p>
-//     Hello there! My name is Esad and I am a web developer with expertise
-//     in front-end frameworks. I have a strong ability to develop complex
-//     solutions and create user-friendly designs. I am a team player with
-//     excellent analytical thinking skills and the ability to adapt quickly
-//     to new technologies.{" "}
-//   </p>{" "}
-//   <p>
-//     I have a solid understanding of JavaScript, React, Python, and Django,
-//     and am always looking to learn and improve my skills. I am dedicated
-//     to achieving my goals and am committed to using my skills to further
-//     the mission of a company. I am self-disciplined, reliable, and always
-//     eager to take on new challenges.{" "}
-//   </p>{" "}
-//   <p>
-//     As a web developer, I am passionate about creating solutions that make
-//     a real difference. Whether it's building a website, creating a mobile
-//     app, or developing a complex system, I am committed to delivering
-//     high-quality results that exceed expectations.{" "}
-//   </p>{" "}
-//   <p>
-//     If you're looking for a web developer who is skilled, reliable, and
-//     dedicated to their craft, look no further! I am ready to put my skills
-//     to work and help your company achieve its goals. Let's work together
-//     and create something amazing!
-//   </p> */
-// }
