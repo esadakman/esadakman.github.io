@@ -6,7 +6,7 @@ export const ContactContainer = styled.div`
   align-items: center;
   width: 100%;
   min-height: calc(100vh - 7.5rem);
-  padding: 3rem 0;
+  padding-bottom: 1rem;
   background-color: ${({ theme }) => theme.colors.heroBg};
   background-image: radial-gradient(
       800px 400px at 20% 0%,
@@ -142,7 +142,7 @@ export const StyledContactForm = styled.div`
     width: 22rem;
     text-align: center;
   }
-  @media (max-width: ${({ theme }) => theme.size.md}) { 
+  @media (max-width: ${({ theme }) => theme.size.md}) {
     flex: 1;
   }
 

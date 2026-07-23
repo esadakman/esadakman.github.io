@@ -8,7 +8,7 @@
 .marquee-container {
   display: grid;
   place-content: center;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .scroller {
