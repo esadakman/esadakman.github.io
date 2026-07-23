@@ -9,7 +9,6 @@ import ReactProjects from "../components/projectsComponents/ReactProjects";
 import ScrolToTop from "../pages/ScrolToTop";
 import Home from "../pages/Home";
 import DjangoProjects from "../components/projectsComponents/DjangoProjects";
-// import Projects from "../pages/Projects";
 
 const Router = () => {
   return (
@@ -20,7 +19,6 @@ const Router = () => {
         <ScrolToTop />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          {/* <Route path="/projects" element={<ReactProjects />} /> */}
           <Route path="/react" exact element={<ReactProjects />} />
           <Route path="/javaScript" exact element={<JavaScript />} />
           <Route path="/htmlCss" exact element={<HtmlCssProjects />} />

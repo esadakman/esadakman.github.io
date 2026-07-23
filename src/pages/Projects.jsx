@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ProjectsTitles } from "../components/componentsStyles/ReactProjects.styled";
 import { MainProjectsContainer, ProjectsIcons } from "./styles/Projects.styled";
-// import ReactProjects from "../components/projectsComponents/ReactProjects";
 
 const Projects = () => {
   const navigate = useNavigate();
