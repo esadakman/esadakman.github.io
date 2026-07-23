@@ -11,7 +11,7 @@ import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
 const Experience = () => {
   return (
     <EducationContainer>
-      <ProjectsTitles>Experince</ProjectsTitles>
+      <ProjectsTitles>Experience</ProjectsTitles>
       <EducationArea>
         <EducationInfo>
           <div className="circle">

@@ -181,7 +181,7 @@ const reactData = [
       "I use axios for fetching data.",
       "User can get random profiles by clicking the button",
     ],
-    link: "https://github.com/esadakman/reactjs-github-finder",
+    link: "https://github.com/esadakman/reactjs-random-user",
   },
   {
     id: 15,
