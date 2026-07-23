@@ -24,9 +24,8 @@ const About = () => {
         <p>
           I have a strong grasp of JavaScript, TypeScript, and the React
           ecosystem, and I enjoy the details that make a product feel solid —
-          from building complex, responsive UIs with libraries like DataTables,
-          Select2, and jsTree to modernizing tooling and keeping the codebase
-          fast and maintainable.
+          from building complex, responsive user interfaces to modernizing
+          tooling and keeping the codebase fast and maintainable.
         </p>
         <p>
           Thank you for visiting my portfolio site. I am excited to leverage my
