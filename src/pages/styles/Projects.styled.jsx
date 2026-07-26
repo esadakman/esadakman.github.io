@@ -7,7 +7,8 @@ export const MainProjectsContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 4rem 0;
+  padding: 2rem 0 4rem;
+  scroll-margin-top: 80px;
 `;
 
 export const ProjectsIcons = styled.div`
