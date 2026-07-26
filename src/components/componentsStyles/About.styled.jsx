@@ -6,8 +6,10 @@ export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 0;
+  padding: 2rem 0 4rem;
   gap: 1.5rem;
+  /* Offset the fixed navbar so scroll-to lands the title just below it */
+  scroll-margin-top: 80px;
 `;
 
 export const IMG = styled.img`
