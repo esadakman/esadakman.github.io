@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>esadakman</title>
+  <!--
+    GitHub Pages serves this file for any unknown path (e.g. a refreshed /react
+    deep link). We save the requested URL and bounce to the SPA root, where
+    index.html restores the path via history.replaceState.
+  -->
+  <script>
+    sessionStorage.redirect = location.href;
+    location.replace("/");
+  </script>
+</head>
+
+<body></body>
+
+</html>
