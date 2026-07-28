@@ -18,6 +18,14 @@ export const CardWrapper = styled.div`
   flex-wrap: wrap;
   flex-direction: column;
   cursor: pointer;
+  border-radius: ${({ theme }) => theme.radius.md};
+  overflow: hidden;
+  box-shadow: ${({ theme }) => theme.colors.shadow};
+  transition: ${({ theme }) => theme.transition};
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: ${({ theme }) => theme.colors.glow};
+  }
   @media (max-width: ${({ theme }) => theme.size.sm}) {
     height: 18rem;
     width: 29rem;
@@ -32,9 +40,10 @@ export const CardWrapper = styled.div`
 export const Card = styled.div`
   flex: 1;
   flex-basis: 260px;
-  background: #fff;
-  border: 2px solid #fff;
-  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
+  background: ${({ theme }) => theme.colors.surfaceSolid};
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  border-top: none;
+  box-shadow: ${({ theme }) => theme.colors.shadow};
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   overflow: hidden;
   position: relative;
@@ -46,23 +55,21 @@ export const Card = styled.div`
   }
   & > img {
     width: 100%;
-    // object-fit: cover;
+    object-fit: cover;
     height: 100%;
     transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   }
   &:hover {
     transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
-    transform: scale(0.97);
     & > img {
       transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-      transform: scale(1.6) rotate(20deg);
-      filter: blur(3px);
+      transform: scale(1.1);
+      filter: blur(2px) brightness(0.7);
     }
     & > div {
       left: 0px;
       transition: all 0.7s ease-in-out;
-      clip-path: circle(75%);
+      clip-path: circle(150%);
     }
   }
 `;
@@ -71,7 +78,13 @@ export const Desc = styled.div`
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(
+    160deg,
+    rgba(5, 15, 36, 0.92),
+    rgba(24, 49, 82, 0.92)
+  );
+  backdrop-filter: blur(2px);
+  color: #e8eefc;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -80,43 +93,41 @@ export const Desc = styled.div`
   box-sizing: border-box;
   clip-path: circle(0% at 100% 100%);
   & > img {
-    width: 3rem;
+    width: 2.5rem;
     position: absolute;
     right: 1rem;
     content: url(${clickPNG});
     transform: rotate(320deg);
+    opacity: 0.8;
   }
   & > h2 {
     text-align: left;
-    color: ${({ theme }) => theme.colors.navBgColor};
+    color: ${({ theme }) => theme.colors.turqo};
     letter-spacing: 1px;
     margin: 10px 0;
-    font-weight: 400;
+    font-weight: 600;
     @media (max-width: ${({ theme }) => theme.size.sm}) {
       font-size: 1.2rem;
       margin-top: 5px;
-      font-weight: bold;
     }
   }
 
   & > ul {
-    /* border: 1px solid red; */
     padding: 0 !important;
     @media (max-width: ${({ theme }) => theme.size.sm}) {
       margin: 0 !important;
     }
     & > li {
       list-style-type: none;
-      /* border: 1px solid red; */
       overflow: auto;
       padding-right: 8px;
       line-height: 24px;
-      font-size: 1.2rem;
+      font-size: 1.05rem;
       text-align: justify;
       height: 85%;
       padding-bottom: 0.5rem;
       @media (max-width: ${({ theme }) => theme.size.sm}) {
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
     }
   }
@@ -128,28 +139,27 @@ export const TitleCard = styled.div`
   position: relative;
   height: 3rem;
   background-color: ${({ theme }) => theme.colors.buttonBg};
+  border-radius: ${({ theme }) => `${theme.radius.md} ${theme.radius.md} 0 0`};
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 0 1rem;
   gap:.5rem;
-  
+
   .fa-circle {
-    width: 1.5rem;
-    /* height: 2rem; */
+    width: 0.9rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    /* padding-right: 1rem; */
     &.red {
-      background-color: red;
+      background-color: #ff5f57;
     }
 
     &.yellow {
-      background-color: yellow;
+      background-color: #febc2e;
     }
 
     &.green {
-      background-color: green;
+      background-color: #28c840;
     }
   }
   & > p {
@@ -169,42 +179,50 @@ export const TitleCard = styled.div`
 
 export const ProjectsTitles = styled.h1`
   position: relative;
-  padding-bottom: 4px;
+  padding-bottom: 12px;
+  color: ${({ theme }) => theme.colors.text};
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
   @media (max-width: ${({ theme }) => theme.size.sm}) {
     font-size: 2rem;
   }
   &::after {
     content: "";
-    background: ${({ theme }) => theme.colors.mainColor};
+    background: linear-gradient(
+      90deg,
+      ${({ theme }) => theme.colors.turqo},
+      ${({ theme }) => theme.colors.purple}
+    );
+    border-radius: 999px;
     position: absolute;
-    text-align: center;
-    bottom: -0;
-    left: 10%;
-    height: 6%;
-    width: 80%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 60%;
   }
 `;
 
 export const ButtonStyleCard = styled.button`
-  background-color: ${({ theme }) => theme.colors.turqo};
-  border: 2px solid ${({ theme }) => theme.colors.navBgColor};
-  border-radius: 0.3rem;
-  color: ${({ theme }) => theme.colors.navBgColor};
+  background: ${({ theme }) => theme.colors.turqo};
+  border: 2px solid ${({ theme }) => theme.colors.turqo};
+  border-radius: ${({ theme }) => theme.radius.pill};
+  color: #04121f;
   text-decoration: none;
-  padding: 5px 10px;
-  font-weight: bold;
+  padding: 0.6rem 1.4rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.7s ease-in-out;
-  font-size: 1.1rem;
-  width: 8rem;
+  transition: ${({ theme }) => theme.transition};
+  font-size: 1rem;
+  width: fit-content;
   margin: 1rem auto;
   &:hover {
-    opacity: 0.9;
     color: ${({ theme }) => theme.colors.turqo};
-    background-color: ${({ theme }) => theme.colors.navBgColor};
-    border: 2px solid ${({ theme }) => theme.colors.turqo};
+    background: transparent;
+    transform: translateY(-2px);
+    box-shadow: ${({ theme }) => theme.colors.glow};
   }
   :active {
-    opacity: 1;
+    transform: translateY(0);
   }
 `;

@@ -10,6 +10,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { Flex } from "../componentsStyles/Main.styled";
 import reactData from "../../helpers/reactProjects";
+import Reveal from "../Reveal";
 
 const ReactProjects = () => {
   const navigate = useNavigate();
@@ -23,10 +24,10 @@ const ReactProjects = () => {
         <ProjectsTitles>ReactJS Projects</ProjectsTitles>
       </Flex>
       <ProjectsContainer>
-        {reactData.map((info) => {
+        {reactData.map((info, i) => {
           return (
+            <Reveal key={info?.id} delay={(i % 3) * 0.08}>
             <CardWrapper
-              key={info?.id}
               title="Click for details"
               onClick={() => openInNewTab(info?.link)}
             >
@@ -49,6 +50,7 @@ const ReactProjects = () => {
                 </Desc>
               </Card>
             </CardWrapper>
+            </Reveal>
           );
         })}
 

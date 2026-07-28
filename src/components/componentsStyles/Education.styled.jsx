@@ -16,15 +16,18 @@ export const EducationContainer = styled.div`
 export const EducationArea = styled.div`
   margin-top: 1rem;
   width: 60%;
-  background-color: "white";
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 2rem 0 1.4rem 0;
-  background-color: ${({ theme }) => theme.colors.cardText};
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 14px;
+  padding: 2.5rem 0 2rem 0;
+  border-radius: ${({ theme }) => theme.radius.lg};
+  color: ${({ theme }) => theme.colors.text};
+  background-color: ${({ theme }) => theme.colors.surface};
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  backdrop-filter: blur(8px);
+  box-shadow: ${({ theme }) => theme.colors.shadow};
   transition: 0.4s all linear;
   @media (max-width: ${({ theme }) => theme.size.lg}) {
     width: 70%;
@@ -45,13 +48,12 @@ export const EducationInfo = styled.div`
   display: flex;
 
   & > div.circle {
-    background: white;
+    background: #fff;
     z-index: 2;
     width: 4.8rem;
     height: 4rem;
     border-radius: 50%;
-    border: 3px solid ${({ theme }) => theme.colors.navBgColor};
-    position: relative;
+    border: 3px solid ${({ theme }) => theme.colors.turqo};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,17 +68,18 @@ export const EducationInfo = styled.div`
       width: 75%;
     }
     & > div.straightLine {
+      /* Anchored to the EducationInfo row (position: relative) so it always
+         reaches the next circle regardless of how tall the content is.
+         Starts just below this circle (~4rem) and runs to the row bottom,
+         crossing the 2rem margin gap into the next circle. */
       position: absolute;
-      height: 17rem;
-      border-left: 3px solid ${({ theme }) => theme.colors.navBgColor};
-      top: 100%;
-      left: 50%;
-      @media (max-width: ${({ theme }) => theme.size.xxlg}) {
-        height: 18rem;
-      }
-      @media (max-width: ${({ theme }) => theme.size.xlg}) {
-        height: 20rem;
-      }
+      top: 4rem;
+      bottom: -2rem;
+      /* 15px row padding + half the 4.8rem circle = circle center */
+      left: 47px;
+      transform: translateX(-50%);
+      border-left: 3px dashed ${({ theme }) => theme.colors.turqo};
+      z-index: 0;
       @media (max-width: ${({ theme }) => theme.size.md}) {
         display: none;
       }

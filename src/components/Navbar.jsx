@@ -7,12 +7,15 @@ import {
   Menu,
   MenuLink,
   Nav,
+  ThemeToggle,
 } from "./componentsStyles/Navbar.styled";
 import hamburger from "../assets/hamburger.png";
 import { useNavigate } from "react-router-dom";
+import { useThemeMode } from "./globalStyles/ThemeContext";
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const navigate = useNavigate();
+  const { mode, toggleTheme } = useThemeMode();
   const scrollToWithOffset = (target, offset) => {
     if (window.location.pathname !== "/") {
       navigate("/");
@@ -36,6 +39,13 @@ const Navbar = () => {
         <IMG src={logo} alt="logo" />
         <p>{"<esad/>"}</p>
       </Logo>
+      <ThemeToggle
+        onClick={toggleTheme}
+        aria-label={`Switch to ${mode === "dark" ? "light" : "dark"} mode`}
+        title={`Switch to ${mode === "dark" ? "light" : "dark"} mode`}
+      >
+        {mode === "dark" ? "☀️" : "🌙"}
+      </ThemeToggle>
       <Hamburger onClick={() => setIsNavOpen(!isNavOpen)}>
         <IMG
           src={hamburger}

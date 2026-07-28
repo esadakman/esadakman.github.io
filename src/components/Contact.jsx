@@ -8,6 +8,7 @@ import {
 import emailjs from "@emailjs/browser";
 import { toastError, toastSuccess } from "../helpers/customToastify";
 import { ProjectsTitles } from "./componentsStyles/ReactProjects.styled";
+import Reveal from "./Reveal";
 
 const Contact = () => {
   const openInNewTab = (url) => {
@@ -39,7 +40,9 @@ const Contact = () => {
   };
   return (
     <ContactContainer id="contact" name="contact">
-      <ProjectsTitles style={{ color: "white" }}>Contact</ProjectsTitles>
+      <Reveal>
+        <ProjectsTitles style={{ color: "white" }}>Contact</ProjectsTitles>
+      </Reveal>
       <SocialIcons>
         <div
           className="iconContainer"

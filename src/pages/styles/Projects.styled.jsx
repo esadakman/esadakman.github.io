@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const MainProjectsContainer = styled.div`
-  background: ${({ theme }) => theme.colors.navBgColor};
-  color: white;
+  color: ${({ theme }) => theme.colors.text};
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-bottom: 2rem;
+  padding: 4rem 0;
 `;
 
 export const ProjectsIcons = styled.div`
@@ -45,32 +44,44 @@ export const ProjectsIcons = styled.div`
   }
   & > div.django {
     &:hover {
-      color: #023b25;
+      color: #0c9d63;
     }
   }
   & > div.iconContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 0.5s all ease-in-out;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 2rem 1.5rem;
+    min-width: 12rem;
+    border-radius: ${({ theme }) => theme.radius.lg};
+    background: ${({ theme }) => theme.colors.surface};
+    border: 1px solid ${({ theme }) => theme.colors.border};
+    backdrop-filter: blur(8px);
+    color: ${({ theme }) => theme.colors.text};
+    transition: 0.4s all cubic-bezier(0.22, 1, 0.36, 1);
     &:hover {
-      animation: shake 0.3s linear;
+      transform: translateY(-8px);
+      box-shadow: ${({ theme }) => theme.colors.glow};
+      border-color: ${({ theme }) => theme.colors.turqo};
     }
     & > i.icon {
-      font-size: 9rem;
+      font-size: 6rem;
       text-transform: none;
+      transition: 0.4s all ease;
       @media (max-width: ${({ theme }) => theme.size.lg}) {
-        font-size: 7rem; 
+        font-size: 5rem;
       }
       @media (max-width: ${({ theme }) => theme.size.md}) {
-        font-size: 5rem;
+        font-size: 4rem;
       }
     }
     & > span {
-      margin-top: 1rem;
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: white;
+      margin-top: 0.5rem;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: ${({ theme }) => theme.colors.text};
       font-family: "Roboto", sans-serif;
       @media (max-width: ${({ theme }) => theme.size.md}) {
         font-size: 1rem;
@@ -101,24 +112,47 @@ export const ProjectsIcons = styled.div`
 
 export const ScrollBtn = styled.button`
   position: fixed;
-  bottom: 3.5rem;
-  right: 1.5rem;
-  box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.2);
+  bottom: ${({ $raised }) => ($raised ? "6.5rem" : "2rem")};
+  right: 2rem;
+  z-index: 5;
+  border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
-  display: flex;
-  letter-spacing: 1px;
-  font-weight: bold;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: grid;
+  place-items: center;
   cursor: pointer;
-  background: ${({ theme }) => theme.colors.turqo};
-  color: ${({ theme }) => theme.colors.navBgColor};
-  align-items: center;
-  justify-content: center;
+  color: ${({ theme }) => theme.colors.turqo};
+  background: ${({ theme }) => theme.colors.navGlass};
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: ${({ theme }) => theme.colors.shadow};
+  transition: ${({ theme }) => theme.transition};
+
+  & > svg {
+    width: 1.35rem;
+    height: 1.35rem;
+    transition: transform 0.3s ease;
+  }
+
   &:hover {
-    animation-name: rotate;
-    animation-duration: 1s;
-    animation-iteration-count: 2;
-    animation-timing-function: linear;
+    color: #04121f;
+    background: ${({ theme }) => theme.colors.turqo};
+    border-color: ${({ theme }) => theme.colors.turqo};
+    transform: translateY(-4px);
+    box-shadow: ${({ theme }) => theme.colors.glow};
+  }
+  &:hover > svg {
+    transform: translateY(-2px);
+  }
+  &:active {
+    transform: translateY(-1px);
+  }
+
+  @media (max-width: ${({ theme }) => theme.size.sm}) {
+    bottom: ${({ $raised }) => ($raised ? "4.5rem" : "1.25rem")};
+    right: 1.25rem;
+    width: 2.8rem;
+    height: 2.8rem;
   }
 `;

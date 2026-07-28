@@ -6,7 +6,14 @@ export const ContactContainer = styled.div`
   align-items: center;
   width: 100%;
   min-height: calc(100vh - 7.5rem);
-  background-color: ${({ theme }) => theme.colors.navBgColor};
+  padding-bottom: 1rem;
+  background-color: ${({ theme }) => theme.colors.heroBg};
+  background-image: radial-gradient(
+      800px 400px at 20% 0%,
+      rgba(3, 191, 203, 0.12),
+      transparent 60%
+    ),
+    radial-gradient(700px 400px at 90% 100%, rgba(140, 60, 157, 0.14), transparent 60%);
 `;
 
 export const SocialIcons = styled.div`
@@ -135,7 +142,7 @@ export const StyledContactForm = styled.div`
     width: 22rem;
     text-align: center;
   }
-  @media (max-width: ${({ theme }) => theme.size.md}) { 
+  @media (max-width: ${({ theme }) => theme.size.md}) {
     flex: 1;
   }
 
@@ -157,19 +164,20 @@ export const StyledContactForm = styled.div`
         color: white;
         transition: 0.3s all linear;
         width: 100%;
-        height: 2rem;
+        height: 2.8rem;
         padding: 0.5rem 0;
         font-size: 1rem;
         text-indent: 1rem;
         outline: none;
-        border-radius: 5px;
-        border: 1px solid rgb(220, 220, 220);
-        background-color: ${({ theme }) => theme.colors.formColor};
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background-color: rgba(255, 255, 255, 0.06);
         ::placeholder {
-          color: white;
+          color: rgba(255, 255, 255, 0.55);
         }
         &:focus {
-          border: 1px solid ${({ theme }) => theme.colors.mainColor};
+          border: 1px solid ${({ theme }) => theme.colors.turqo};
+          box-shadow: 0 0 0 3px rgba(3, 191, 203, 0.15);
         }
       }
       textarea {
@@ -179,37 +187,39 @@ export const StyledContactForm = styled.div`
         text-indent: 1rem;
         padding: 1rem 0;
         width: 100% !important;
-        border: none;
         outline: none;
         resize: none;
-        height: 5rem !important;
-        border-radius: 5px;
-        border: 1px solid rgb(220, 220, 220);
-        background-color: ${({ theme }) => theme.colors.formColor};
+        height: 7rem !important;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background-color: rgba(255, 255, 255, 0.06);
         ::placeholder {
-          color: white;
+          color: rgba(255, 255, 255, 0.55);
         }
         &:focus {
-          border: 1px solid ${({ theme }) => theme.colors.mainColor};
+          border: 1px solid ${({ theme }) => theme.colors.turqo};
+          box-shadow: 0 0 0 3px rgba(3, 191, 203, 0.15);
         }
       }
 
       & > button {
         cursor: pointer;
-        transition: 0.3s all linear;
-        background-color: ${({ theme }) => theme.colors.formColor};
+        transition: ${({ theme }) => theme.transition};
+        background: ${({ theme }) => theme.colors.turqo};
         font-size: 1rem;
-        letter-spacing: 0.2rem;
-        color: white;
-        border: 1px solid white;
-        border-radius: 0.3rem;
-        padding: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.15rem;
+        color: #04121f;
+        border: 1px solid ${({ theme }) => theme.colors.turqo};
+        border-radius: ${({ theme }) => theme.radius.pill};
+        padding: 0.85rem;
         width: 100%;
-        opacity: 0.7;
 
         &:hover {
-          opacity: 1;
-          border: 1px solid ${({ theme }) => theme.colors.mainColor};
+          background: transparent;
+          color: ${({ theme }) => theme.colors.turqo};
+          transform: translateY(-2px);
+          box-shadow: 0 12px 30px rgba(3, 191, 203, 0.3);
         }
       }
     }

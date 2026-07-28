@@ -1,7 +1,14 @@
+:root[data-theme="dark"] {
+  --skill-icon-color: #e8eefc;
+}
+:root[data-theme="light"] {
+  --skill-icon-color: #1a2338;
+}
+
 .marquee-container {
   display: grid;
   place-content: center;
-  /* min-height: 30vh; */
+  padding: 2rem 0;
 }
 
 .scroller {
@@ -15,7 +22,9 @@
 .skill-icons {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 1rem;
+  padding: 1.5rem 0;
   transition: all 0.3s linear;
 }
 
@@ -23,16 +32,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 0.5s all ease-in-out;
+  gap: 0.5rem;
+  color: var(--skill-icon-color, #1a2338);
+  transition: 0.4s all ease-in-out;
 }
 
 .icon-container:hover {
   color: #03bfcb;
+  transform: scale(1.08);
   animation: shake 0.3s linear;
 }
 
 .icon-container > .icon {
-  font-size: 8rem;
+  font-size: 7rem;
+  transition: 0.4s all ease;
 }
 
 @media (max-width: 768px) {
@@ -47,13 +60,19 @@
 }
 
 .styled-comp {
-  width: 8rem;
+  width: 7rem;
 }
 
 /* Inline-SVG skills (Cursor, Claude Code) sized to match the icon font glyphs */
 .svg-icon {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
+}
+
+/* Img-based SVGs render black; invert them in dark mode so they stay visible */
+:root[data-theme="dark"] .styled-comp,
+:root[data-theme="dark"] .svg-icon {
+  filter: invert(1) brightness(1.6);
 }
 
 @media (max-width: 768px) {
@@ -130,6 +149,5 @@
 
 .skills-title {
   width: fit-content;
-  margin: 0.67em auto;
-  font-size: 2em;
+  margin: 0.67em auto 1.2em;
 }
